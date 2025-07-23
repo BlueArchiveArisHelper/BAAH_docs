@@ -1,0 +1,49 @@
+name: Hexo Deploy
+
+on:
+  push:
+    branches:
+      - main  # 触发条件，当 main 分支有 push 事件时触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # 运行环境
+
+    steps:
+    - name: Checkout Source
+      uses: actions/checkout@v2  # 检出代码
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'  # 选择 Node.js 版本
+
+    - name: Install Dependencies
+      run: npm install  # 安装 Hexo 依赖
+
+    - name: Edit Download URL
+      run: python xiaofeiTM233.py
+
+    - name: Build Page
+      run: npm run docs:build  # 构建 Hexo 静态文件
+
+    - name: Clear barauch files # 清除当前分支内容
+      run: git rm -rf .
+
+    - name: Copy files # 复制生成的静态文件到gh-Pages分支
+      run: cp -r ./public/* .
+
+    - name: Clear unuseful files # 清除无用文件
+      run: |
+        rm -rf ./node_modules
+        rm .gitignore
+    
+    - name: Deploy to FTP Server
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}  # FTP 服务器地址
+        username: ${{ secrets.FTP_USERNAME }}  # FTP 用户名
+        password: ${{ secrets.FTP_PASSWORD }}  # FTP 密码
+        local-dir: ./
+        server-dir: /wwwroot/
+        dangerous-clean-slate: true  # 清空服务器目录
