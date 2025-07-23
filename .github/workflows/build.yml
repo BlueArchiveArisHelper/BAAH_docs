@@ -1,4 +1,4 @@
-name: Hexo Deploy
+name: Website Build and Deploy
 
 on:
   push:
@@ -36,7 +36,6 @@ jobs:
     - name: Clear unuseful files # 清除无用文件
       run: |
         rm -rf ./node_modules
-        rm .gitignore
     
     - name: Deploy to FTP Server
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
