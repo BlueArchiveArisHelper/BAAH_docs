@@ -1,3 +1,10 @@
+---
+# SEO 优化
+title: BAAH 高级源码部署指南
+subtitle: Python 3.10+Git 手动编译（附风险提示)
+description: 面向开发者的 BAAH 源码部署方案，需 Python 3.10 与 ADB 环境，支持 Windows/MacOS/Linux/Android，无官方更新支持，建议技术用户使用。
+---
+
 # 从源码部署
 
 Android Termux部署请前往[🔗部署方法](https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/)

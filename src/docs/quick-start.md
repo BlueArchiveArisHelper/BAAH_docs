@@ -1,3 +1,10 @@
+---
+# SEO 优化
+title: BAAH 快速部署指南
+subtitle: Windows/Linux 自动化脚本配置
+description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置（1280x720/240 DPI），Windows 解压即用 + GUI 配置，Linux Docker 一键运行，支持定时任务自动化。
+---
+
 # 快速开始
 
 ## 开始前的准备
