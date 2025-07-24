@@ -166,3 +166,21 @@ docker run -d --name BAAH -p 8000:8000 ghcr.io/sanmusen214/baah:latest
 起始于，填写 **程序或脚本(P):** 下方输入框 **BAAH.exe** 前的所有内容
 
 随后点击 **下一页(N)** **完成(F)** 随后你的自动化任务创建成功。
+
+### Linux
+
+首先，确保你已经安装了BAAH的Docker容器以及MCSManager，使用 `docker ps` 或 `sudo docker ps` 来查看，命令输出中存在 **BAAH** 即已安装
+
+[安装MCSManager](https://www.mcsmanager.com/)
+
+新建一个实例，部署在 **localhost:24444**
+
+程序类型选择 **部署任意控制台程序**
+
+部署方式选择 **无需额外文件**
+
+名称任意，启动命令输入 `docker exec BAAH sh -c "python main.py <你的配置文件名称>.json"`
+
+点击确定，进入控制台，点击计划任务。
+
+点击新增，根据自己实际情况设置即可。
