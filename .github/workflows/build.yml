@@ -37,32 +37,32 @@ jobs:
       run: |
         rm -rf ./node_modules
 
-    - name: Set Git information  # 设置git信息
-      run: |
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]" 
+    # - name: Set Git information  # 设置git信息
+    #   run: |
+    #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+    #     git config --global user.name "github-actions[bot]" 
   
-    - name: Switch baranch  # 切换分支
-      run: |
-        git checkout -b test-page
+    # - name: Switch baranch  # 切换分支
+    #   run: |
+    #     git checkout -b test-page
 
-    - name: Deploy to test-page Branch
-      run: |
-        # 添加所有文件到 git
-        git add .
+    # - name: Deploy to test-page Branch
+    #   run: |
+    #     # 添加所有文件到 git
+    #     git add .
 
-        # 提交更改
-        git commit -m "Update test-page branch with latest build"
+    #     # 提交更改
+    #     git commit -m "Update test-page branch with latest build"
 
-        # 推送到远程 HTML 分支
-        git push origin test-page --force
+    #     # 推送到远程 HTML 分支
+    #     git push origin test-page --force
 
-    # - name: Deploy to FTP Server
-    #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-    #   with:
-    #     server: ${{ secrets.FTP_HOST }}  # FTP 服务器地址
-    #     username: ${{ secrets.FTP_USERNAME }}  # FTP 用户名
-    #     password: ${{ secrets.FTP_PASSWORD }}  # FTP 密码
-    #     local-dir: ./
-    #     server-dir: /wwwroot/
-    #     dangerous-clean-slate: true  # 清空服务器目录
+    - name: Deploy to FTP Server
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}  # FTP 服务器地址
+        username: ${{ secrets.FTP_USERNAME }}  # FTP 用户名
+        password: ${{ secrets.FTP_PASSWORD }}  # FTP 密码
+        local-dir: ./
+        server-dir: /wwwroot/
+        dangerous-clean-slate: true  # 清空服务器目录
