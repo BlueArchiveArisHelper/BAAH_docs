@@ -4,6 +4,8 @@
 
 你可以从以下方式获取BAAH
 
+强烈建议从Mirror酱下载，高速，稳定，支持快速更新，~~还可以让作者吃上美美的饭菜~~
+
 [GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases)
 
 [Mirror酱](https://mirrorchyan.com/zh/projects?rid=BAAH)
