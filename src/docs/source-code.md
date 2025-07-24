@@ -45,3 +45,8 @@ pip install -r requirements.txt
 使用 `python jsoneditor.py` 来运行webui,在配置文件编辑界面中修改adb路径
 
 执行 `python main.py config.json` 将会按照config.json配置开始执行BAAH
+
+### 从源码归档安装
+
+不用安装git,下载 **source code zip** 然后解压到想要的文件夹，在BAAH源代码文件夹中打开终端，然后安装依赖，运行即可。
+
