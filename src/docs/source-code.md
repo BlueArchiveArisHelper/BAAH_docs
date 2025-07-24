@@ -10,6 +10,8 @@
 
 [从Python官网下载](https://www.python.org/ftp/python/3.10.9/python-3.10.9-amd64.exe)
 
+然后，你需要自备adb
+
 ### 从Git安装
 
 使用 `winget` 安装Git
@@ -40,3 +42,6 @@ pip config set global.index-url https://mirrors.cernet.edu.cn/pypi/web/simple
 pip install -r requirements.txt
 ```
 
+使用 `python jsoneditor.py` 来运行webui,在配置文件编辑界面中修改adb路径
+
+执行 `python main.py config.json` 将会按照config.json配置开始执行BAAH
