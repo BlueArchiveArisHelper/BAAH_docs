@@ -17,7 +17,7 @@ export default {
     try {
       const response = await axios.get('https://baah.02000721.xyz');
       const data = response.data;
-      this.downloadUrl = data['assets'][0]['browser_download_url'].replace('https://github.com/sanmusen214/BAAH/releases/', 'https://baah.02000721.xyz/');
+      this.downloadUrl = data['assets'][0]['browser_download_url'].replace('https://github.com/BlueArchiveArisHelper/BAAH/releases/', 'https://baah.02000721.xyz/');
     } catch (error) {
       console.error('Error fetching download link:', error);
     }

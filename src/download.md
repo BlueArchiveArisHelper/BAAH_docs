@@ -4,7 +4,7 @@
 
 你可以从以下方式获取BAAH
 
-[GitHub Release](https://github.com/sanmusen214/BAAH/releases)
+[GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases)
 
 [Mirror酱](https://mirrorchyan.com/zh/projects?rid=BAAH)
 
@@ -23,7 +23,7 @@
 通过Docker运行
 
 ``` bash
-docker run -d --name BAAH -p 8000:8000 ghcr.io/sanmusen214/baah:latest
+docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
 ```
 
 或者手动使用源代码，详情请见文档

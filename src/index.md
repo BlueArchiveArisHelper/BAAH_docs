@@ -18,7 +18,7 @@ hero:
       link: /docs/quick-start
     - theme: alt
       text: 前往仓库
-      link: https://github.com/sanmusen214/BAAH/
+      link: https://github.com/BlueArchiveArisHelper/BAAH/
 
 features:
   - title: 开源，透明，免费
@@ -40,8 +40,8 @@ features:
 
 ## 贡献者们
 <a></a>
-<a href="https://github.com/sanmusen214/BAAH/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sanmusen214/BAAH" />
+<a href="https://github.com/BlueArchiveArisHelper/BAAH/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=BlueArchiveArisHelper/BAAH" />
 </a>
 
 更新BOT支持 [@xiaofeiTM233](https://github.com/xiaofeiTM233)

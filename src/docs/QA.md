@@ -2,7 +2,7 @@
 
 ## 0. 如何更新BAAH
 
-从[Github Release](https://github.com/sanmusen214/BAAH/releases/)界面或[Gitee Release](https://gitee.com/sammusen/BAAH/releases)界面或QQ群内或通过点击GUI的更新按钮下载 BAAH1.x.xx_update.zip后，解压缩所有内容至BAAH文件夹内覆盖即可。
+从[Github Release](https://github.com/BlueArchiveArisHelper/BAAH/releases/)界面或[Gitee Release](https://gitee.com/sammusen/BAAH/releases)界面或QQ群内或通过点击GUI的更新按钮下载 BAAH1.x.xx_update.zip后，解压缩所有内容至BAAH文件夹内覆盖即可。
 
 或者双击目录下的`UPDATE.exe`来更新BAAH。
 

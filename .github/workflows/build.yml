@@ -21,8 +21,8 @@ jobs:
     - name: Install Dependencies
       run: npm install  # 安装 Hexo 依赖
 
-    - name: Edit Download URL
-      run: python xiaofeiTM233.py
+    # - name: Edit Download URL
+    #   run: python xiaofeiTM233.py
 
     - name: Build Page
       run: npm run docs:build  # 构建 Hexo 静态文件

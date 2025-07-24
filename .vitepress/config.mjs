@@ -33,7 +33,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/sanmusen214/BAAH' }
+      { icon: 'github', link: 'https://github.com/BlueArchiveArisHelper/BAAH' }
     ],
     docFooter: {
       prev: "上一页",
