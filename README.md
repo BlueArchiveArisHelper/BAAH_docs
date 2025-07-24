@@ -7,4 +7,5 @@
 /.vitepress/config.mjs --> VitePress配置文件
 /src/public/img --> 分门别类存储图片
 /src/docs --> 赛文档的地方
+/scripts/ --> 后处理脚本位置
 ```
