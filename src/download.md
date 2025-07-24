@@ -8,7 +8,9 @@
 
 [Mirror酱](https://mirrorchyan.com/zh/projects?rid=BAAH)
 
-[小飞RAN的API](###xiaofeiRAN-download-url###)
+<!-- [小飞RAN的API](###xiaofeiRAN-download-url###) -->
+
+<DownloadLink />
 
 使用前建议阅读文档
 
