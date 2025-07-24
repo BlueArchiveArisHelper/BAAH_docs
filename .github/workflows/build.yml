@@ -31,7 +31,7 @@ jobs:
       run: git rm -rf .
 
     - name: Copy files # 复制生成的静态文件到gh-Pages分支
-      run: cp -r ./public/* .
+      run: cp -r ./dist/* .
 
     - name: Clear unuseful files # 清除无用文件
       run: |

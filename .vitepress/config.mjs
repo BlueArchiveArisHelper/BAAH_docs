@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "BAAH",
   lang: 'zh-CN',
-  outDir: "public",
+  outDir: "dist",
   srcDir: "src",
   description: "一个由开源社区驱动的BlueArchive自动化脚本",
   themeConfig: {
