@@ -23,9 +23,12 @@ export default defineConfig({
     sidebar: [
       { text: '主页', link: '/' },
       { text: '下载', link: '/download' },
-      { text: '文档', items: [
-        { text: '快速开始', link: '/docs/quick-start' },
-      ]}
+      {
+        text: '使用文档', items: [
+          { text: '快速开始', link: '/docs/quick-start' },
+          { text: '从源码部署', link: '/docs/source-code' }
+        ]
+      }
     ],
 
     socialLinks: [

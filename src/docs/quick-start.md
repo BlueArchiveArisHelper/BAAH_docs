@@ -153,19 +153,35 @@ docker run -d --name BAAH -p 8000:8000 ghcr.io/sanmusen214/baah:latest
 
 首先，在任务计划程序库中，创建一个文件夹，名称任意。
 
-然后，点击进入文件夹，创建一个基本任务，名称任意。
+![](/img/quick-start/windows_timer_1.png)
 
-触发器的选择上，根据需求选择。
+然后，点击进入文件夹，创建一个基本任务，名称任意。如：
+
+![](/img/quick-start/windows_timer_2.png)
+
+![](/img/quick-start/windows_timer_3.png)
+
+触发器的选择上，根据需求选择。如：
+
+![](/img/quick-start/windows_timer_4.png)
+
+![](/img/quick-start/windows_timer_5.png)
 
 执行任务，选择 **运行程序(T)**
+
+![](/img/quick-start/windows_timer_6.png)
 
 点击 **浏览(R)...** 选择你的BAAH程序本体 **BAAH.exe**
 
 添加参数，填写配置文件名称，要带后缀名，如 **example.json**
 
-起始于，填写 **程序或脚本(P):** 下方输入框 **BAAH.exe** 前的所有内容
+起始于，填写 **程序或脚本(P):** 下方输入框 **BAAH.exe** 前的所有内容。如：
+
+![](/img/quick-start/windows_timer_7.png)
 
 随后点击 **下一页(N)** **完成(F)** 随后你的自动化任务创建成功。
+
+![](/img/quick-start/windows_timer_8.png)
 
 ### Linux
 

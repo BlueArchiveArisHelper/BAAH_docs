@@ -26,7 +26,7 @@ features:
   - title: 强大的跨平台能力
     details: 无论是Windows，MacOS，Linux甚至Android (实验性) 都可以运行BAAH
   - title: 完善的社区支持
-    details: 你可以在BAAH所在的GitHub仓库发送Issue,或是在QQ问题解答群 (869909298) 中提出问题。
+    details: 你可以在BAAH所在的GitHub仓库发送Issue,或是在QQ问题解答群 (985729020) 中提出问题。
 ---
 
 ## 支持的功能
