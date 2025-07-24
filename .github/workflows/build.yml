@@ -27,6 +27,9 @@ jobs:
     - name: Build Page
       run: npm run docs:build  # 构建 Hexo 静态文件
 
+    - name: Copy Images
+      run: cp -r ./src/img/ ./dist/img
+
     - name: Clear barauch files # 清除当前分支内容
       run: git rm -rf .
 
