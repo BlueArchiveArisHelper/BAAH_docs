@@ -26,7 +26,8 @@ export default defineConfig({
       {
         text: '使用文档', items: [
           { text: '快速开始', link: '/docs/quick-start' },
-          { text: '从源码部署', link: '/docs/source-code' }
+          { text: '从源码部署', link: '/docs/source-code' },
+          { text: 'Q&A 常见问题', link: '/docs/QA' },
         ]
       }
     ],
