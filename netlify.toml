@@ -1,0 +1,24 @@
+[[redirects]]
+from = "/releases"
+to = "https://api.github.com/repos/BlueArchiveArisHelper/BAAH/releases/latest"
+status = 200
+
+[[redirects]]
+from = "/download/:tag/:filename"
+to = "https://github.com/BlueArchiveArisHelper/BAAH/releases/download/:tag/:filename"
+status = 200
+
+[[redirects]]
+from = "/apk/global"
+to = "https://d.apkpure.net/b/XAPK/com.nexon.bluearchive?version=latest"
+status = 200
+
+[[redirects]]
+from = "/apk/jp"
+to = "https://d.apkpure.net/b/XAPK/com.YostarJP.BlueArchive?version=latest"
+status = 200
+
+[[redirects]]
+from = "/apk/cn"
+to = "https://d.apkpure.net/b/XAPK/com.RoamingStar.BlueArchive?version=latest"
+status = 200
