@@ -2,11 +2,6 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  vite: {
-    server: {
-      allowedHosts: ['test-baah.blockhaity.dpdns.org'],
-    },
-  },
   title: "BAAH",
   lang: 'zh-CN',
   outDir: "public",
