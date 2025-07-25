@@ -20,6 +20,12 @@ export default defineConfig({
   outDir: "dist",
   srcDir: "src",
   description: "一个由开源社区驱动的BlueArchive自动化脚本",
+  head: [
+    ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/img/website/icon-180x180.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/img/website/icon-32x32.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/img/website/icon-16x16.png" }],
+    ["link", {rel: "shortcut icon", href: "/img/website/icon-16x16.ico" }],
+  ],
   themeConfig: {
     logo: '/img/website/icon.png',
     // https://vitepress.dev/reference/default-theme-config
@@ -82,6 +88,9 @@ export default defineConfig({
     }
   },
   markdown: {
+    image: {
+      lazyLoading: true
+    },
     config(md) {
       md.use(tabsMarkdownPlugin)
     }
