@@ -1,7 +1,20 @@
 import { defineConfig } from 'vitepress'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vue: {
+    template: {
+      compilerOptions: {
+        whitespace: 'preserve'
+      }
+    }
+  },
+  vite: {
+    server: {
+      allowedHosts: ['test-baah.blockhaity.dpdns.org']
+    }
+  },
   title: "BAAH",
   lang: 'zh-CN',
   outDir: "dist",
@@ -23,6 +36,15 @@ export default defineConfig({
           { text: '快速开始', link: '/docs/quick-start' },
           { text: '从源码部署', link: '/docs/source-code' },
           { text: 'Q&A 常见问题', link: '/docs/QA' },
+        ]
+      },
+      {
+        text: '开发文档', items: [
+          { text: '环境搭建', link: '/docs/dev-env' },
+          { text: '文件结构', link: '/docs/file-structure' },
+          { text: '关键类说明', link: '/docs/key-classes' },
+          { text: '开发规范', link: '/docs/dev-spec' },
+          { text: '任务开发步骤', link: '/docs/task-dev' },
         ]
       }
     ],
@@ -59,4 +81,9 @@ export default defineConfig({
       provider: 'local'
     }
   },
+  markdown: {
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+    }
+  }
 })
