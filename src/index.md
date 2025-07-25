@@ -27,6 +27,12 @@ features:
     details: 无论是Windows，MacOS，Linux甚至Android (实验性) 都可以运行BAAH
   - title: 完善的社区支持
     details: 你可以在BAAH所在的GitHub仓库发送Issue,或是在QQ问题解答群 (985729020) 中提出问题。
+
+# SEO优化
+
+title: BlueArchive Aris Helper (BAAH) - 开源自动化脚本
+subtitle: 官方下载与文档
+description: BAAH 是开源免费的 Blue Archive 自动化工具，支持 Windows/MacOS/Linux/Android 多平台，提供游戏任务自动执行、资源领取、商店购买、关卡扫荡等一站式解决方案。
 ---
 
 ## 支持的功能

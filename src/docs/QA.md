@@ -1,3 +1,10 @@
+---
+# SEO优化
+title: BAAH 常见问题解答
+subtitle: 更新/多开/报错处理指南
+description: 快速解决 BAAH 自动化脚本的典型问题：更新覆盖安装、ADB连接修复、多开配置、杀毒误报处理、定时任务设置，兼容 MAA/ALAS 等工具。
+---
+
 # Q&A 常见问题
 
 ## 0. 如何更新BAAH

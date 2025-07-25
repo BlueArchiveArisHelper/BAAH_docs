@@ -21,3 +21,11 @@
 ``` markdown
 ![说明](/img/文档名/xxx.png)
 ```
+
+## SEO格式
+
+---
+title: 标题
+subtitle: 小标题
+description: 描述
+---

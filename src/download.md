@@ -1,3 +1,10 @@
+---
+# SEO优化
+title: BAAH 多平台下载指南
+subtitle: Windows/MacOS/Linux/安卓
+description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推荐高速镜像下载，MacOS 需源码部署，Linux 支持 Docker 一键运行，安卓详见外部教程。
+---
+
 # 下载BAAH
 
 ## Windows
