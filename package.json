@@ -21,6 +21,7 @@
     "@lite-tree/icons": "^1.0.8",
     "@lite-tree/vue": "^1.1.6",
     "axios": "^1.11.0",
-    "cheerio": "^1.1.2"
+    "cheerio": "^1.1.2",
+    "medium-zoom": "^1.1.0"
   }
 }
