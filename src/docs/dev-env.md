@@ -75,7 +75,102 @@ uv python install 3.10
 
 ~~下载过慢自行魔法~~
 
-当然，不想安装UV，也可以从源码安装
+当然，不想安装UV，也可以从源码安装，或是容器搭建。
+
+**容器搭建**
+
+确保你有docker。
+
+首先，获取Python的Docker镜像
+
+``` bash
+sudo docker pull python:3.10
+```
+然后，寻找你心仪的位置，这里以/workspace为例，创建docker容器
+
+``` bash
+docker run -itd --name dev -v /workspace（你心仪的位置）:/workspace python:3.10 /bin/bash
+```
+
+接下来，使用VSCode的开发容器功能或PyCharm的同类（不知道有没有）功能，打开容器终端，进入/workspace目录。
+
+[克隆你的dev分支仓库](#获取源码) 用VSCode在容器内打开此目录，然后运行初始化脚本。
+
+``` bash
+# 初始化脚本一键运行命令
+bash -c "$(curl -L baah.sanmusen.top/res/dev-container-initalize.sh)"
+```
+
+::: details 脚本内容
+``` bash
+#!/usr/bin/bash
+
+echo '=================='
+echo 'BAAH 开发容器初始化'
+echo '=================='
+
+echo '更换apt软件源'
+echo 'Types: deb
+URIs: https://mirrors.cernet.edu.cn/debian
+Suites: bookworm bookworm-updates bookworm-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+# Types: deb-src
+# URIs: https://mirrors.cernet.edu.cn/debian
+# Suites: bookworm bookworm-updates bookworm-backports
+# Components: main contrib non-free non-free-firmware
+# Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# 以下安全更新软件源包含了官方源与镜像站配置，如有需要可自行修改注释切换
+# Types: deb
+# URIs: https://mirrors.cernet.edu.cn/debian-security
+# Suites: bookworm-security
+# Components: main contrib non-free non-free-firmware
+# Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# # Types: deb-src
+# # URIs: https://mirrors.cernet.edu.cn/debian-security
+# # Suites: bookworm-security
+# # Components: main contrib non-free non-free-firmware
+# # Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: http://security.debian.org/debian-security
+Suites: bookworm-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Types: deb-src
+# URIs: http://security.debian.org/debian-security
+# Suites: bookworm-security
+# Components: main contrib non-free non-free-firmware
+# Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+' > /etc/apt/sources.list.d/debian.sources
+
+echo '安装UV'
+wget https://gh-proxy.com/github.com/dariogriffo/uv-debian/releases/download/0.8.3%2B1/uv_0.8.3-1+bookworm_amd64.deb
+apt install ./uv_0.8.3-1+bookworm_amd64.deb -y
+rm uv_0.8.3-1+bookworm_amd64.deb
+
+echo '安装依赖到项目目录'
+python3.10 -m venv .venv
+mkdir -p /root/.config/uv
+echo '[[index]]
+url = "https://mirrors.cernet.edu.cn/pypi/web/simple"
+default = true' > ~/.config/uv/uv.toml
+source .venv/bin/activate
+uv pip install -r requirements.txt
+uv pip install opencv-python-headless==4.9.0.80
+
+echo '=================='
+echo 'BAAH 开发容器初始化完成'
+echo '在IDE内激活虚拟环境即可使用'
+echo '=================='
+```
+:::
+
 
 **源码安装**
 

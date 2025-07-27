@@ -28,7 +28,7 @@ userconfigdict是一个dict，存储用户的一个脚本的BAAH配置文件的�
 ```
 
 如果你要使用映射 `modules/configs/settingMaps.py` ，selective value作为提醒值存在，主要的map映射应当在settingMaps里。
-2
+
 映射字典规范如下，
 
 ``` python
