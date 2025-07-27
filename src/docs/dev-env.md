@@ -12,7 +12,7 @@
 
 <a href="https://apps.microsoft.com/detail/9PJPW5LDXLZ5" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="SVG Image" width="200" height="200"></a>
 
-[从Python官网下载](https://www.python.org/ftp/python/3.10.9/python-3.10.9-amd64.exe)
+[从Python官网下载](https://www.python.org/ftp/python/3.10.18/python-3.10.18-amd64.exe)
 
 #### VSCode
 
@@ -98,7 +98,7 @@ docker run -itd --name dev -v /workspace（你心仪的位置）:/workspace pyth
 
 ``` bash
 # 初始化脚本一键运行命令
-bash -c "$(curl -L baah.sanmusen.top/res/dev-container-initalize.sh)"
+bash -c "$(curl -L gh-proxy.com/github.com/BlueArchiveArisHelper/BAAH_docs/raw/refs/heads/src/public/res/dev-container-initalize.sh)"
 ```
 
 ::: details 脚本内容
@@ -179,7 +179,7 @@ echo '=================='
 然后运行下列命令
 
 ``` bash
-sudo curl -O https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tgz
+sudo curl -O https://www.python.org/ftp/python/3.10.18/Python-3.10.18.tgz
 tar zxvf ./Python-3.10.9.tgz
 cd python-3.10.9
 ./configure --prefix=/usr/local/python310 # 配置安装目录
