@@ -10,7 +10,7 @@
 
 首先，安装Python 3.10.x
 
-<a href="https://apps.microsoft.com/detail/9PJPW5LDXLZ5" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="SVG Image" width="200" height="200"></a>
+<a href="https://apps.microsoft.com/detail/9PJPW5LDXLZ5" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="Get it form Microsoft" width="200" height="200"></a>
 
 [从Python官网下载](https://www.python.org/ftp/python/3.10.18/python-3.10.18-amd64.exe)
 
@@ -18,7 +18,7 @@
 
 [VSCode 下载](https://code.visualstudio.com)
 
-<a href="https://apps.microsoft.com/detail/XP9KHM4BK9FZ7Q" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="SVG Image" width="200" height="200"></a>
+<a href="https://apps.microsoft.com/detail/XP9KHM4BK9FZ7Q" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="Get it form Microsoft" width="200" height="200"></a>
 
 安装后，安装 Python 与 Python Extension Pack 以及本地化插件
 
@@ -193,7 +193,7 @@ sudo make altinstall
 
 如果在使用图形化桌面发行版，则可以获取官方的 VSCode
 
-<a href="https://snapcraft.io/code" title="从Snap Store下载"><img src="/img/website/Get-it-from-Snap-Store/zh-tw.svg" alt="SVG Image" width="200" height="200"></a>
+<a href="https://snapcraft.io/code" title="从Snap Store下载"><img src="/img/website/Get-it-from-Snap-Store/zh-tw.svg" alt="Get it form Snap Store" width="200" height="200"></a>
 
 虽然可以，但是不建议从Snap安装。
 
