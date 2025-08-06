@@ -48,6 +48,9 @@ echo '安装ADB'
 apt update
 apt install adb -y
 
+echo '安装aria2'
+apt install aria2 -y
+
 echo '安装UV'
 wget https://gh-proxy.com/github.com/dariogriffo/uv-debian/releases/download/0.8.3%2B1/uv_0.8.3-1+bookworm_amd64.deb
 apt install ./uv_0.8.3-1+bookworm_amd64.deb -y
