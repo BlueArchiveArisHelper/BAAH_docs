@@ -42,7 +42,14 @@ Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 # Suites: bookworm-security
 # Components: main contrib non-free non-free-firmware
 # Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
-' > /etc/apt/sources.list.d/debian.sources
+' | tee /etc/apt/sources.list.d/debian.sources
+
+echo '安装ADB'
+apt update
+apt install adb -y
+
+echo '安装aria2'
+apt install aria2 -y
 
 echo '安装UV'
 wget https://gh-proxy.com/github.com/dariogriffo/uv-debian/releases/download/0.8.3%2B1/uv_0.8.3-1+bookworm_amd64.deb
@@ -58,6 +65,8 @@ default = true' > ~/.config/uv/uv.toml
 source .venv/bin/activate
 uv pip install -r requirements.txt
 uv pip install opencv-python-headless==4.9.0.80
+
+rm dev-container-initialize.sh
 
 echo '=================='
 echo 'BAAH 开发容器初始化完成'
