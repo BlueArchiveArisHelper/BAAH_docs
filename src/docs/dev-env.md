@@ -97,8 +97,8 @@ docker run -itd --name dev -v /workspace（你心仪的位置）:/workspace pyth
 [克隆你的dev分支仓库](#获取源码) 用VSCode在容器内打开此目录，然后运行初始化脚本。
 
 ``` bash
-# 初始化脚本一键运行命令
-bash -c "$(curl -L gh-proxy.com/github.com/BlueArchiveArisHelper/BAAH_docs/raw/refs/heads/src/public/res/dev-container-initalize.sh)"
+# 一键运行命令
+wget https://gh-proxy.com/https://github.com/BlueArchiveArisHelper/BAAH_docs/raw/refs/heads/main/src/public/res/dev-container-initialize.sh && bash dev-container-initialize.sh
 ```
 
 ::: details 脚本内容
