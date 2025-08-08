@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/releases",
+      "destination": "https://api.github.com/repos/sanmusen214/BAAH/releases/latest"
+    },
+    {
+      "source": "/download/:tag/:filename",
+      "destination": "https://github.com/sanmusen214/BAAH/releases/download/:tag/:filename"
+    },
+    {
+      "source": "/apk/global",
+      "destination": "https://d.apkpure.net/b/XAPK/com.nexon.bluearchive?version=latest"
+    },
+    {
+      "source": "/apk/jp",
+      "destination": "https://d.apkpure.net/b/XAPK/com.YostarJP.BlueArchive?version=latest"
+    },
+    {
+      "source": "/apk/cn",
+      "destination": "https://d.apkpure.net/b/XAPK/com.RoamingStar.BlueArchive?version=latest"
+    }
+  ]
+}
