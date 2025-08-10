@@ -10,15 +10,15 @@
 
 首先，安装Python 3.10.x
 
-<a href="https://apps.microsoft.com/detail/9PJPW5LDXLZ5" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="SVG Image" width="200" height="200"></a>
+<a href="https://apps.microsoft.com/detail/9PJPW5LDXLZ5" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="Get it form Microsoft" width="200" height="200"></a>
 
-[从Python官网下载](https://www.python.org/ftp/python/3.10.9/python-3.10.9-amd64.exe)
+[从Python官网下载](https://www.python.org/ftp/python/3.10.18/python-3.10.18-amd64.exe)
 
 #### VSCode
 
 [VSCode 下载](https://code.visualstudio.com)
 
-<a href="https://apps.microsoft.com/detail/XP9KHM4BK9FZ7Q" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="SVG Image" width="200" height="200"></a>
+<a href="https://apps.microsoft.com/detail/XP9KHM4BK9FZ7Q" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="Get it form Microsoft" width="200" height="200"></a>
 
 安装后，安装 Python 与 Python Extension Pack 以及本地化插件
 
@@ -75,7 +75,111 @@ uv python install 3.10
 
 ~~下载过慢自行魔法~~
 
-当然，不想安装UV，也可以从源码安装
+当然，不想安装UV，也可以从源码安装，或是容器搭建。
+
+**容器搭建**
+
+确保你有docker。
+
+首先，获取Python的Docker镜像
+
+``` bash
+sudo docker pull python:3.10
+```
+然后，寻找你心仪的位置，这里以/workspace为例，创建docker容器
+
+``` bash
+docker run -itd --name dev -v /workspace（你心仪的位置）:/workspace python:3.10 /bin/bash
+```
+
+接下来，使用VSCode的开发容器功能或PyCharm的同类（不知道有没有）功能，打开容器终端，进入/workspace目录。
+
+[克隆你的dev分支仓库](#获取源码) 用VSCode在容器内打开此目录，然后运行初始化脚本。
+
+``` bash
+# 一键运行命令
+wget https://gh-proxy.com/https://github.com/BlueArchiveArisHelper/BAAH_docs/raw/refs/heads/main/src/public/res/dev-container-initialize.sh && bash dev-container-initialize.sh
+```
+
+::: details 脚本内容
+``` bash
+#!/usr/bin/bash
+
+echo '=================='
+echo 'BAAH 开发容器初始化'
+echo '=================='
+
+echo '更换apt软件源'
+echo 'Types: deb
+URIs: https://mirrors.cernet.edu.cn/debian
+Suites: bookworm bookworm-updates bookworm-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+# Types: deb-src
+# URIs: https://mirrors.cernet.edu.cn/debian
+# Suites: bookworm bookworm-updates bookworm-backports
+# Components: main contrib non-free non-free-firmware
+# Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# 以下安全更新软件源包含了官方源与镜像站配置，如有需要可自行修改注释切换
+# Types: deb
+# URIs: https://mirrors.cernet.edu.cn/debian-security
+# Suites: bookworm-security
+# Components: main contrib non-free non-free-firmware
+# Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# # Types: deb-src
+# # URIs: https://mirrors.cernet.edu.cn/debian-security
+# # Suites: bookworm-security
+# # Components: main contrib non-free non-free-firmware
+# # Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: http://security.debian.org/debian-security
+Suites: bookworm-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Types: deb-src
+# URIs: http://security.debian.org/debian-security
+# Suites: bookworm-security
+# Components: main contrib non-free non-free-firmware
+# Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+' | tee /etc/apt/sources.list.d/debian.sources
+
+echo '安装ADB'
+apt update
+apt install adb -y
+
+echo '安装aria2'
+apt install aria2 -y
+
+echo '安装UV'
+wget https://gh-proxy.com/github.com/dariogriffo/uv-debian/releases/download/0.8.3%2B1/uv_0.8.3-1+bookworm_amd64.deb
+apt install ./uv_0.8.3-1+bookworm_amd64.deb -y
+rm uv_0.8.3-1+bookworm_amd64.deb
+
+echo '安装依赖到项目目录'
+python3.10 -m venv .venv
+mkdir -p /root/.config/uv
+echo '[[index]]
+url = "https://mirrors.cernet.edu.cn/pypi/web/simple"
+default = true' > ~/.config/uv/uv.toml
+source .venv/bin/activate
+uv pip install -r requirements.txt
+uv pip install opencv-python-headless==4.9.0.80
+
+rm dev-container-initialize.sh
+
+echo '=================='
+echo 'BAAH 开发容器初始化完成'
+echo '在IDE内激活虚拟环境即可使用'
+echo '=================='
+```
+:::
+
 
 **源码安装**
 
@@ -84,7 +188,7 @@ uv python install 3.10
 然后运行下列命令
 
 ``` bash
-sudo curl -O https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tgz
+sudo curl -O https://www.python.org/ftp/python/3.10.18/Python-3.10.18.tgz
 tar zxvf ./Python-3.10.9.tgz
 cd python-3.10.9
 ./configure --prefix=/usr/local/python310 # 配置安装目录
@@ -98,7 +202,7 @@ sudo make altinstall
 
 如果在使用图形化桌面发行版，则可以获取官方的 VSCode
 
-<a href="https://snapcraft.io/code" title="从Snap Store下载"><img src="/img/website/Get-it-from-Snap-Store/zh-tw.svg" alt="SVG Image" width="200" height="200"></a>
+<a href="https://snapcraft.io/code" title="从Snap Store下载"><img src="/img/website/Get-it-from-Snap-Store/zh-tw.svg" alt="Get it form Snap Store" width="200" height="200"></a>
 
 虽然可以，但是不建议从Snap安装。
 
