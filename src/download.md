@@ -7,19 +7,31 @@ description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推�
 
 # 下载BAAH
 
+::: tip
+你可以加入以下QQ群之一以获取最新版本更新通知
+
+禁言通知群2: 1056031857
+禁言通知群1: 1029291081 （已满）
+禁言通知群: 715586983（已满）
+
+
+
+你可以加入以下QQ群之一以咨询使用帮助
+问题解答群：985729020
+
+:::
+
 ## Windows
 
 你可以从以下方式获取BAAH
 
-强烈建议从Mirror酱下载，高速，稳定，支持快速更新，~~还可以让作者吃上美美的饭菜~~
-
-[GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases)
+[夸克网盘](https://pan.quark.cn/s/319faf23496c)
 
 [Mirror酱](https://mirrorchyan.com/zh/projects?rid=BAAH)
 
-<!-- [小飞RAN的API](###xiaofeiRAN-download-url###) -->
+[GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases)
 
-[夸克网盘](https://pan.quark.cn/s/319faf23496c)
+<!-- [小飞RAN的API](###xiaofeiRAN-download-url###) -->
 
 <DownloadLink />
 
