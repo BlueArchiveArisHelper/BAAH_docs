@@ -9,7 +9,7 @@ description: 面向开发者的 BAAH 源码部署方案，需 Python 3.10 与 AD
 
 Android Termux部署请前往[🔗部署方法](https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/)
 
-无论如何，都不建议直接从源码部署，从源码部署不会有官方的更新程序支持，使用 `git pull` 也会有损坏程序的风险。
+无论如何，不建议普通用户直接从源码部署，从源码部署不会有官方的更新程序支持，使用 `git pull` 也会有损坏程序的风险。
 
 首先，安装好 **Python 3.10.x** 
 
