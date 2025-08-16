@@ -47,6 +47,7 @@ export default defineConfig({
             items: [
               { text: '刷取关卡', link: '/docs/sweep-level.md' },
               { text: '课程表', link: '/docs/lesson.md' },
+              { text: '商店', link: '/docs/shop.md' },
             ]
           },
           { text: 'Q&A 常见问题', link: '/docs/QA' },
