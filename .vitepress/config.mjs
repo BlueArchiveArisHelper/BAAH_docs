@@ -51,6 +51,7 @@ export default defineConfig({
               { text: '咖啡馆', link: '/docs/cafe.md' },
               { text: '推图', link: '/docs/explore-stage.md' },
               { text: '小工具', link: '/docs/tools.md' },
+              { text: '通知', link: '/docs/notification.md' },
             ]
           },
           { text: 'Q&A 常见问题', link: '/docs/QA' },
