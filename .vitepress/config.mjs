@@ -50,6 +50,7 @@ export default defineConfig({
               { text: '商店', link: '/docs/shop.md' },
               { text: '咖啡馆', link: '/docs/cafe.md' },
               { text: '推图', link: '/docs/explore-stage.md' },
+              { text: '小工具', link: '/docs/tools.md' },
             ]
           },
           { text: 'Q&A 常见问题', link: '/docs/QA' },
