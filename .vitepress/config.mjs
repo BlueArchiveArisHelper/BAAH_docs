@@ -54,6 +54,7 @@ export default defineConfig({
               { text: '通知', link: '/docs/notification.md' },
             ]
           },
+          { text: '获取支持', link: '/docs/get-support.md' },
           { text: 'Q&A 常见问题', link: '/docs/QA' },
         ]
       },
