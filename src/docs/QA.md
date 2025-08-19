@@ -9,7 +9,7 @@ description: 快速解决 BAAH 自动化脚本的典型问题：更新覆盖安�
 
 ## 0. 如何更新BAAH
 
-从[Github Release](https://github.com/BlueArchiveArisHelper/BAAH/releases/)界面或[Gitee Release](https://gitee.com/sammusen/BAAH/releases)界面或QQ群内或通过点击GUI的更新按钮下载 BAAH1.x.xx_update.zip后，解压缩所有内容至BAAH文件夹内覆盖即可。
+从[GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases/)界面或[Gitee Release](https://gitee.com/sammusen/BAAH/releases)界面或QQ群内或通过点击GUI的更新按钮下载 BAAH1.x.xx_update.zip后，解压缩所有内容至BAAH文件夹内覆盖即可。
 
 或者双击目录下的`UPDATE.exe`来更新BAAH。
 
@@ -24,13 +24,15 @@ description: 快速解决 BAAH 自动化脚本的典型问题：更新覆盖安�
 4. 描述BAAH在错误发生前后的行为或提供录屏
 5. 提供BAAH.exe发生错误前后的日志
 
+详见章节[获取支持](../docs/get-support)。
+
 ## 2. 提示adb连接失败，截图大小为0kb 或 一直检测到游戏未打开，尝试打开游戏
 
 请检查你配置文件里的adb端口号是否和模拟器的adb端口号相同。
 
 清检查你配置文件里的游戏区服选择是否正确。
 
-## 3. 如何查看MUMU模拟器的端口号
+## 3. 如何查看MuMu模拟器的端口号
 
 点击模拟器右上角三条横线，点开问题检测，滑动到底部，会显示 adb端口号
 
@@ -40,9 +42,9 @@ description: 快速解决 BAAH 自动化脚本的典型问题：更新覆盖安�
 
 模拟器右侧点击多开，可以得知当前模拟器的ID编号，端口号为：5555+ID*2
 
-## 5. 国服BA如果自己安装了反和谐，点击不了扫荡按钮
+## 5. 日服/国际服使用了第三方汉化
 
-请在选择服务器那块勾选上 "如果开启了反和谐，请勾选此项"
+BAAH是基于图像和文字识别的自动点击软件，改变了图像和文字等就很可能无法使用。
 
 ## 6. 使用滑动进行选关时，滑动距离不够，导致脚本点击到按钮间的空白处
 
@@ -65,11 +67,13 @@ BAAH与ALAS，MAA兼容，只是：
 
 ## 9. 解压后BAAH.exe消失了
 
-请将BAAH所在文件夹设置为杀毒软件的白名单重新解压，BAAH完全开源，只需确保你的BAAH下载自github release或本文档开头的QQ群内，即可安心使用。
+请将BAAH所在文件夹设置为杀毒软件的白名单重新解压，BAAH完全开源，只需确保你的BAAH下载自GitHub Release、Mirror酱、本文档开头的夸克网盘和QQ群内，即可安心使用。
 
 ## 10. 如何让BAAH能够定时自动运行
 
-BAAH的本质是一个可以接受参数的应用程序，当我们打开cmd，cd到BAAH文件夹下，执行`BAAH.exe 你的配置名.json`即可运行该配置。在了解了如何使用windows的任务计划程序后（参见视频教程末尾），您就可以使用任务计划程序控制程序的定时自动运行，结合BAAH中的定时开启/关闭模拟器功能，即可做到解放双手完成BAAH的每日任务。
+BAAH的本质是一个可以接受参数的应用程序，当我们打开cmd，cd到BAAH文件夹下，执行`BAAH.exe 你的配置名.json`即可运行该配置。在了解了如何使用Windows的任务计划程序后末尾，您就可以使用任务计划程序控制程序的定时自动运行，结合BAAH中的定时开启/关闭模拟器功能，即可做到解放双手完成BAAH的每日任务。
+
+详见[视频教程](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6)和章节[自动化运行](../docs/automated-operation)。
 
 ## 11. GUI运行时参数
 

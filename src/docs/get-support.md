@@ -34,7 +34,7 @@ QQ群 问题解答群：985729020
 1. 请确定你已经按照提示的内容观看完教学视频和本文档，它们能解决绝大多数的问题。
 2. 检查一下软件是否有[更新](../docs/QA.md#_0-如何更新baah)，尝试更新到最新版本。
 3. 如果你在QQ群内，可以先翻看群聊天记录，看看有没有类似的情况，他们是怎么解决的。
-4. 阅读 GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues)，包括已经关闭的[Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed)，看有没有类似问题。
+4. 阅读 GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues)，包括已经关闭的 [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed)，看有没有类似问题。
 
 ### 在提问时
 解决没有足够信息问题的难度无亚于闭门造车，所以提问时请确保你提供了有效信息，包括：
