@@ -51,15 +51,42 @@
    - 没有你使用的邮箱？请自行在网络上搜寻你所使用的SMTP服务器的地址。
 
 
-## 使用API获取通知
+## API通知
 
 ::: tip
 请勾选 `是否启用API通知。自定义需注意关键字段格式` 选项启用此功能。
 
 :::
 
-咕咕咕……
+可以使用API获取通知，可用于推送给微信公众号、QQ群等。这需要一些第三方服务，请自行在互联网上查阅。
+
+1. 在 `API通知URL(get请求)` 一栏输入你的API地址。
+> :memo: **注：** 可以点击API地址选项卡下方的 `PUSHPLUS`、`SERVERCHAN`或`TELEGRAM BOT` 按钮，自动添加[PushPlus](https://www.pushplus.plus/)、[Server酱](https://sct.ftqq.com/)或[Telegram Bot](https://t.me/BotFather)的API地址。
+
+API地址的需要指定 Token，标题和内容的格式，关键词为[token], [title], [content]。
+
+<details>
+<summary>以Server酱为例</summary>
+
+Server酱的API地址为：
+
+```
+https://sctapi.ftqq.com/<Token>.send?title=<标题>&desp=<内容>
+
+```
+
+因此在 `API通知URL(get请求)` 一栏输入：
+
+```
+https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
+
+```
+
+</details>
+
+1. 在 `API通知Token` 一栏输入你的API的Token。
+> :memo: **注：** 各大通知API的Token获取方法各不相同，请根据你使用的服务自行查询。
 
 ## 自定义通知内容
 
-咕咕咕……
+可以通过自定义通知内容来修改通知内容。
