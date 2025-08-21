@@ -32,9 +32,9 @@ description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置�
 
 [前往下载页](/download)
 
-将BAAH_CONFIGS文件夹内的 example.json 复制并重命名为任一其他名字，如 task.json
+将 BAAH_CONFIGS 文件夹内的 example.json 复制并重命名为任一其他名字，如 task.json
 
-双击BAAH_GUI.exe打开界面。
+双击 BAAH_GUI.exe 打开界面。
 
 在模拟器设置中，修改端口号为你的模拟器adb调试端口。
 

@@ -9,9 +9,9 @@ description: 快速解决 BAAH 自动化脚本的典型问题：更新覆盖安�
 
 ## 0. 如何更新BAAH
 
-从[GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases/)界面或[Gitee Release](https://gitee.com/sammusen/BAAH/releases)界面或QQ群内或通过点击GUI的更新按钮下载 BAAH1.x.xx_update.zip后，解压缩所有内容至BAAH文件夹内覆盖即可。
+从[GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases/)界面或[Gitee Release](https://gitee.com/sammusen/BAAH/releases)界面或QQ群内或通过点击GUI的更新按钮下载 BAAH1.x.xx_update.zip 后，解压缩所有内容至 BAAH 文件夹内覆盖即可。
 
-或者双击目录下的`UPDATE.exe`来更新BAAH。
+或者双击目录下的 `UPDATE.exe` 来更新 BAAH 。
 
 ## 1. 如何反馈
 
@@ -30,7 +30,7 @@ description: 快速解决 BAAH 自动化脚本的典型问题：更新覆盖安�
 
 请检查你配置文件里的adb端口号是否和模拟器的adb端口号相同。
 
-清检查你配置文件里的游戏区服选择是否正确。
+请检查你配置文件里的游戏区服选择是否正确。
 
 ## 3. 如何查看MuMu模拟器的端口号
 
@@ -38,13 +38,13 @@ description: 快速解决 BAAH 自动化脚本的典型问题：更新覆盖安�
 
 ## 4. 如何查看雷电模拟器的端口号
 
-连接到雷电模拟器，可以勾选adb端口输入框右侧的`使用序列号`，然后添入`emulator-5554`，或者依次尝试`emulator-5556`, `emulator-5558`等，直到成功连接。
+连接到雷电模拟器，可以勾选adb端口输入框右侧的 `使用序列号` ，然后填入 `emulator-5554` ，或者依次尝试 `emulator-5556` ,  `emulator-5558` 等，直到成功连接。
 
 模拟器右侧点击多开，可以得知当前模拟器的ID编号，端口号为：5555+ID*2
 
 ## 5. 日服/国际服使用了第三方汉化
 
-BAAH是基于图像和文字识别的自动点击软件，改变了图像和文字等就很可能无法使用。
+BAAH 是基于图像和文字识别的自动点击软件，改变了图像和文字等很可能无法使用。
 
 ## 6. 使用滑动进行选关时，滑动距离不够，导致脚本点击到按钮间的空白处
 
@@ -54,7 +54,7 @@ BAAH是基于图像和文字识别的自动点击软件，改变了图像和文�
 
 在GUI界面切换至不同配置文件，分别点击右下角保存并运行即可。
 
-BAAH可以通过命令行使用，请cd到BAAH文件夹下，执行`BAAH.exe 你的配置名.json`即可运行该配置，结合Windows的任务计划程序可以实现自动启动。
+BAAH可以通过命令行使用，请cd到BAAH文件夹下，执行 `BAAH.exe 你的配置名.json` 即可运行该配置，结合Windows的任务计划程序可以实现自动启动。
 
 如果你使用bat命令，请确保cd到了BAAH文件夹下，然后执行 `BAAH.exe config1.json` 接着执行 `BAAH.exe config2.json`
 
@@ -71,7 +71,7 @@ BAAH与ALAS，MAA兼容，只是：
 
 ## 10. 如何让BAAH能够定时自动运行
 
-BAAH的本质是一个可以接受参数的应用程序，当我们打开cmd，cd到BAAH文件夹下，执行`BAAH.exe 你的配置名.json`即可运行该配置。在了解了如何使用Windows的任务计划程序后末尾，您就可以使用任务计划程序控制程序的定时自动运行，结合BAAH中的定时开启/关闭模拟器功能，即可做到解放双手完成BAAH的每日任务。
+BAAH的本质是一个可以接受参数的应用程序，当我们打开cmd，cd到BAAH文件夹下，执行 `BAAH.exe 你的配置名.json` 即可运行该配置。在了解了如何使用Windows的任务计划程序后末尾，您就可以使用任务计划程序控制程序的定时自动运行，结合BAAH中的定时开启/关闭模拟器功能，即可做到解放双手完成BAAH的每日任务。
 
 详见[视频教程](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6)和章节[自动化运行](../docs/automated-operation)。
 
