@@ -41,6 +41,22 @@ export default defineConfig({
         text: '使用文档', items: [
           { text: '快速开始', link: '/docs/quick-start' },
           { text: '从源码部署', link: '/docs/source-code' },
+          { 
+            text: '功能介绍',
+            collapsed: true,
+            items: [
+              { text: '刷取关卡', link: '/docs/sweep-level' },
+              { text: '课程表', link: '/docs/lesson' },
+              { text: '商店', link: '/docs/shop' },
+              { text: '咖啡馆', link: '/docs/cafe' },
+              { text: '总力战', link: '/docs/assault' },
+              { text: '推图', link: '/docs/explore-stage' },
+              { text: '小工具', link: '/docs/tools' },
+              { text: '通知', link: '/docs/notification' },
+            ]
+          },
+          { text: '自动化运行', link: '/docs/automated-operation' },
+          { text: '获取支持', link: '/docs/get-support' },
           { text: 'Q&A 常见问题', link: '/docs/QA' },
         ]
       },
