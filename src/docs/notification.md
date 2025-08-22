@@ -111,7 +111,7 @@ https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 | 13    | %SCREENSHOT\_READ\_FAIL\_TIMES% | 截图读取失败次数     | 数字                        |
 | 14    | %RESTART\_EMULATOR\_TIMES%      | 模拟器重启次数      | 数字                        |
 | 15    | %SCREENSHOT\_DATA%              | 截图数据         | 当截图模式为pipe时使用，RGB 值或 None |
-| 16    | %CURRENT\_PERIOD\_TASK\_INDEX%  | 执行的任务数   | 数字，\-1 表示未执行任何任务          |
+| 16    | %CURRENT\_PERIOD\_TASK\_INDEX%  | 执行的任务序数   | 数字，\-1 表示未执行任何任务          |
 
 <details>
 <summary>例子</summary>
@@ -124,7 +124,7 @@ https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 任务开始时间：%BAAH_START_TIME%
 任务开始前的资源：%BEFORE_BAAH_SOURCES%
 任务结束时的资源：%AFTER_BAAH_SOURCES%
-执行的任务数量：%CURRENT_PERIOD_TASK_INDEX%
+执行的任务序数：%CURRENT_PERIOD_TASK_INDEX%
 
 ```
 回报内容：
