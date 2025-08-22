@@ -10,28 +10,31 @@ description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置�
 ## 开始前的准备
 
 1. 模拟器
-   - 建议使用MuMu 4.x
-   - 分辨率设置为 1280*720像素， 240 DPI。将adb调试打开。注意模拟器的adb调试端口号。
-   - 如果你使用的Mumu模拟器，请在设置的底部关闭后台保活运行
-   - 如果adb无法连接，请确认关闭模拟器的网络桥接功能 或 在其他设置中修改adb连接ip。
+   - 建议使用 MuMu 4.x
+   - 分辨率设置为 1280*720 像素， 240 DPI。将adb调试打开。注意模拟器的adb调试端口号。
+   - 如果你使用的MuMu模拟器，请在设置的底部关闭后台保活运行
+   - 如果adb无法连接，请确认关闭模拟器的网络桥接功能 或 在其他设置中修改adb连接IP。
 2. 游戏本体设置
-    - 游戏：技能动画关
-    - 画面：战斗时上下黑边关
+    - **游戏** -> **技能动画** -> **关**
+    - **画面** -> **战斗时上下黑边** -> **关**
     - 咖啡厅的摄像机视角手动拉到了最高，最好家具全堆在屏幕最右侧
 
 ## 开始部署
 
-### Windows
+:::: tabs
+
+== Windows
+**Windows**
 
 [视频教程](https://www.bilibili.com/video/BV1ZxfGYSEVr)
 
-首先，下载约100MB的压缩包后解压至任意文件夹
+首先，下载约 140MB 的压缩包后解压至任意文件夹
 
 [前往下载页](/download)
 
-将BAAH_CONFIGS文件夹内的example.json重命名为任一其他名字，如task.json
+将 BAAH_CONFIGS 文件夹内的 example.json 复制并重命名为任一其他名字，如 task.json
 
-双击BAAH_GUI.exe打开界面
+双击 BAAH_GUI.exe 打开界面。
 
 在模拟器设置中，修改端口号为你的模拟器adb调试端口。
 
@@ -39,7 +42,14 @@ description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置�
 
 在任务执行顺序设置中，启用任务流或点击快速执行按钮运行任务。
 
-### Linux
+
+== MacOS
+**MacOS**
+
+详见[从源码部署](../docs/source-code.md)。
+
+== Linux
+**Linux**
 
 首先，确保你的系统内包含Docker，可以输入一下命令查看
 
@@ -152,58 +162,4 @@ docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
 
 在任务执行顺序设置中，启用任务流或点击快速执行按钮运行任务。
 
-## 自动化运行
-
-### Windows
-
-你可以使用 **Windows任务计划程序** 来自动化运行
-
-首先，在任务计划程序库中，创建一个文件夹，名称任意。
-
-![计划任务：找到程序](/img/quick-start/windows_timer_1.png)
-
-然后，点击进入文件夹，创建一个基本任务，名称任意。如：
-
-![计划任务：创建基本任务](/img/quick-start/windows_timer_2.png)
-
-![计划任务：创建基本任务](/img/quick-start/windows_timer_3.png)
-
-触发器的选择上，根据需求选择。如：
-
-![计划任务：选择触发器](/img/quick-start/windows_timer_4.png)
-
-![计划任务：选择触发器](/img/quick-start/windows_timer_5.png)
-
-执行任务，选择 **运行程序(T)**
-
-![计划任务：选择运行方式](/img/quick-start/windows_timer_6.png)
-
-点击 **浏览(R)...** 选择你的BAAH程序本体 **BAAH.exe**
-
-添加参数，填写配置文件名称，要带后缀名，如 **example.json**
-
-起始于，填写 **程序或脚本(P):** 下方输入框 **BAAH.exe** 前的所有内容。如：
-
-![计划任务：寻找程序](/img/quick-start/windows_timer_7.png)
-
-随后点击 **下一页(N)** **完成(F)** 随后你的自动化任务创建成功。
-
-![计划任务：完成](/img/quick-start/windows_timer_8.png)
-
-### Linux
-
-首先，确保你已经安装了BAAH的Docker容器以及MCSManager，使用 `docker ps` 或 `sudo docker ps` 来查看，命令输出中存在 **BAAH** 即已安装
-
-[安装MCSManager](https://www.mcsmanager.com/)
-
-新建一个实例，部署在 **localhost:24444**
-
-程序类型选择 **部署任意控制台程序**
-
-部署方式选择 **无需额外文件**
-
-名称任意，启动命令输入 `docker exec BAAH sh -c "python main.py <你的配置文件名称>.json"`
-
-点击确定，进入控制台，点击计划任务。
-
-点击新增，根据自己实际情况设置即可。
+::::
