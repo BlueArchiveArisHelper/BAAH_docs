@@ -13,9 +13,10 @@
 
 /src/public/img --> 分门别类存储图片
 
-/src/docs --> 赛文档的地方（zh_CN）
-/src/download.md --> 下载页（zh_CN）
-/src/index.md --> 主页（zh_CN）
+/src/zh_CN --> 中文文档
+/src/docs --> 赛文档的地方
+/src/download.md --> 下载页
+/src/index.md --> 主页
 
 /src/en_US --> English site
 /src/en_US/docs --> English docs
