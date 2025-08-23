@@ -7,8 +7,21 @@
 ```
 /.vitepress --> VitePress相关文件
 /.vitepress/config.mjs --> VitePress配置文件
+/.vitepress/config --> 多语言配置文件
+/.vitepress/navbar --> 多语言导航栏
+/.vitepress/sideber --> 多语言侧边栏
+
 /src/public/img --> 分门别类存储图片
-/src/docs --> 赛文档的地方
+
+/src/docs --> 赛文档的地方（zh_CN）
+/src/download.md --> 下载页（zh_CN）
+/src/index.md --> 主页（zh_CN）
+
+/src/en_US --> English site
+/src/en_US/docs --> English docs
+/src/en_US/download.md --> English download page
+/src/en_US/index.md --> English home page
+
 /scripts/ --> 后处理脚本位置
 ```
 

@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import { zhConfig } from './config/zh_CN'
+import { enConfig } from './config/en_US'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,63 +12,72 @@ export default defineConfig({
       }
     }
   },
-  vite: {
-    server: {
-      allowedHosts: ['test-baah.blockhaity.dpdns.org']
-    }
-  },
   title: "BAAH",
   lang: 'zh-CN',
   outDir: "dist",
   srcDir: "src",
   description: "一个由开源社区驱动的BlueArchive自动化脚本",
+  locales: {
+    root: {
+      label: "简体中文",
+      lang: "zh_CN",
+      link: "/",
+      ...zhConfig
+    },
+    en_US: {
+      label: "English",
+      lang: "en_US",
+      link: "/en_US",
+      ...enConfig
+    }
+  },
   head: [
     ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/img/website/icon-180x180.png" }],
     ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/img/website/icon-32x32.png" }],
     ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/img/website/icon-16x16.png" }],
-    ["link", {rel: "shortcut icon", href: "/img/website/icon-16x16.ico" }],
+    ["link", { rel: "shortcut icon", href: "/img/website/icon-16x16.ico" }],
   ],
   themeConfig: {
     logo: '/img/website/icon.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '主页', link: '/' },
+      { text: '主页', link: '/zh_CN' },
       { text: '下载', link: '/download' }
     ],
 
     sidebar: [
-      { text: '主页', link: '/' },
-      { text: '下载', link: '/download' },
+      { text: '主页', link: '/zh_CN' },
+      { text: '下载', link: '/zh_CN/download' },
       {
         text: '使用文档', items: [
-          { text: '快速开始', link: '/docs/quick-start' },
-          { text: '从源码部署', link: '/docs/source-code' },
-          { 
+          { text: '快速开始', link: '/zh_CN/docs/quick-start' },
+          { text: '从源码部署', link: '/zh_CN/docs/source-code' },
+          {
             text: '功能介绍',
             collapsed: true,
             items: [
-              { text: '刷取关卡', link: '/docs/sweep-level' },
-              { text: '课程表', link: '/docs/lesson' },
-              { text: '商店', link: '/docs/shop' },
-              { text: '咖啡馆', link: '/docs/cafe' },
-              { text: '总力战', link: '/docs/assault' },
-              { text: '推图', link: '/docs/explore-stage' },
-              { text: '小工具', link: '/docs/tools' },
-              { text: '通知', link: '/docs/notification' },
+              { text: '刷取关卡', link: '/zh_CN/docs/sweep-level' },
+              { text: '课程表', link: '/zh_CN/docs/lesson' },
+              { text: '商店', link: '/zh_CN/docs/shop' },
+              { text: '咖啡馆', link: '/zh_CN/docs/cafe' },
+              { text: '总力战', link: '/zh_CN/docs/assault' },
+              { text: '推图', link: '/zh_CN/docs/explore-stage' },
+              { text: '小工具', link: '/zh_CN/docs/tools' },
+              { text: '通知', link: '/zh_CN/docs/notification' },
             ]
           },
-          { text: '自动化运行', link: '/docs/automated-operation' },
-          { text: '获取支持', link: '/docs/get-support' },
-          { text: 'Q&A 常见问题', link: '/docs/QA' },
+          { text: '自动化运行', link: '/zh_CN/docs/automated-operation' },
+          { text: '获取支持', link: '/zh_CN/docs/get-support' },
+          { text: 'Q&A 常见问题', link: '/zh_CN/docs/QA' },
         ]
       },
       {
         text: '开发文档', items: [
-          { text: '环境搭建', link: '/docs/dev-env' },
-          { text: '文件结构', link: '/docs/file-structure' },
-          { text: '关键类说明', link: '/docs/key-classes' },
-          { text: '开发规范', link: '/docs/dev-spec' },
-          { text: '任务开发步骤', link: '/docs/task-dev' },
+          { text: '环境搭建', link: '/zh_CN/docs/dev-env' },
+          { text: '文件结构', link: '/zh_CN/docs/file-structure' },
+          { text: '关键类说明', link: '/zh_CN/docs/key-classes' },
+          { text: '开发规范', link: '/zh_CN/docs/dev-spec' },
+          { text: '任务开发步骤', link: '/zh_CN/docs/task-dev' },
         ]
       }
     ],
