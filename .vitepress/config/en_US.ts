@@ -41,7 +41,7 @@ export const enConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
     docFooter: { // 自定义上下页名
       prev: 'Previous', next: 'Next'
     },
-    darkModeSwitchLabel: '深浅模式', // 手机端深浅模式文字修改
+    darkModeSwitchLabel: 'Dark mode', // 手机端深浅模式文字修改
     outline: { // 大纲显示 1-6 级标题
       level: [1, 6],
       label: 'directory'
