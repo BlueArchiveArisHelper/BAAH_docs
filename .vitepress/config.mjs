@@ -18,7 +18,7 @@ export default defineConfig({
   srcDir: "src",
   description: "一个由开源社区驱动的BlueArchive自动化脚本",
   locales: {
-    root: {
+    zh_CN: {
       label: "简体中文",
       lang: "zh_CN",
       link: "/zh_CN",

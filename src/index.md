@@ -1,5 +1,5 @@
-<head>
-    <meta http-equiv="refresh" content="0;url=/zh_CN">
-</head>
+<LanguageRedirect/>
 
-页面将自动跳转到[/zh_CN](/zh_CN)
+You will be redirected to the language of your browser
+
+即将重定向到您浏览器所使用的语言
