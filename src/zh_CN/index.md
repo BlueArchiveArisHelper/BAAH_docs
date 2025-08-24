@@ -15,7 +15,7 @@ hero:
       link: /zh_CN/download
     - theme: alt
       text: 查看文档
-      link: /zh_CN/docs/quick-start
+      link: /zh_CN/docs/manual/quick-start
     - theme: alt
       text: 前往仓库
       link: https://github.com/BlueArchiveArisHelper/BAAH/
