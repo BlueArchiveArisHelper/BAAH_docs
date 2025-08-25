@@ -1,91 +1,94 @@
 ---
-# SEO优化
-title: BAAH 常见问题解答
-subtitle: 更新/多开/报错处理指南
-description: 快速解决 BAAH 自动化脚本的典型问题：更新覆盖安装、ADB连接修复、多开配置、杀毒误报处理、定时任务设置，兼容 MAA/ALAS 等工具。
+# SEO Optimization
+title: BAAH Frequently Asked Questions
+subtitle: Update/Multi-instance/Error Handling Guide
+description: Quick solutions to common BAAH automation script issues update overlay installation, ADB connection fixes, multi-instance configuration, antivirus false positive handling, scheduled task settings, compatible with MAA/ALAS and other tools.
 ---
 
-# Q&A 常见问题
+<LanguageWarn/>
 
-## 0. 如何更新BAAH
+# Q&A Frequently Asked Questions
 
-从[GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases/)界面或[Gitee Release](https://gitee.com/sammusen/BAAH/releases)界面或QQ群内或通过点击GUI的更新按钮下载 BAAH1.x.xx_update.zip 后，解压缩所有内容至 BAAH 文件夹内覆盖即可。
+## 0. How to update BAAH
 
-或者双击目录下的 `UPDATE.exe` 来更新 BAAH 。
+Download BAAH1.x.xx_update.zip from [GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases/) or [Gitee Release](https://gitee.com/sammusen/BAAH/releases) or QQ group or by clicking the update button in the GUI, then extract all contents to the BAAH folder and overwrite.
 
-## 1. 如何反馈
+Or double-click `UPDATE.exe` in the directory to update BAAH.
 
-请：
+## 1. How to provide feedback
 
-0. 检查问题是否已经列在常见问题里
-1. 检查BAAH是否是最新版本，你可以通过GUI内的更新按钮来更新BAAH
-2. 描述你的游戏区服，BAAH版本号
-3. 描述你的目的
-4. 描述BAAH在错误发生前后的行为或提供录屏
-5. 提供BAAH.exe发生错误前后的日志
+Please:
 
-详见章节[获取支持](../docs/get-support)。
+0. Check if the issue is already listed in the FAQ
+1. Check if BAAH is the latest version, you can update BAAH through the update button in the GUI
+2. Describe your game server region and BAAH version number
+3. Describe your purpose
+4. Describe BAAH's behavior before and after the error occurs, or provide a screen recording
+5. Provide logs from BAAH.exe before and after the error occurs
 
-## 2. 提示adb连接失败，截图大小为0kb 或 一直检测到游戏未打开，尝试打开游戏
+For details, see the [Getting Support](../docs/get-support) section.
 
-请检查你配置文件里的adb端口号是否和模拟器的adb端口号相同。
+## 2. ADB connection failed, screenshot size is 0kb or game is always detected as not opened
 
-请检查你配置文件里的游戏区服选择是否正确。
+Please check if the ADB port number in your configuration file matches the emulator's ADB port number.
 
-## 3. 如何查看MuMu模拟器的端口号
+Please check if the game server region selection in your configuration file is correct.
 
-点击模拟器右上角三条横线，点开问题检测，滑动到底部，会显示 adb端口号
+## 3. How to check MuMu emulator's port number
 
-## 4. 如何查看雷电模拟器的端口号
+Click the three horizontal lines in the upper right corner of the emulator, open Problem Detection, scroll to the bottom, and the ADB port number will be displayed.
 
-连接到雷电模拟器，可以勾选adb端口输入框右侧的 `使用序列号` ，然后填入 `emulator-5554` ，或者依次尝试 `emulator-5556` ,  `emulator-5558` 等，直到成功连接。
+## 4. How to check LDPlayer emulator's port number
 
-模拟器右侧点击多开，可以得知当前模拟器的ID编号，端口号为：5555+ID*2
+When connecting to LDPlayer, you can check "Use Serial Number" on the right side of the ADB port input box, then enter `emulator-5554`, or try `emulator-5556`, `emulator-5558`, etc., until the connection is successful.
 
-## 5. 日服/国际服使用了第三方汉化
+Click Multi-instance on the right side of the emulator to get the current emulator's ID number, the port number is: 5555 + ID * 2
 
-BAAH 是基于图像和文字识别的自动点击软件，改变了图像和文字等很可能无法使用。
+## 5. JP/Global server with third-party localization
 
-## 6. 国服BA安装了反和谐
+BAAH is an auto-click software based on image and text recognition. Changing images and text may make it unusable.
 
-BAAH 可以动态识别国服的反和谐，请确保使用的反和谐来自第一方。
+## 6. CN server with anti-censorship patch
 
-## 7. 使用滑动进行选关时，滑动距离不够，导致脚本点击到按钮间的空白处
+BAAH can dynamically recognize CN server's anti-censorship patch. Please ensure you are using the official anti-censorship patch.
 
-这个问题通常出现在国服BA上，请把配置文件底部的滑动触发距离取消与区服绑定，并将原先的40改为60。如果原先是60，请尝试改为40
+## 7. When using swipe to select stages, the swipe distance is not enough, causing the script to click on the blank space between buttons
 
-## 8. BAAH能否多开
+This issue usually occurs on CN server BA. Please unbind the swipe trigger distance from the server region in the configuration file and change the original 40 to 60. If it was originally 60, try changing it to 40.
 
-在GUI界面切换至不同配置文件，分别点击右下角保存并运行即可。
+## 8. Can BAAH run multiple instances
 
-BAAH可以通过命令行使用，请cd到BAAH文件夹下，执行 `BAAH.exe 你的配置名.json` 即可运行该配置，结合Windows的任务计划程序可以实现自动启动。
+In the GUI interface, switch to different configuration files and click "Save and Run" in the lower right corner respectively.
 
-如果你使用bat命令，请确保cd到了BAAH文件夹下，然后执行 `BAAH.exe config1.json` 接着执行 `BAAH.exe config2.json`
+BAAH can be used via command line. Please cd to the BAAH folder and execute `BAAH.exe your_config_name.json` to run the configuration. Combined with Windows Task Scheduler, automatic startup can be achieved.
 
-## 9. BAAH能否与其他脚本多开
+If you use bat commands, make sure you have cd'd to the BAAH folder, then execute `BAAH.exe config1.json` followed by `BAAH.exe config2.json`
 
-BAAH与ALAS，MAA兼容，只是：
+## 9. Can BAAH run with other scripts
 
-1. 请不要尝试在 一个多开模拟器/一个模拟器端口 上同时运行（BAAH）和（ALAS）或（MAA），他们会抢占截图。请设置多个多开模拟器
-2. 请注意尽量不要让自动化脚本重启adb服务，BAAH永远不会重启adb服务，你可以把BAAH放在其它自动化工具的后面启动。
+BAAH is compatible with ALAS and MAA, but:
 
-## 10. 解压后BAAH.exe消失了
+1. Do not try to run (BAAH) and (ALAS) or (MAA) simultaneously on the same multi-instance emulator/same emulator port, as they will compete for screenshots. Please set up multiple multi-instance emulators
+2. Try to prevent automation scripts from restarting the ADB service. BAAH will never restart the ADB service. You can start BAAH after other automation tools.
 
-请将BAAH所在文件夹设置为杀毒软件的白名单重新解压，BAAH完全开源，只需确保你的BAAH下载自GitHub Release、Mirror酱、本文档开头的夸克网盘和QQ群内，即可安心使用。
+## 10. BAAH.exe disappeared after extraction
 
-## 11. 如何让BAAH能够定时自动运行
+Please add the BAAH folder to your antivirus software's whitelist and extract again. BAAH is completely open source. As long as you download BAAH from GitHub Release, Mirror酱, the Baidu Netdisk link at the beginning of this document, or the QQ group, you can use it safely.
 
-BAAH的本质是一个可以接受参数的应用程序，当我们打开cmd，cd到BAAH文件夹下，执行 `BAAH.exe 你的配置名.json` 即可运行该配置。在了解了如何使用Windows的任务计划程序后末尾，您就可以使用任务计划程序控制程序的定时自动运行，结合BAAH中的定时开启/关闭模拟器功能，即可做到解放双手完成BAAH的每日任务。
+## 11. How to make BAAH run on a schedule
 
-详见[视频教程](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6)和章节[自动化运行](../docs/automated-operation)。
+BAAH is essentially an application that can accept parameters. When we open cmd, cd to the BAAH folder, and execute `BAAH.exe your_config_name.json`, we can run the configuration. After understanding how to use Windows Task Scheduler, you can use it to control the scheduled automatic operation of the program. Combined with BAAH's scheduled emulator on/off feature, you can complete BAAH's daily tasks hands-free.
 
-## 12. GUI运行时参数
+See [Video Tutorial](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6) and the [Automated Operation](../docs/automated-operation) section.
 
-你可以在GUI启动时指定参数以实现更多设置，比如 "BAAH_GUI.exe --token 123456" 来为GUI页面设置密码。以下是可使用的参数列表
+## 12. GUI runtime parameters
+
+You can specify parameters when starting the GUI to achieve more settings, such as "BAAH_GUI.exe --token 123456" to set a password for the GUI page. The following is a list of available parameters
 
 | Param | Desc | Default |
 |-|-|-|
-| --host | GUI启动时的ip | 127.0.0.1 |
-| --port | GUI启动时的端口 | 8000 （自动查找） |
-| --token | GUI密码 | None |
-| --no-show | 开关，指定时不自动打开浏览器 | |
+| --host | GUI startup IP | 127.0.0.1 |
+| --port | GUI startup port | 8000 (auto search) |
+| --token | GUI password | None |
+| --no-show | Switch, don't open browser when specified | |
+

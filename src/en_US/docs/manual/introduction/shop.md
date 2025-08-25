@@ -1,10 +1,12 @@
-# 商店
+<LanguageWarn/>
 
-商店依靠行和列的关系来定位购买的物品，只需要填写对应的位置即可。
+# Shop
 
-![商店](/img/shop/shop_1.png)
+The shop locates items to be purchased based on row and column relationships, you just need to fill in the corresponding position.
 
-- 若需要全部购买，请勾选 `购买所有` 。
-- `刷新次数` 即购买后点击 **立即更新** 的按钮再进行购买的次数，需要消耗青辉石。
-- 若某一行不买物品，那一行留空即可，即提示 **这里没有设置任何任务** 。
-- 商店分为普通商店和竞技场商店，可独立填写。
+![Shop](/img/shop/shop_1.png)
+
+- If you want to purchase all items, please check `Buy All`.
+- `Refresh Count` refers to the number of times clicking the **Update Now** button after purchase, which consumes Cyanite.
+- If you don't want to buy items in a certain row, just leave it blank, which will prompt **No tasks set here**.
+- The shop is divided into normal shop and arena shop, which can be filled in independently.

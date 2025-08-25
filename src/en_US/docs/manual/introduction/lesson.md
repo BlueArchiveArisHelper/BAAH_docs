@@ -1,33 +1,35 @@
-# 课程表
+<LanguageWarn/>
 
-## 通过房间权重自动计算刷取的课程
+# Schedule
 
-::: tip
-
-请勾选 `是否开启智能识别课程表/日程` 的选项来启用此功能。
-:::
-
-通过填写数字来编辑权重，数字越大优先级越高。
-
-- 奖励权重：优先刷取高等级的课程，能获取更高等级的光盘和笔记。
-- 爱心权重：优先刷取拥有学生的课程，能获取更多学生的好感度。
-- 未解锁房间权重：优先提升地区等级，能解锁更多的房间。
-
-## 手动填写
+## Automatically Calculate Courses Through Room Weights
 
 ::: tip
 
-请取消勾选 `是否开启智能识别课程表/日程` 的选项来启用此功能。
+Please check the option `Enable smart schedule/calendar recognition` to activate this feature.
 :::
 
-### 地区
-`地区` 即最上层的学校名称，按照从上往下排序。
+Edit by entering numbers to set weights, where higher numbers indicate higher priority.
 
-![课程表地区](/img/lesson/lesson_1.png)
+- Reward Weight: Prioritize higher-level courses to obtain higher-grade CDs and notes.
+- Affection Weight: Prioritize courses with students to gain more favorability.
+- Unlocked Room Weight: Prioritize increasing area level to unlock more rooms.
 
-若对应地区没有填写内容，即提示 **这里没有设置任何任务** ，则会直接跳过该地区。
+## Manual Entry
 
-### 房间号
-`房间号` 即进入对应地区后，需要刷取的教室编号，从左往右，从上往下数，数字从1到9。
+::: tip
 
-![课程表房间号](/img/lesson/lesson_2.png)
+Please uncheck the option `Enable smart schedule/calendar recognition` to activate this feature.
+:::
+
+### Area
+`Area` refers to the top-level school name, sorted from top to bottom.
+
+![Schedule Area](/img/lesson/lesson_1.png)
+
+If no content is filled in for the corresponding area, it will display **No tasks set here** and skip the area directly.
+
+### Room Number
+`Room Number` refers to the classroom numbers you want to visit after entering the corresponding area, counted from left to right and top to bottom, with numbers ranging from 1 to 9.
+
+![Schedule Room Number](/img/lesson/lesson_2.png)

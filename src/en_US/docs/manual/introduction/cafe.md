@@ -1,38 +1,44 @@
-# 咖啡馆
+<LanguageWarn/>
+
+# Cafe
 ::: tip
 
-请将咖啡馆视角拉到最高，最好将家具移动到右侧，然后将视角移动到家具画面外。
+Please raise the cafe view to the highest position, preferably move the furniture to the right, then move the view outside the furniture screen.
 
-尽可能减少使用黄色的家具以提高识别率。
+Try to minimize the use of yellow furniture to improve recognition rate.
 
-若需要使用互动家具请把互动开关关闭。
+If you need to use interactive furniture, please turn off the interaction switch.
 :::
 
-## 配置介绍
-- 收集：勾选 `咖啡馆是否收集` 启用此功能，将领取咖啡馆产出。
+## Configuration Introduction
+- Collection: Check `Cafe Collection` to enable this function, which will collect cafe outputs.
 
-- 摸头：勾选 `咖啡馆是否摸头` 启用此功能，将摸头获取好感。
+- Head Pat: Check `Cafe Head Pat` to enable this function, which will increase affection by patting heads.
 
-- 识别人物：勾选 `是否识别人物的位置点击` 启用此功能，这样将识别学生的位置并点击。否则将识别注意力符号并点击。
+- Character Recognition: Check `Recognize Character Position Click` to enable this function, which will recognize and click on student positions. Otherwise, it will recognize and click on attention symbols.
 
-- 邀请学生序号：即使用邀请券邀请对应的学生，数字按照从上往下顺序填写，填写0则不邀请。
+- Student Invitation Number: Use invitation coupons to invite corresponding students. Fill in numbers from top to bottom, enter 0 for no invitation.
 
-![邀请列表序号](/img/cafe/invite_list_1.png)
+![Invitation List Number](/img/cafe/invite_list_1.png)
 
-- 邀请同名学生已在场往后推延一位序号：勾选 `咖啡馆邀请时如果同名学生已在场是否往后推延一位序号
-` 启用此功能，当有同名学生已进入时（即弹出是否切换学生），将邀请下一个序号的学生。 
-> :memo: **注：** 如果勾选了 `反向` ，则会要邀请上一个序号的学生。
+- Postpone Invitation if Same Name Student is Present: Check `Postpone by One Position if Same Name Student is Already Present` to enable this function. When a student with the same name is already present (i.e., pop-up asking whether to switch students), it will invite the next numbered student.
+> :memo: **Note:** If `Reverse` is checked, it will invite the previous numbered student instead.
 
-## 邀请指定学生
+## Invite Specific Students
 
-1. 在学生界面将想要固定邀请的学生设置为精选（点击学生头像左上角的图钉图标）。
-2. 在咖啡馆界面将咖啡馆邀请列表内设置筛选方式为精选。
-3. 可以发现指定学生被固定在了列表的最上方，输入现在所处的编号，就能指定邀请该学生。
+1. In the student interface, set the student you want to invite regularly as Featured (click the pin icon on the top left of the student's avatar).
+2. In the cafe interface, set the filter method in the cafe invitation list to Featured.
+3. You will find that the specified student is pinned at the top of the list. Enter their current number to invite that specific student.
 
    <details>
-   <summary>例子</summary>
+   <summary>Example</summary>
 
-   ![邀请列表精选](/img/cafe/invite_list_2.png)
+   ![Featured Invitation List](/img/cafe/invite_list_2.png)
 
    </details>
+
+
+
+
+
 

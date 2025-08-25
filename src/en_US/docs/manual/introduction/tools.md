@@ -1,32 +1,34 @@
-# 小工具
+<LanguageWarn/>
+
+# Tools
 
 ::: warning
 
-若使用 `从源码中部署` ，请在 `任务执行顺序` 中填写对应的任务，保存在对应配置后执行 `python main.py <配置名>.json` 。
+If using `Deploy from source code`, please fill in the corresponding tasks in `Task Execution Order`, save the configuration, and then execute `python main.py <config name>.json`.
 :::
 
-在配置过模拟器端口和区服后，可以在 `任务执行顺序` 一处直接点击 `快速执行任务` 的按钮使用一些小工具。
+After configuring the emulator port and server region, you can use various tools by clicking the `Quick Execute Task` button in the `Task Execution Order` section.
 
-## 清理MomoTalk
-自动回复MomoTalk（桃信）的消息内容。
+## Clear MomoTalk
+Automatically reply to MomoTalk messages.
 
-## 推剧情
-自动完成对应的剧情任务。
+## Story Progression
+Automatically complete corresponding story quests.
 
-- 推主线剧情：自动完成主线剧情/故事。
+- Main Story: Automatically complete main story/plot.
   
-  >:memo: **注：** 最终章部分关卡暂不支持。
+  >:memo: **Note:** Some chapters in the final part are not supported.
 
-- 推短篇剧情/小故事：自动完成短篇剧情/小故事。
-- 推支线剧情/社团故事：自动完成支线剧情/社团故事。
+- Short Stories: Automatically complete short stories.
+- Side Stories/Club Stories: Automatically complete side stories and club stories.
 
-## 挑战任务
-自动完成任务列表中的挑战任务。
+## Challenge Quests
+Automatically complete challenge quests in the quest list.
 
-## 推图
-详见 [推图](../docs/explore-stage.md) 一章节。
+## Stage Exploration
+See [Stage Exploration](../docs/explore-stage.md) chapter for details.
 
-## 活动一览
-自动完成活动一览中的活动故事（在纪念大厅界面的任务/业务区的旁边）。
+## Events
+Automatically complete event stories found in the Events section (next to Tasks/Services in the Memorial Hall).
 
->:memo: **注：** 仅支持清理活动故事，指引任务暂不支持。
+>:memo: **Note:** Only event story clearing is supported; guide quests are not supported.

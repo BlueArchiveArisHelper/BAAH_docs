@@ -1,69 +1,70 @@
 ---
-# SEO 优化
-title: BAAH 快速部署指南
-subtitle: Windows/Linux 自动化脚本配置
-description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置（1280x720/240 DPI），Windows 解压即用 + GUI 配置，Linux Docker 一键运行，支持定时任务自动化。
+# SEO Optimization
+title: BAAH Quick Deployment Guide
+subtitle: Windows/Linux Automated Script Configuration
+description: Complete BlueArchive Aris Helper deployment in 3 steps! MuMu emulator settings (1280x720/240 DPI), Windows extract-and-run + GUI configuration, Linux Docker one-click deployment, with scheduled task automation support.
 ---
 
-# 快速开始
+<LanguageWarn/>
 
-## 开始前的准备
+# Quick Start
 
-1. 模拟器
-   - 建议使用 MuMu 4.x
-   - 分辨率设置为 1280*720 像素， 240 DPI。将adb调试打开。注意模拟器的adb调试端口号。
-   - 如果你使用的MuMu模拟器，请在设置的底部关闭后台保活运行
-   - 如果adb无法连接，请确认关闭模拟器的网络桥接功能 或 在其他设置中修改adb连接IP。
-2. 游戏本体设置
-    - **游戏** -> **技能动画** -> **关**
-    - **画面** -> **战斗时上下黑边** -> **关**
-    - 咖啡厅的摄像机视角手动拉到了最高，最好家具全堆在屏幕最右侧
+## Pre-deployment Preparation
 
-## 开始部署
+1. Emulator
+   - It is recommended to use MuMu 4.x
+   - Set resolution to 1280*720 pixels with 240 DPI. Enable ADB debugging. Note the ADB debugging port number of the emulator.
+   - If you are using MuMu emulator, please turn off background keep-alive running in the bottom of settings
+   - If ADB cannot connect, please confirm that the network bridge function of the emulator is turned off or modify the ADB connection IP in other settings.
+2. Game Settings
+    - **Game** -> **Skill Animations** -> **Off**
+    - **Display** -> **Black Bars During Combat** -> **Off**
+    - Manually raise the camera view in the café to the highest position, preferably stacking all furniture on the far right side of the screen
+
+## Deployment
 
 :::: tabs
 
 == Windows
 **Windows**
 
-[视频教程](https://www.bilibili.com/video/BV1ZxfGYSEVr)
+[Video Tutorial](https://www.bilibili.com/video/BV1ZxfGYSEVr)
 
-首先，下载约 140MB 的压缩包后解压至任意文件夹
+First, download the approximately 140MB compressed package and extract it to any folder
 
-[前往下载页](/download)
+[Go to Download Page](/download)
 
-将 BAAH_CONFIGS 文件夹内的 example.json 复制并重命名为任一其他名字，如 task.json
+Copy example.json from the BAAH_CONFIGS folder and rename it to any other name, such as task.json
 
-双击 BAAH_GUI.exe 打开界面。
+Double-click BAAH_GUI.exe to open the interface.
 
-在模拟器设置中，修改端口号为你的模拟器adb调试端口。
+In emulator settings, modify the port number to your emulator's ADB debugging port.
 
-在服务器设置中，选择你游玩的ba服务器。
+In server settings, select your BA server.
 
-在任务执行顺序设置中，启用任务流或点击快速执行按钮运行任务。
+In task execution order settings, enable the task flow or click the quick execute button to run tasks.
 
 
 == MacOS
 **MacOS**
 
-详见[从源码部署](../docs/source-code.md)。
+See [Deploy from Source Code](../docs/source-code.md) for details.
 
 == Linux
 **Linux**
 
-首先，确保你的系统内包含Docker，可以输入一下命令查看
+First, ensure your system has Docker installed. You can check by entering the following command
 
-``` bash
-# 对于ROOT用户
+ 56  ``` bash
+# For ROOT users
 docker help
-# 对于非ROOT，但是拥有sudo权限的用户
+# For non-ROOT users with sudo privileges
 sudo docker help
-```
 
-如果命令输出了以下内容，则你的系统包含Docker
+If the command outputs the following content, then your system has Docker
 
-::: details 命令输出
-``` bash
+ 65  ::: details Command Output
+ 66  ``` bash
 Usage:  docker [OPTIONS] COMMAND
 
 A self-sufficient runtime for containers
@@ -145,21 +146,19 @@ Global Options:
 Run 'docker COMMAND --help' for more information on a command.
 
 For more help on how to use Docker, head to https://docs.docker.com/go/guides/
-```
-:::
+149  :::
 
-然后，拉取镜像，创建并运行容器。
+Then, pull the image, create and run the container.
 
-``` bash
+153  ``` bash
 docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
-```
 
-随后打开浏览器，打开 `http://<your-server-ip>:8000`
+Then open your browser and navigate to `http://<your-server-ip>:8000`
 
-在模拟器设置中，修改端口号为你的模拟器adb调试端口。
+In emulator settings, modify the port number to your emulator's ADB debugging port.
 
-在服务器设置中，选择你游玩的ba服务器。
+In server settings, select your BA server.
 
-在任务执行顺序设置中，启用任务流或点击快速执行按钮运行任务。
+In task execution order settings, enable the task flow or click the quick execute button to run tasks.
 
 ::::

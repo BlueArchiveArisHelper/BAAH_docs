@@ -1,82 +1,85 @@
-# 获取支持
+<LanguageWarn/>
+
+# Getting Support
 ::: warning
-首先明确，我们不是客服，只是出于互帮互助的想法愿意回答一些力所能及的问题。第二，大多数人还是愿意提供帮助的。
+First, please understand that we are not customer service. We are just willing to answer some questions within our ability out of the spirit of mutual help. Second, most people are still willing to help.
 
 :::
 
-BAAH 拥有完善的社区支持，在使用中如果遇到了问题可以寻求支持。
+BAAH has comprehensive community support. If you encounter any problems while using it, you can seek support.
 
 
-## 使用中遇到了问题
+## Encountering Problems During Use
 :::tip
 
-1. 一般来说阅读文档与观看[教程视频](https://www.bilibili.com/video/BV1ZxfGYSEVr/)能解决90%以上的问题。
-2. 多使用此文档的搜索功能（快捷键：Ctrl+K）搜索你问题的关键词，能快速找到需要的内容。
-3. 大部分常见的问题会放在[Q&A 常见问题](../docs/QA.md)一章中，请先查看。
-4. **非常建议**先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
+1. Generally speaking, reading the documentation and watching the [tutorial videos](https://www.bilibili.com/video/BV1ZxfGYSEVr/) can solve more than 90% of the problems.
+2. Make good use of the search function in this documentation (shortcut key: Ctrl+K) to search for keywords related to your question, which can quickly help you find the content you need.
+3. Most common questions are listed in the [Q&A Common Questions](../docs/QA.md) chapter, please check it first.
+4. It is **highly recommended** to read [How To Ask Questions The Smart Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md) first.
 
 :::
 
-### 咨询渠道
+### Consulting Channels
 
-你可以加入通过以下渠道获取帮助。
+You can get help through the following channels.
 
-QQ群 问题解答群：985729020
+QQ Group Problem-solving Group: 985729020
 
-[QQ频道](https://pd.qq.com/s/5atxio0vq)
+[QQ Channel](https://pd.qq.com/s/5atxio0vq)
 
-[GitHub 讨论区](https://github.com/BlueArchiveArisHelper/BAAH/discussions)
+[GitHub Discussions](https://github.com/BlueArchiveArisHelper/BAAH/discussions)
 
-> :memo: **注：** 请优先选择在群内咨询。
+> :memo: **Note:** Please prioritize consulting in the group.
 
 
-### 在提问之前
-1. 请确定你已经按照提示的内容观看完教学视频和本文档，它们能解决绝大多数的问题。
-2. 检查一下软件是否有[更新](../docs/QA.md#_0-如何更新baah)，尝试更新到最新版本。
-3. 如果你在QQ群内，可以先翻看群聊天记录，看看有没有类似的情况，他们是怎么解决的。
-4. 阅读 GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues)，包括已经关闭的 [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed)，看有没有类似问题。
+### Before Asking Questions
+1. Please make sure you have watched the tutorial videos and this documentation as suggested, as they can solve the vast majority of problems.
+2. Check if the software has an [update](../docs/QA.md#_0-如何更新baah), and try updating to the latest version.
+3. If you are in the QQ group, you can first browse through the group chat history to see if there are similar situations and how they were resolved.
+4. Read GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues), including closed [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed), to see if there are similar problems.
 
-### 在提问时
-解决没有足够信息问题的难度无亚于闭门造车，所以提问时请确保你提供了有效信息，包括：
+### When Asking Questions
+Solving problems without sufficient information is no different than trying to build a car behind closed doors. Therefore, when asking questions, please ensure you provide effective information, including:
    
-   · 游戏区服，BAAH的版本号
+   · Game server, BAAH version number
 
-   · 描述问题发生的环境（机器配置、操作系统、应用程序、以及相关的信息）
+   · Describe the environment where the problem occurs (machine configuration, operating system, application, and related information)
 
-   · 仔细、清楚地描述你的问题的症状，即你希望BAAH做什么。
+   · Carefully and clearly describe the symptoms of your problem, that is, what you want BAAH to do.
 
-   · 描述BAAH在错误发生前后的行为，或者直接将问题完整地录屏。
+   · Describe BAAH's behavior before and after the error occurs, or record a complete video of the problem.
 
-   · 提供BAAH的日志，它通常在 `BAAH\DATA\LOGS` 下，请复现一次问题，然后准备好最新的日志。如果未能保存日志，请在 `其他设置` 中勾选 `是否输出日志到/DATA/LOGS/目录下` 和 `发生错误时是否保存日志` 两个选项。
+   · Provide BAAH's logs, which are usually under `BAAH\DATA\LOGS`. Please reproduce the problem once and prepare the latest logs. If logs cannot be saved, please check the options "Output logs to /DATA/LOGS/ directory" and "Save logs when errors occur" in "Other Settings".
 
 
-## 上报 Bug / 提供建议
+## Reporting Bugs / Making Suggestions
 
 :::tip
 
-在上报 Bug / 提供建议之前，请先查看 GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues)，包括已经关闭的 [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed) ，确保此问题未被提及。
+Before reporting bugs or making suggestions, please check GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues), including closed [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed), to ensure that this issue has not been mentioned before.
 
 :::
 
-你可以在 GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues) 中提交Bug或者建议。
+You can submit bugs or suggestions in GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues).
 
-### 上报 Bug
+### Reporting Bugs
 
-1. 在 GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues) 页面中新建一个议题，选择 `Bug report / 上报Bug`。
+1. On the GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues) page, create a new issue and select `Bug report / Report Bug`.
 
-2. 根据提示，将下列信息填写在对应的位置。
-   - 描述 Bug 的症状。
-   - 提供 BAAH 发生错误前后的日志，它通常在 `BAAH\DATA\LOGS` 下，请复现一次问题，然后准备好最新的日志。如果未能保存日志，请在 `其他设置` 中勾选 `是否输出日志到/DATA/LOGS/目录下` 和 `发生错误时是否保存日志` 两个选项。
-   - 提供模拟器的截图。
-   - 提供相关的信息，包括游戏区服，模拟器的分辨率和DPI，BAAH的版本号等。
-   - 概括你的问题，填写在标题。
+2. According to the prompts, fill in the following information in the corresponding fields.
+   - Describe the symptoms of the bug.
+   - Provide BAAH logs before and after the error occurs, which are usually under `BAAH\DATA\LOGS`. Please reproduce the problem once and prepare the latest logs. If logs cannot be saved, please check the options "Output logs to /DATA/LOGS/ directory" and "Save logs when errors occur" in "Other Settings".
+   - Provide screenshots of the emulator.
+   - Provide relevant information, including game server, emulator resolution and DPI, BAAH version number, etc.
+   - Summarize your problem and fill it in the title.
 
-### 提供建议
+### Making Suggestions
 
-1. 在 GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues) 页面中新建一个议题，选择 `Feature request / 功能请求`。
+1. On the GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues) page, create a new issue and select `Feature request / Feature Request`.
 
-2. 根据提示，将下列信息填写在对应位置。
-   - 描述你的建议，即你希望添加的功能，它能解决何种麻烦。
-   - 实现该功能有何种建议，包括实现的方法等，若不清楚则无需填写。
-   - 如果有需要补充的信息，请填写在补充信息一栏。
-   - 概括你的建议，填写在标题。
+2. According to the prompts, fill in the following information in the corresponding fields.
+   - Describe your suggestion, that is, the feature you want to add, and what problems it can solve.
+   - Suggestions for implementing this feature, including implementation methods, etc. No need to fill if unclear.
+   - If there is additional information that needs to be added, please fill it in the additional information section.
+   - Summarize your suggestion and fill it in the title.
+

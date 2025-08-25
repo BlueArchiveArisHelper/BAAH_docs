@@ -1,86 +1,89 @@
-# 推图
+<LanguageWarn/>
+
+# Stage Exploration
 ::: tip
 
-如果勾选了勾选 `简易攻略` ，将使用跳过走格子的功能。请注意，这无法拿满所有奖励，但是可以提高推图的成功率（尤其是前期练度低凑不齐学生的情况）。
+If `Simple Strategy` is selected, the function to skip grid movement will be used. Please note that this will not collect all rewards, but it can increase the success rate of stage exploration (especially in the early game when your students' levels are low and you can't form a complete team).
 
-部分走格子关卡无法一次推图吃满奖励（三星、青辉石礼物盒和挑战成就），对于这些关卡会进行重复战斗保证奖励吃满。
+Some grid-based stages cannot be cleared in one run to collect all rewards (three-star ratings, Luminite gift boxes, and challenge achievements). For these stages, repeated battles will be performed to ensure all rewards are collected.
 :::
 
 ::: warning
 
-所有涉及自动战斗的内容均会使用游戏默认的 `AUTO` 模式战斗，请确保练度足够。
+All automatic battles will use the game's default `AUTO` mode. Please ensure your team's levels are sufficient.
 
-~~啥？你说你人工手打都打不过去，那样的话脚本更不可能打得过去了。~~
+~~What? You can't even clear it manually? Well, the script definitely can't clear it either.~~
 :::
 
-可以自动完成普通图和困难图的推图，请确保队伍练度足够。
+Can automatically complete normal and hard stage explorations. Please ensure your team's levels are sufficient.
 
-## 推图配置
-在 `普通图推图` / `困难图推图` 中填写要开始堆图的起始地区和关卡，随后点击右侧的 `普通图推图` / `困难图推图` 按钮开始推图。
+## Stage Exploration Configuration
+Fill in the starting area and stage in `Normal Stage Exploration` / `Hard Stage Exploration`, then click the `Normal Stage Exploration` / `Hard Stage Exploration` button on the right to start.
 
-[不知道地区和关卡是什么？点这里](../docs/sweep-level.md#地区与关卡说明)
+[Don't know what areas and stages are? Click here](../docs/sweep-level.md#area-and-stage-explanation)
 
-> :memo: **注：** 若使用 `从源码中部署` ，请在 `任务执行顺序` 中填写 `普通图推图` / `困难图推图` 任务，保存在对应配置后执行 `python main.py <配置名>.json` 。
+> :memo: **Note:** If using `Deploy from source code`, please fill in `Normal Stage Exploration` / `Hard Stage Exploration` in the `Task Execution Order`, save the configuration, and then execute `python main.py <config_name>.json`.
 
-## 配队
-### 自动配队
-勾选 `自动配队` 启用此功能，每次开始战斗前会进入配队界面，点击队伍旁边的 `自动` 按钮用BA的推荐配队。
+## Team Configuration
+### Automatic Team Matching
+Check `Automatic Team Matching` to enable this feature. Before each battle, it will enter the team configuration interface and click the `Auto` button next to the team to use BA's recommended team composition.
 
-![自动配队](/img/explore-stage/automatic_matching.png)
+![Automatic Team Matching](/img/explore-stage/automatic_matching.png)
 
-### 自动根据属性选择队伍
+### Automatic Team Selection Based on Attributes
 ::: tip
 
-请勾选 `推图是否自动根据属性选择队伍，如果不勾选则需要手动配置队伍` 的选项来启用此功能。
+Please check the option `Automatically select team based on attributes for stage exploration. If unchecked, manual team configuration is required` to enable this feature.
 
-此功能并不是自动扫描你配置的队伍属性选择出最好的队伍出击，而是根据填写的权重来选择最合适的队伍。
+This feature does not automatically scan your configured teams to select the best one, but rather selects the most suitable team based on the weights you fill in.
 :::
 
-需要提前在队伍的配置界面配置好推图的学生队伍，并配置好不同队伍，并且填写各个队伍的属性权重，单格子填写0~10，脚本将根据权重选择最适合的队伍进行出击。
+You need to configure your student teams for stage exploration in advance in the team configuration interface, set up different teams, and fill in the attribute weights for each team. Each cell should be filled with values from 0-10, and the script will select the most suitable team based on these weights.
 
-队伍对应关系：
-![队伍对应关系](/img/explore-stage/Auto_select_team_according_to_the_attribute_1.png)
+Team correspondence:
+![Team Correspondence](/img/explore-stage/Auto_select_team_according_to_the_attribute_1.png)
 
-例如在游戏中，你的队伍 1 设置为既可以打红甲，又可以打黄甲，那么在配置界面中，可以将红攻和黄攻的强度均设置为5，这样遭遇红甲或者黄甲将调用这支队伍。
+For example, in the game, if your Team 1 is set up to fight both red and yellow armored enemies, you can set both red and yellow attack strengths to 5 in the configuration interface. This way, when encountering red or yellow armored enemies, this team will be selected.
 
-不建议一股脑将一支队伍全设置为同色队，因为部分图可能会遭遇重复的甲（例如两个红甲），可以去网络上查询推图建议的学生和配队攻略。
+It is not recommended to set a team as a mono-color team, as some stages may have repeated enemy types (for example, two red armored enemies). You can search online for recommended students and team composition guides for stage exploration.
 
-~~啥？你没有那么多学生？用 `简易攻略` 吧，只是吃不满奖励而已。~~
+~~What? You don't have enough students? Use the `Simple Strategy` then. You just won't be able to collect all rewards.~~
 
 
-### 手动配置队伍
+### Manual Team Configuration
 
 ::: tip
 
-请取消勾选 `推图是否自动根据属性选择队伍，如果不勾选则需要手动配置队伍` 的选项来启用此功能。
+Please uncheck the option `Automatically select team based on attributes for stage exploration. If unchecked, manual team configuration is required` to enable this feature.
 
-:::
+57. | :::
 
 ::: warning
 
-在使用此模式时，请勿直接在GUI中直接执行任务，请在 `任务执行顺序` 填写 `普通图推图` / `困难图推图` 的选项后，在终端执行任务。
+When using this mode, do not execute tasks directly in the GUI. Please fill in `Normal Stage Exploration` / `Hard Stage Exploration` in the `Task Execution Order`, then execute the task in the terminal.
 :::
 
-该功能为人工配队模式，即脚本将自动完成走格子和战斗的内容，但是配队需要人工完成。
+This is a manual team configuration mode, where the script will automatically handle grid movement and battles, but team configuration needs to be done manually.
 
-该功能启用后会在每次开始战斗前，会在终端中提示需要的队伍属性，随后等待点击 `回车键` 继续执行任务。
+When this feature is enabled, before each battle, it will prompt for the required team attributes in the terminal, and then wait for you to press `Enter` to continue the task.
 
    <details>
-   <summary>例</summary>
+   <summary>Example</summary>
 
-   1. 查看终端中提示的队伍属性。例如这里提示队伍1需要红攻，队伍2需要紫攻。
-    ![手动配置队伍1](/img/explore-stage/manually_configure_the_team_1.png)
-   2. 点击走格子界面的 `开始` 键，进入配队界面。
-    ![手动配置队伍2](/img/explore-stage/manually_configure_the_team_2.png)
-   3. 根据提示配队。这里根据提示配置红攻的队伍1，紫攻的队伍2。
-    ![手动配置队伍3](/img/explore-stage/manually_configure_the_team_3.png)
-    ![手动配置队伍4](/img/explore-stage/manually_configure_the_team_4.png)
-   4. 完成配队后**不要点击出击**，直接点击左上角返回按钮回到走格子界面。
-   ![手动配置队伍5](/img/explore-stage/manually_configure_the_team_5.png)
-   5. 回到终端，点击键盘的 `回车` 键，开始执行任务。
-   ![手动配置队伍6](/img/explore-stage/manually_configure_the_team_6.png)
+   1. Check the team attributes prompted in the terminal. For example, here it prompts that Team 1 needs red attack and Team 2 needs purple attack.
+    ![Manual Team Configuration 1](/img/explore-stage/manually_configure_the_team_1.png)
+   2. Click the `Start` button in the grid movement interface to enter the team configuration interface.
+    ![Manual Team Configuration 2](/img/explore-stage/manually_configure_the_team_2.png)
+   3. Configure teams based on the prompt. Here, configure Team 1 with red attack and Team 2 with purple attack according to the prompts.
+    ![Manual Team Configuration 3](/img/explore-stage/manually_configure_the_team_3.png)
+    ![Manual Team Configuration 4](/img/explore-stage/manually_configure_the_team_4.png)
+   4. After configuring the teams, **do not click Deploy**. Directly click the return button in the upper left corner to go back to the grid movement interface.
+   ![Manual Team Configuration 5](/img/explore-stage/manually_configure_the_team_5.png)
+   5. Return to the terminal and press the `Enter` key on your keyboard to start the task.
+   ![Manual Team Configuration 6](/img/explore-stage/manually_configure_the_team_6.png)
 
    </details>
+
 
 
 

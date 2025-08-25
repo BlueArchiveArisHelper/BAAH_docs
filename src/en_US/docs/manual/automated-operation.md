@@ -1,61 +1,63 @@
-# 自动化运行
+<LanguageWarn/>
+
+# Automated Operation
 
 ::: tabs
 == Windows
 
 **Windows**
 
-你可以使用 **Windows任务计划程序** 来自动化运行
+You can use **Windows Task Scheduler** to automate the operation
 
-1. 首先，在任务计划程序库中，创建一个文件夹，名称任意。
+1. First, in the Task Scheduler Library, create a folder with any name.
 
-![计划任务：找到程序](/img/automated-operation/windows_timer_1.png)
+![Task Scheduler: Find Program](/img/automated-operation/windows_timer_1.png)
 
-2. 然后，点击进入文件夹，创建一个基本任务，名称任意。如：
+2. Then, click to enter the folder and create a basic task with any name. For example:
 
-![计划任务：创建基本任务](/img/automated-operation/windows_timer_2.png)
+![Task Scheduler: Create Basic Task](/img/automated-operation/windows_timer_2.png)
 
-![计划任务：创建基本任务](/img/automated-operation/windows_timer_3.png)
+![Task Scheduler: Create Basic Task](/img/automated-operation/windows_timer_3.png)
 
-3. 触发器的选择上，根据需求选择。如：
+3. For the trigger selection, choose according to your needs. For example:
 
-![计划任务：选择触发器](/img/automated-operation/windows_timer_4.png)
+![Task Scheduler: Select Trigger](/img/automated-operation/windows_timer_4.png)
 
-![计划任务：选择触发器](/img/automated-operation/windows_timer_5.png)
+![Task Scheduler: Select Trigger](/img/automated-operation/windows_timer_5.png)
 
-4. 执行任务，选择 **运行程序(T)**
+4. For the action, select **Start a program**
 
-![计划任务：选择运行方式](/img/automated-operation/windows_timer_6.png)
+![Task Scheduler: Select Action](/img/automated-operation/windows_timer_6.png)
 
-5. 点击 **浏览(R)...** 选择你的BAAH程序本体 **BAAH.exe**
+5. Click **Browse...** to select your BAAH program **BAAH.exe**
 
-添加参数，填写配置文件名称，要带后缀名，如 **example.json**
+Add arguments, fill in the configuration file name with extension, such as **example.json**
 
-起始于，填写 **程序或脚本(P):** 下方输入框 **BAAH.exe** 前的所有内容。如：
+For "Start in (optional)", fill in everything before **BAAH.exe** in the input box below "Program/script:". For example:
 
-![计划任务：寻找程序](/img/automated-operation/windows_timer_7.png)
+![Task Scheduler: Find Program Path](/img/automated-operation/windows_timer_7.png)
 
-6. 随后点击 **下一页(N)** **完成(F)** 随后你的自动化任务创建成功。
+6. Then click **Next** and **Finish** to complete the task creation.
 
-![计划任务：完成](/img/automated-operation/windows_timer_8.png)
+![Task Scheduler: Complete](/img/automated-operation/windows_timer_8.png)
 
 == Linux
 **Linux**
 
-首先，确保你已经安装了BAAH的Docker容器以及MCSManager，使用 `docker ps` 或 `sudo docker ps` 来查看，命令输出中存在 **BAAH** 即已安装
+First, ensure you have installed the BAAH Docker container and MCSManager. Use `docker ps` or `sudo docker ps` to check. If **BAAH** appears in the command output, it is installed.
 
-[安装MCSManager](https://www.mcsmanager.com/)
+[Install MCSManager](https://www.mcsmanager.com/)
 
-新建一个实例，部署在 **localhost:24444**
+Create a new instance deployed at **localhost:24444**
 
-程序类型选择 **部署任意控制台程序**
+Select **Deploy any console program** as the program type
 
-部署方式选择 **无需额外文件**
+Select **No additional files required** as the deployment method
 
-名称任意，启动命令输入 `docker exec BAAH sh -c "python main.py <你的配置文件名称>.json"`
+Name it as you like, and for the startup command, enter `docker exec BAAH sh -c "python main.py <your configuration file name>.json"`
 
-点击确定，进入控制台，点击计划任务。
+Click OK, enter the console, and click on Scheduled Tasks.
 
-点击新增，根据自己实际情况设置即可。
+Click Add and set according to your actual situation.
 
 :::

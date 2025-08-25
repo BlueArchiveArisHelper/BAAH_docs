@@ -1,48 +1,51 @@
-# 总力战
+<LanguageWarn/>
+
+# Assault
 
 ::: warning
 
-所有涉及自动战斗的内容均会使用游戏默认的 `AUTO` 模式战斗，请确保练度足够。
+All automatic battles will use the game's default `AUTO` mode. Please ensure your team is sufficiently leveled.
 
-~~啥？你说你人工手打都打不过去，那样的话脚本更不可能打得过去了。~~
+~~What? You can't even clear it manually? Then the script definitely can't do it either.~~
 
-该功能只能完成每日的刷票，无法代替凹分。
+This feature can only complete daily token farming, and cannot be used for score optimization.
 :::
 
-总力战可以完成自动使用 `AUTO` 模式刷取每日的总力战，可自动推进至目标档位。
+Assault can automatically complete daily Assault stages using `AUTO` mode, and can automatically progress to the target difficulty.
 
-需要在总力战界面提前配置好队伍。
+You need to configure your teams in advance in the Assault interface.
 
-## 配置
+## Configuration
 
-通过填写数字来配置总力战的目标档位，目标档位大约为人工手打练度的减两档。
+Configure the target difficulty level by entering a number. The target difficulty should be approximately two levels lower than your manual clear level.
 
-| **数字** | **档位**    |
-|--------|-----------|
-| 1      | Normal    |
-| 2      | Hard      |
-| 3      | Very Hard |
-| 4      | Hardcore  |
-| 5      | Extreme   |
-| 6      | Insane    |
-| 7      | Torment   |
-| 8      | Lunatic   |
+| **Number** | **Difficulty** |
+| ---------- | ------------- |
+| 1          | Normal        |
+| 2          | Hard          |
+| 3          | Very Hard     |
+| 4          | Hardcore      |
+| 5          | Extreme       |
+| 6          | Insane        |
+| 7          | Torment       |
+| 8          | Lunatic       |
 
-## 借用助战学生
+## Borrowing Assist Students
 
 ::: tip
 
-请勾选 `总力战1号队是否选择助战` 启用此功能。
+Please check `Enable assist for Assault Team 1` to use this feature.
 
 :::
 
-该功能可以使用总力战1号队使用助战学生，请提前在队伍中空出一个学生位置。
+This feature allows Team 1 in Assault to use assist students. Please leave an empty slot in your team in advance.
 
-1. 来到游戏配队界面，进入借用学生的界面。
-2. 选择点击`总力战助战学生`按钮。
-![助战学生](/img/assault/assault_helper_1.png)
-3. 在弹出的窗口中，使用鼠标左键框起需要借用的学生。
-![选择学生](/img/assault/assault_helper_2.png)
+1. Go to the team formation interface and enter the student borrowing screen.
+2. Click the `Assist Student` button.
+![Assist Student](/img/assault/assault_helper_1.png)
+3. In the popup window, use the left mouse button to select the students you want to borrow.
+![Select Students](/img/assault/assault_helper_2.png)
 
-> :memo: **注：** 如果需要借用的是后排学生，请勾选`总力战助战学生是否是后排角色` 启用此功能。仅需在后排空出一个学生位置，并且圈起的学生为需要借用的后排学生即可。
+> :memo: **Note:** If you need to borrow back-row students, please check `Is the assist student a back-row character` to enable this feature. You only need to leave an empty slot in the back row, and select the back-row students you want to borrow.
+
 
