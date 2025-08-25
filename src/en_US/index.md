@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: 前往下载
-      link: /download
+      link: /en_US/download
     - theme: alt
       text: 查看文档
-      link: /docs/quick-start
+      link: /en_US/docs/manual/quick-start
     - theme: alt
       text: 前往仓库
       link: https://github.com/BlueArchiveArisHelper/BAAH/
