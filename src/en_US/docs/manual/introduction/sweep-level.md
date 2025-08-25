@@ -1,76 +1,77 @@
-# 刷取关卡
+<LanguageWarn/>
+
+# Level Sweeping
 
 ::: tip
 
-本章节适用于悬赏通缉、特殊任务、学园交流会、活动关卡、一键扫荡、普通图扫荡、困难图扫荡。
+This chapter applies to Bounty, Commission, Scrimmage, Event Stages, Multi-Sweep(One Click Raid), Normal Map Sweep, and Hard Map Sweep.
 :::
 
-## 地区与关卡说明
+## Location and Stage Description
 
-`地区` 即最上层的一级地区，分为两种：
+`Location` refers to the top-level primary area, which is divided into two types:
 
-**1. 适用于悬赏通缉、特殊任务、学园交流会、活动关卡需要进入二级菜单的关卡**
+**1. For levels that require entering a secondary menu, such as Bounty, Commission, Scrimmage, and Event Stages**
    
-   为进入的一级菜单中显示的多个地区，按照从上往下排序。
+   These are the multiple areas displayed in the primary menu, sorted from top to bottom.
 
    <details>
-   <summary>以悬赏通缉为例</summary>
+   <summary>Example using Bounty</summary>
 
-   ![悬赏通缉地区](/img/sweep-level/area_1.png)
+   ![Bounty Area](/img/sweep-level/area_1.png)
 
    </details>
 
-**2. 适用于普通图扫荡、困难图扫荡的关卡**
+**2. For levels in Normal Map Sweep and Hard Map Sweep**
 
-   为界面左上角显示的地区数字。
+   This is the area number displayed in the top-left corner of the interface.
 
    <details>
-   <summary>以普通图为例</summary>
+   <summary>Example using Normal Map</summary>
 
-   ![普通图地区](/img/sweep-level/area_2.png)
+   ![Normal Map Area](/img/sweep-level/area_2.png)
 
    </details>
    
 ---
 
-`关卡` 即进入对应地区后，需要刷取的关卡数字，按照从上往下排序。
+`Stage` refers to the level number that needs to be swept after entering the corresponding area, sorted from top to bottom.
 
    <details>
-   <summary>以普通图为例</summary>
+   <summary>Example using Normal Map</summary>
 
-   ![普通图关卡](/img/sweep-level/level.png)
+   ![Normal Map Stage](/img/sweep-level/level.png)
 
    </details>
 
->:memo: **注：** 如果将关卡数字加一个负号，则会按照从下往上的顺序。例如 `-1` 代表倒数的第一个可扫荡的关卡。
+>:memo: **Note:** If a negative sign is added to the level number, it will be ordered from bottom to top. For example, `-1` represents the first sweepable level from the bottom.
+
+## Times Description
+
+| **Input Times** | **Action**                                  |
+|-----------------|---------------------------------------------|
+| number          | Sweep number times                          |
+| \-1             | Sweep Max times                             |
+| \-number        | Sweep Max times, then subtract number times |
 
 
 
+Examples:
 
-## 次数说明
-
-| **输入的次数** | **行为**            |
-|-----------|-------------------|
-| <数字>      | 扫荡<数字>次           |
-| \-1       | 扫荡Max/最大值次         |
-| \-<数字>  | 扫荡Max/最大值，再减去<数字＞次 |
-
-例：
-
-| **输入的次数** | **行为**            |
-|-----------|-------------------|
-| 5      | 扫荡5次           |
-| \-1       | 扫荡Max/最大值次         |
-| \-3  | 扫荡Max/最大值，再减去3次 |
+| **Input Times** | **Action**                                     |
+|-----------------|------------------------------------------------|
+| 5               | Sweep 5 times                                  |
+| \-1             | Sweep Max times                                |
+| \-3             | Sweep Max/Maximum times, then subtract 3 times |
 
 
-## 定义不同天数刷取的内容
+## Defining Content for Different Days
 
-可以通过填写不同的天数来定义不同天数刷取的内容。
+You can define the content to be swept on different days by filling in different days.
 
-- 仅填写了一天就只会重复刷取那一天的内容。
-- 若填写多天，则会按照日期的顺序刷取，到最后一天结束会重复第一天的内容。
-- 若填写的天数为空白，即提示 **这里没有设置任何任务** ，则会直接跳过该日期。
+- If only one day is filled, only the content of that day will be repeatedly swept.
+- If multiple days are filled, the sweeping will follow the date order, and after the last day, it will repeat the content of the first day.
+- If a day is left blank, i.e., the prompt **No tasks are set here**, it will skip that date directly.
 
-## 包含上述功能的例子
-![普通图关卡](/img/sweep-level/sweep_level_example.png)
+## Example Including the Above Features
+![Normal Map Level](/img/sweep-level/sweep_level_example.png)

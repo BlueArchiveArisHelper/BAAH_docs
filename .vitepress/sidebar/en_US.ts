@@ -11,7 +11,7 @@ export const enSidebar: DefaultTheme.Sidebar = {
                     text: 'Function introduction',
                     collapsed: true,
                     items: [
-                        { text: 'Brush the level', link: '/en_US/docs/manual/introduction/sweep-level' },
+                        { text: 'Level Sweeping', link: '/en_US/docs/manual/introduction/sweep-level' },
                         { text: 'Schedule', link: '/en_US/docs/manual/introduction/lesson' },
                         { text: 'Shop', link: '/en_US/docs/manual/introduction/shop' },
                         { text: 'Cafe', link: '/en_US/docs/manual/introduction/cafe' },
