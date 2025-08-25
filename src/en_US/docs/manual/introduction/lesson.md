@@ -6,26 +6,26 @@
 
 ::: tip
 
-Please check the option `Enable smart schedule/calendar recognition` to activate this feature.
+Please check the option `Whether recognize which room to click in the timetable` to activate this feature.
 :::
 
 Edit by entering numbers to set weights, where higher numbers indicate higher priority.
 
-- Reward Weight: Prioritize higher-level courses to obtain higher-grade CDs and notes.
-- Affection Weight: Prioritize courses with students to gain more favorability.
-- Unlocked Room Weight: Prioritize increasing area level to unlock more rooms.
+- Weight of rewards: Prioritize higher-level courses to obtain higher-grade Blu-ray Disc and Notes.
+- Weight of heart: Prioritize courses with students to gain more relationships.
+- Weight of lock rooms: Prioritize increasing area level to unlock more rooms.
 
 ## Manual Entry
 
 ::: tip
 
-Please uncheck the option `Enable smart schedule/calendar recognition` to activate this feature.
+Please uncheck the option `Whether recognize which room to click in the timetable` to activate this feature.
 :::
 
-### Area
-`Area` refers to the top-level school name, sorted from top to bottom.
+### Location
+`Location` refers to the top-level school name, sorted from top to bottom.
 
-![Schedule Area](/img/lesson/lesson_1.png)
+![Schedule Location](/img/lesson/lesson_1.png)
 
 If no content is filled in for the corresponding area, it will display **No tasks set here** and skip the area directly.
 

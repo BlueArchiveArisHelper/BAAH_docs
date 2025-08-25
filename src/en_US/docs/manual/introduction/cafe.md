@@ -11,18 +11,18 @@ If you need to use interactive furniture, please turn off the interaction switch
 :::
 
 ## Configuration Introduction
-- Collection: Check `Cafe Collection` to enable this function, which will collect cafe outputs.
+- Collection: Check `Whether collect in cafe` to enable this function, which will collect cafe outputs.
 
-- Head Pat: Check `Cafe Head Pat` to enable this function, which will increase affection by patting heads.
+- Head Pat: Check `Whether touch in cafe` to enable this function, which will increase affection by patting heads.
 
-- Character Recognition: Check `Recognize Character Position Click` to enable this function, which will recognize and click on student positions. Otherwise, it will recognize and click on attention symbols.
+- Student Recognition: Check `Whether defer the invited student when same name students is in cafe` to enable this function, which will recognize and click on student positions. Otherwise, it will recognize and click on attention symbols.
 
 - Student Invitation Number: Use invitation coupons to invite corresponding students. Fill in numbers from top to bottom, enter 0 for no invitation.
 
 ![Invitation List Number](/img/cafe/invite_list_1.png)
 
 - Postpone Invitation if Same Name Student is Present: Check `Postpone by One Position if Same Name Student is Already Present` to enable this function. When a student with the same name is already present (i.e., pop-up asking whether to switch students), it will invite the next numbered student.
-> :memo: **Note:** If `Reverse` is checked, it will invite the previous numbered student instead.
+> :memo: **Note:** If `Whether reversed` is checked, it will invite the previous numbered student instead.
 
 ## Invite Specific Students
 

@@ -15,7 +15,7 @@ export const enSidebar: DefaultTheme.Sidebar = {
                         { text: 'Schedule', link: '/en_US/docs/manual/introduction/lesson' },
                         { text: 'Shop', link: '/en_US/docs/manual/introduction/shop' },
                         { text: 'Cafe', link: '/en_US/docs/manual/introduction/cafe' },
-                        { text: 'Assault', link: '/en_US/docs/manual/introduction/assault' },
+                        { text: 'Total Assault', link: '/en_US/docs/manual/introduction/assault' },
                         { text: 'Explore Stage', link: '/en_US/docs/manual/introduction/explore-stage' },
                         { text: 'Tools', link: '/en_US/docs/manual/introduction/tools' },
                         { text: 'Notifications', link: '/en_US/docs/manual/introduction/notification' },

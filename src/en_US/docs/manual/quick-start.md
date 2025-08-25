@@ -17,9 +17,9 @@ description: Complete BlueArchive Aris Helper deployment in 3 steps! MuMu emulat
    - If you are using MuMuPlayer, please turn off Keep alive in background in the bottom of settings
    - If ADB cannot connect, please confirm that the network bridge mode of the emulator is turned off or modify the ADB connection IP in other settings.
 2. Game Settings
-    - **Game** -> **Skill Animations** -> **Off**
-    - **Display** -> **Black Bars During Combat** -> **Off**
-    - Manually raise the camera view in the café to the highest position, preferably stacking all furniture on the far right side of the screen
+    - **Games** -> **EX Skill Effects** -> **Off**
+    - **Graphics** -> **Battle Screen Vertical Letterbox** -> **Off**
+    - Manually raise the camera view in the cafe to the highest position, preferably stacking all furniture on the far right side of the screen
 
 ## Deployment
 
