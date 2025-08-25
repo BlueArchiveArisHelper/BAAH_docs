@@ -12,6 +12,7 @@ export default {
   enhanceApp({ app }) {
     app.component('DownloadLink', defineAsyncComponent(() => import('./components/DownloadLink.vue')));
     app.component('LanguageRedirect', defineAsyncComponent(() => import('./components/LanguageRedirect.vue')));
+    app.component('LanguageWarn', defineAsyncComponent(() => import('./components/LanguageWarn.vue')));
     enhanceAppWithTabs(app)
     app.component('LiteTree', LiteTree)
   },

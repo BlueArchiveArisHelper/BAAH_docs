@@ -1,56 +1,56 @@
 ---
-# SEO 优化
-title: BAAH 高级源码部署指南
-subtitle: Python 3.10+Git 手动编译（附风险提示)
-description: 面向开发者的 BAAH 源码部署方案，需 Python 3.10 与 ADB 环境，支持 Windows/MacOS/Linux/Android，无官方更新支持，建议技术用户使用。
+# SEO Optimization
+title: BAAH Advanced Source Code Deployment Guide
+subtitle: Python 3.10+Git Manual Compilation (with Risk Warning)
+description: BAAH source code deployment solution for developers, requires Python 3.10 and ADB environment, supports Windows/MacOS/Linux/Android, no official update support, recommended for technical users.
 ---
 
-# 从源码部署
+<LanguageWarn/>
 
-Android Termux 部署请前往[🔗部署方法](https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/)
+# Deploying from Source Code
+
+For Android Termux deployment, please visit [🔗 Deployment Method](https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/)
 
 ::: warning
-无论如何，不建议普通用户直接从源码部署，从源码部署不会有官方的更新程序支持，使用 `git pull` 也会有损坏程序的风险。
+Regardless, it is not recommended for regular users to deploy directly from source code. There will be no official update program support for source code deployment, and using `git pull` also carries the risk of damaging the program.
 
 :::
 
-首先，安装好 **Python 3.10.x** 
+First, install **Python 3.10.x**
 
 ::: tabs
 == Windows
 
 **Windows**
 
-<a href="https://apps.microsoft.com/detail/9PJPW5LDXLZ5" title="从Microsoft Store下载"><img src="/img/website/Get-it-form-Microsoft.svg" alt="SVG Image" width="200" height="200"></a>
+<a href="https://apps.microsoft.com/detail/9PJPW5LDXLZ5" title="Download from Microsoft Store"><img src="/img/website/Get-it-form-Microsoft.svg" alt="SVG Image" width="200" height="200"></a>
 
-[从Python官网下载](https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe)
+[Download from Python official website](https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe)
 
 == MacOS
 
 **MacOS**
 
-使用homebrew安装
+Install using homebrew
 
 ``` bash
 brew install python 3.10
-```
 == Linux
 
 **Linux**
 
-使用UV安装
+Install using UV
 
 ``` bash
 uv python install 3.10
-```
 
-~~啥？你没有UV，放心，你都用Linux了，这点小事肯定会解决的。~~
+~~What? You don't have UV? Don't worry, if you're using Linux, you'll definitely figure this small thing out.~~
 
 :::
 
-然后，你需要自备 [adb](https://developer.android.google.cn/tools/releases/platform-tools) 和 [aria2](https://github.com/aria2/aria2/releases) 。
+Then, you need to prepare [adb](https://developer.android.google.cn/tools/releases/platform-tools) and [aria2](https://github.com/aria2/aria2/releases) yourself.
 
-## 从Git安装
+## Installing from Git
 
 ::: tabs
 
@@ -58,57 +58,53 @@ uv python install 3.10
 
 **Windows**
 
-使用 `winget` 安装Git
+Install Git using `winget`
 
 ``` cmd
 winget install Git.Git
-```
 
-或从 [Git官方网站](https://git-scm.com/downloads) 下载，运行安装程序，一路下一步即可
+Or download from [Git official website](https://git-scm.com/downloads), run the installer, and click Next all the way through
 
-~~不用担心安装到C盘会占用空间，就100+MB的软件~~
+~~Don't worry about installing to C drive taking up space, it's just a 100+MB software~~
 
 == MacOS
 
 **MacOS**
 
-从homebrew安装
+Install from homebrew
 
 ``` bash
 brew install git
-```
 
 == Linux
 
 **Linux**
 
-一般发行版中都自带Git，如果没有，请从软件包管理器中安装
+Most distributions come with Git pre-installed. If not, please install it from the package manager
 
 
 :::
 
-然后，在你想安装BAAH的位置，打开终端，运行以下内容。
+Then, in the location where you want to install BAAH, open the terminal and run the following.
 
 ``` cmd
-# 如果你连接 GitHub 的网络良好，运行这个
+# If you have good network connection to GitHub, run this
 git clone https://github.com/BlueArchiveArisHelper/BAAH.git
-# 如果不好，运行下列内容
+# If not, run the following
 git clone https://gh-proxy.com/BlueArchiveArisHelper/BAAH.git
-```
 
-不要关闭窗口，运行 `cd BAAH` 进入文件夹，安装依赖。
+Don't close the window, run `cd BAAH` to enter the folder, and install dependencies.
 
 ``` cmd
-# 换源
+# Switch source
 pip config set global.index-url https://mirrors.cernet.edu.cn/pypi/web/simple
-# 安装依赖
+# Install dependencies
 pip install -r requirements.txt
-```
 
-使用 `python jsoneditor.py` 来运行WebUI，在配置文件编辑界面中修改adb和aria2路径。
+Use `python jsoneditor.py` to run the WebUI, and modify the adb and aria2 paths in the configuration file editing interface.
 
-执行 `python main.py config.json` 将会按照config.json配置开始执行BAAH。
+Execute `python main.py config.json` to start BAAH according to the config.json configuration.
 
-## 从源码归档安装
+## Installing from Source Archive
 
-不用安装Git，下载 **source code zip** 然后解压到想要的文件夹，在BAAH源代码文件夹中打开终端，然后安装依赖，运行即可。
+No need to install Git, download the **source code zip** and extract it to the desired folder. Open the terminal in the BAAH source code folder, then install dependencies and run.
