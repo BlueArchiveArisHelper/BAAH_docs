@@ -14,8 +14,8 @@ description: Complete BlueArchive Aris Helper deployment in 3 steps! MuMu emulat
 1. Emulator
    - It is recommended to use MuMu 4.x
    - Set resolution to 1280*720 pixels with 240 DPI. Enable ADB debugging. Note the ADB debugging port number of the emulator.
-   - If you are using MuMu emulator, please turn off background keep-alive running in the bottom of settings
-   - If ADB cannot connect, please confirm that the network bridge function of the emulator is turned off or modify the ADB connection IP in other settings.
+   - If you are using MuMuPlayer, please turn off Keep alive in background in the bottom of settings
+   - If ADB cannot connect, please confirm that the network bridge mode of the emulator is turned off or modify the ADB connection IP in other settings.
 2. Game Settings
     - **Game** -> **Skill Animations** -> **Off**
     - **Display** -> **Black Bars During Combat** -> **Off**

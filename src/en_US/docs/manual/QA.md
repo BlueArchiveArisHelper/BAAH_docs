@@ -34,9 +34,9 @@ Please check if the ADB port number in your configuration file matches the emula
 
 Please check if the game server region selection in your configuration file is correct.
 
-## 3. How to check MuMu emulator's port number
+## 3. How to check MuMuPlayer's port number
 
-Click the three horizontal lines in the upper right corner of the emulator, open Problem Detection, scroll to the bottom, and the ADB port number will be displayed.
+Click the three horizontal lines in the upper right corner of the emulator, open Device Diagnostics, scroll to the bottom, and the ADB port number will be displayed.
 
 ## 4. How to check LDPlayer emulator's port number
 
