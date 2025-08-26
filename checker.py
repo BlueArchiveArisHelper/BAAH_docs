@@ -17,9 +17,6 @@ config = {
 
 ### 逻辑区 ###
 
-global warninglist
-global errorlist
-
 warninglist = []
 errorlist = []
 
@@ -57,10 +54,10 @@ def check_config():
     for language in config:
         if language not in navbar:
             logging.warn(f"未找到导航栏文件{language}")
-            warninglist = warninglist.append(f"未找到导航栏文件{language}")
+            warninglist.append(f"未找到导航栏文件{language}")
         if language not in sidebar:
             logging.warn(f"未找到侧边栏文件{language}")
-            warninglist = warninglist.append(f"未找到侧边栏文件{language}")
+            warninglist.append(f"未找到侧边栏文件{language}")
     
     logging.info("检查完成\n")
 
