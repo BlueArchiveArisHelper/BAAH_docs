@@ -1,65 +1,65 @@
-# 关键类说明
+# Key Classes
 
-## modules/configs/Configger类
+## modules/configs/Configger Class
 
-位于modules/configs/下的MyConfig控制了用户配置文件的内容，其关键行为是给未出现的用户配置文件赋默认值，以及通过已知的配置推算未知的配置。这两个功能分别和settingMaps.py和defaultSettings.py有关
+Located in modules/configs/, MyConfig controls the contents of the user configuration file. Its key behaviors are assigning default values to user configuration files that have not appeared and deducing unknown configurations through known configurations. These two functions are related to settingMaps.py and defaultSettings.py, respectively.
 
-以下为defaultSettings.py内每个配置项目的字段含义。
+The following are the meanings of each configuration item field in defaultSettings.py:
 ```
-d: default value 默认值。若用户配置文件内无这个配置项目，则触发配置项目新增时的默认值为这个值
-s: selective value 可选值，此项仅起到对开发者的提示作用，无任何值约束作用
-m: map value 映射方法。与默认值同级，当定义了map映射方式后，若用户配置文件内无这个配置项目，则触发配置项目新增时优先按照映射关系为这个值寻找搭配的值
-    from: map value的来源key
-    map: map value的映射函数，默认是 lambda x: ...
-p: post parse action 后解析方法。二级解析过程，位于d和m过程之后，且无轮用户配置文件内有无这个配置项目，都会触发此流程。默认是lambda value, parsedjson: ...，如果需要在每次对配置文件解析后对值执行一些固定的判断和替换，可以在这重写
+d: default value. If this configuration item doesn't exist in the user configuration file, the default value when adding this configuration item will be this value
+s: selective value. This only serves as a reminder to developers and has no value constraint effect
+m: map value. At the same level as the default value. When a map mapping method is defined, if this configuration item doesn't exist in the user configuration file, when adding the configuration item, it will prioritize finding a matching value for this value according to the mapping relationship
+    from: source key of map value
+    map: mapping function of map value, default is lambda x: ...
+p: post parse action. A secondary parsing process, located after the d and m processes, and this process will be triggered regardless of whether this configuration item exists in the user configuration file. Default is lambda value, parsedjson: ..., if you need to perform some fixed judgments and replacements on the value after each configuration file parsing, you can rewrite it here
 ```
 
 ::: warning
-selective value仅作为提醒值存在，主要的map映射应当在settingMaps里，并通过m或p字段进行控制。
+The selective value only exists as a reminder value. The main map mapping should be in settingMaps and controlled through the m or p fields.
 :::
 
 ::: warning
-对某个功能进行逻辑重做时，最好设定新的参数key名，并通过mapping功能从旧key中复制参数的值
+When redoing the logic for a certain function, it's best to set a new parameter key name and copy the parameter value from the old key through the mapping function.
 :::
 
-### Config里三种参数的不同
+### Differences between the Three Parameters in Config
 
-| 特性 | userconfigdict | softwareconfigdict | userstoragedict |
+| Feature | userconfigdict | softwareconfigdict | userstoragedict |
 | ---- | -------------- | ----------------- | ---------------- |
-| 解析 | 在每次执行或用户编辑前解析 | 在软件启动时解析 | 在需要进行脚本运行数据保存时解析 |
-| 数量 | 每个配置文件仅对应一份 | 每个BAAH软件仅对应一份 | 每个配置文件仅对应一份 |
-| 功能 | 存储用户的每份任务配置 | 存储BAAH软件的配置 | 存储配置文件对应的非任务内容的存储信息 |
+| Parsing | Parsed before each execution or user edit | Parsed at software startup | Parsed when script runtime data needs to be saved |
+| Quantity | Only one copy per configuration file | Only one copy per BAAH software | Only one copy per configuration file |
+| Function | Stores each user's task configuration | Stores BAAH software configuration | Stores non-task content storage information corresponding to configuration files |
 
-## DATA/assets/ButtonName；PageName；PopupName类
+## DATA/assets/ButtonName; PageName; PopupName Classes
 
-皆为静态截图的命名类
+These are naming classes for static screenshots.
 
-## AllPage/Page类
+## AllPage/Page Class
 
-初始构想是维护一个页面间的跳转图，这样当我们想要到达哪个游戏页面时，调用Page.to_page(PageName.PAGE_TARGET)即可。
+The initial idea was to maintain a diagram of page transitions so that when we want to reach a particular game page, we can call Page.to_page(PageName.PAGE_TARGET).
 
-后面取消了此类构想，将页面的跳转放到了每一个TASK里面，通过Page.is_page()判断当前页面是否是该页面
+Later, this idea was abandoned, and page transitions were moved into each TASK. Page.is_page() is used to determine if the current page is the desired page.
 
-## AllTask/Task类
+## AllTask/Task Class
 
-Task类的实例就是用户想要完成的自动化任务，每个任务都会有pre_condition, on_run, post_condition阶段。run方法定义了Task实例的运行逻辑。
+An instance of the Task class is an automation task that the user wants to complete. Each task has pre_condition, on_run, and post_condition phases. The run method defines the logic for running Task instances.
 
-其中pre_condition是此任务是否可以进行的判断，当pre_condition返回False时，将会跳过此任务。
+The pre_condition is the judgment of whether this task can proceed. When pre_condition returns False, the task will be skipped.
 
-on_run定义了任务具体的执行步骤，在on_run内部，使用self.run_until(func1, func2, times)来持续性地执行func1操作, 直到func2成立，或执行了times次，每次尝试执行后都会重新进行截图操作。使用match(page_pic(PageName.PAGE_TARGET))来进行图片匹配操作。使用click(button_pic(ButtonName.BUTTON_TARGET))点击图像匹配中心点，或使用click((224, 789))点击横轴224，纵轴789位置。
+on_run defines the specific execution steps of the task. Inside on_run, use self.run_until(func1, func2, times) to continuously execute func1 operation until func2 is established or it has been executed times times. Screenshot operations are performed using match(page_pic(PageName.PAGE_TARGET)). Clicking on image matches the center point using click(button_pic(ButtonName.BUTTON_TARGET)) or click((224, 789)) to click at the coordinates (224, 789) on the screen.
 
-post_condition是任务的后置判断，主要判断此任务结束时的位置是否可控，是否回到某个特定的页面。
-
-::: tip
-当pre_condition方法多次返回False，则该任务不会被执行
-
-当post_condition方法多次返回False，会触发回到主页操作
-:::
-
-在modules/AllTask文件夹下有许多子文件夹，与这些子文件夹同名的Task，称之为一级Task。每个一级Task都应是一个每日任务之一，比如咖啡馆相关大任务/商店购买大任务，这些一级Task将会被放进myAllTask列表内进行解析并能够串行运行。
+post_condition is the post-judgment of the task, mainly to determine if the task is in a controllable state when it ends, and if it has transitioned to other pages.
 
 ::: tip
-一级Task应当从游戏主页，也就是live2D界面开始运行，运行结束时应当回到游戏主页。
+When the pre_condition method returns False multiple times, the task will not be executed.
+
+When the post_condition method returns False multiple times, it will trigger a return to the homepage operation.
 :::
 
-在一级任务的文件夹内部可能会有复数个py文件，此为二级任务。二级任务可能是一级任务内的拆分并包装后的步骤集合。在 `modules/AllTask/SubTask/` 下存在多个可复用步骤逻辑，如列表滚动选择（ScrollSelect），局内战斗任务（FightQuest）等。
+There are many subfolders in the modules/AllTask folder. Tasks with the same name as these subfolders are called first-level Tasks. Each first-level Task should be one of the daily tasks, such as cafe-related major tasks/shop purchase major tasks. These first-level Tasks will be placed in the myAllTask list for parsing and can run serially.
+
+::: tip
+First-level Tasks should start from the game homepage, that is, the live2D interface, and should return to the game homepage when finished running.
+:::
+
+There may be multiple py files inside a first-level task folder, which are second-level tasks. Second-level tasks may be split and packaged step collections within first-level tasks. Under `modules/AllTask/SubTask/`, there are multiple reusable step logics, such as list scroll selection (ScrollSelect), in-game combat tasks (FightQuest), etc.

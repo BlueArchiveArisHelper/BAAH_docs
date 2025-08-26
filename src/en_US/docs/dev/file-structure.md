@@ -1,38 +1,39 @@
-# 文件结构&说明
+<LanguageWarn/>
+
+# File Structure & Description
 
 <LiteTree>
-项目目录
-    + [folder]BAAH_CONFIGS // 用户配置的需要执行的任务
-    + DATA // 此项目所需的各类静态资源以及多语言支持
-        - [folder]assets // 国际服资源（繁体）以及资源语义化文件
-        - [folder]assets_cn // 国，B服资源
-        - [folder]assets_global_en // 国际服资源（英语）
-        - [folder]assets_jp // 日服资源
-        - [folder]grid_solution // 自动推图数据
-        - [folder]i18n // 国际化数据
-    + [folder]docs // 旧文档（归档）
-    + gui // webui相关
-        - [folder]components // 可复用组件
-        - [folder]pages // 二级页面（单个配置文件编辑页）内的子页面
-        + refactor_pages // 路由页面
-            - home.py // 一级页面（首页）
-            - json_set_panel.py // 二级页面（单个配置文件编辑页）
-        - define.py // 定义GUI全局共享config变量和js注入
-    + modules // 主要模块
-        - [folder]AllPage // 页面级别定位（弃用）
-        - [folder]AllTask // 一级任务
-        + configs // 配置文件管理模块
-            - defaultSettings.py // 配置文件的默认参数
-            - MyConfig.py // 定义配置文件类
-            - settingMaps.py // 参数间映射关系
-        - [folder]utils // 使用工具或辅助方法
-    + tools // 被调用的adb以及库的静态资源包，注意这些资源不在github里面
+Project Directory
+    + [folder]BAAH_CONFIGS // User-configured tasks to be executed
+    + DATA // Various static resources required for this project and multilingual support
+        - [folder]assets // Global server resources (Traditional Chinese) and resource semantic files
+        - [folder]assets_cn // CN server and Bilibili Server resources
+        - [folder]assets_global_en // Global server resources (English)
+        - [folder]assets_jp // JP server resources
+        - [folder]grid_solution // Auto-mapping data
+        - [folder]i18n // Internationalization data
+    + [folder]docs // Old documents (archived)
+    + gui // WebUI related
+        - [folder]components // Reusable components
+        - [folder]pages // Sub-pages within secondary pages (single configuration file edit page)
+        + refactor_pages // Route pages
+            - home.py // Primary page (homepage)
+            - json_set_panel.py // Secondary page (single configuration file edit page)
+        - define.py // Define GUI global shared config variables and JS injection
+    + modules // Main modules
+        - [folder]AllPage // Page-level positioning (deprecated)
+        - [folder]AllTask // Primary tasks
+        + configs // Configuration file management module
+            - defaultSettings.py // Default parameters for configuration files
+            - MyConfig.py // Define configuration file class
+            - settingMaps.py // Mapping relationships between parameters
+        - [folder]utils // Tools or auxiliary methods used
+    + tools // Static resources for called adb and libraries; note that these resources are not in GitHub
         - [folder]adb
         - [folder]aria2
-    BAAH.py // 执行某一个用户配置的任务文件，封装为方法
-    jsoneditor.py // webui的入口文件，包含命令行参数解析
-    main.py // 为主程序的入口文件，包含命令行参数解析
-    package.py // 打包脚本为可执行文件
-    requirements.txt // 依赖列表
+    BAAH.py // Execute a user-configured task file, encapsulated as a method
+    jsoneditor.py // Entry file for WebUI, including command-line argument parsing
+    main.py // Entry file for the main program, including command-line argument parsing
+    package.py // Package script as executable file
+    requirements.txt // Dependency list
 </LiteTree>
-

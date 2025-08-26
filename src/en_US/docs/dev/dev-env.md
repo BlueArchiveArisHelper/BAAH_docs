@@ -1,51 +1,53 @@
-# 环境搭建
+<LanguageWarn/>
 
-## 开发工具准备
+# Environment Setup
 
-请准备好你所擅长使用的开发环境，需要 python 3.10.x 和 git
+## Development Tools Preparation
 
-## 获取源码
+Please prepare your preferred development environment, which requires Python 3.10.x and Git.
 
-首先，打开浏览器，进入 `https://github.com/BlueArchiveArisHelper/BAAH`
+## Get the Source Code
 
-点击 **fork** ，取消勾选 **Copy the main branch only**，创建你自己的Fork
+First, open your browser and go to `https://github.com/BlueArchiveArisHelper/BAAH`
 
-然后，选择心仪的位置打开终端
+Click **Fork**, uncheck **Copy the main branch only**, and create your own Fork.
+
+Then, choose your preferred location and open a terminal.
 
 ``` bash
-git clone https://github.com/<你的用户名>/BAAH -b dev
+git clone https://github.com/<your_username>/BAAH -b dev
 ```
 
-源码会下载此文件夹中
+The source code will be downloaded to this folder.
 
-## 安装所需依赖
+## Install Required Dependencies
 
 ``` bash
 cd BAAH
 pip install -r requirements.txt
 ```
 
-## 进行开发
+## Start Development
 
-项目文件结构与类说明请看后续文档。
+For project file structure and class descriptions, please refer to subsequent documentation.
 
 ::: tip
-欢迎成为项目贡献者! 
+Welcome to become a project contributor!
 
-如果你想要将你开发的内容合并到项目主分支，请在BAAH项目主页开一个issue，描述你想要完善何种功能和现有的构思，进行交流并issue通过后再进行开发，这有利于让你的pr **更顺利** 地被通过。
+If you want to merge your developed content into the project's main branch, please open an issue on the BAAH project homepage, describing what functionality you want to improve and your existing ideas. Discuss and wait for the issue to be approved before starting development. This will help your PR to be approved **more smoothly**.
 :::
 
-## 打包
+## Packaging
 
-你可以使用打包脚本编译出可执行文件
+You can use the packaging script to compile executable files.
 
 ### Windows EXE
 
-直接运行下列命令即可
+Simply run the following command:
 ``` cmd
 python package.py
 ```
 
 ### Linux Docker
 
-使用 `DockerFile` 打包即可
+Use `DockerFile` for packaging.
