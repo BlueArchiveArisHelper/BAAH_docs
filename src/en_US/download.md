@@ -65,6 +65,6 @@ Or manually use the source code, see the chapter [Deploy from Source Code](/docs
 
 **Android** 
 
-For details, please see [🔗 BlockHaity's deployment method](https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/)# Download BAAH
+For details, please see [🔗 BlockHaity's deployment method](https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/) (Only Chinese!!!)
 
 :::
