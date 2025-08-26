@@ -23,8 +23,6 @@ global errorlist
 warninglist = []
 errorlist = []
 
-funclist = ["config | 检查配置文件"]
-
 # 日志模块
 class logging:
     def info(msg):
