@@ -35,6 +35,16 @@
 python checker.py
 ```
 
+### 应用文档
+
+确保其他语言内也存在相同的文件
+
+使用相对于src的目录链接来调用。
+
+``` markdown
+[连接](/{语言}/目录)
+```
+
 ### 图片调用
 
 首先，在 `/src/public/img` 中，创建对应的文件夹，将图片放入
@@ -47,8 +57,10 @@ python checker.py
 
 ## SEO格式
 
+````
 ---
 title: 标题
 subtitle: 小标题
 description: 描述
 ---
+```
