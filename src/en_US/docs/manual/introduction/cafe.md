@@ -26,14 +26,14 @@ If you need to use interactive furniture, please turn off the interaction switch
 
 ## Invite Specific Students
 
-1. In the student interface, set the student you want to invite regularly as Featured (click the pin icon on the top left of the student's avatar).
-2. In the cafe interface, set the filter method in the cafe invitation list to Featured.
+1. In the student interface, set the student you want to invite regularly as Pinned (click the pin icon on the top left of the student's avatar).
+2. In the cafe interface, set the filter method in the cafe invitation list to Pinned.
 3. You will find that the specified student is pinned at the top of the list. Enter their current number to invite that specific student.
 
    <details>
    <summary>Example</summary>
 
-   ![Featured Invitation List](/img/cafe/invite_list_2.png)
+   ![Pinned Invitation List](/img/cafe/invite_list_2.png)
 
    </details>
 

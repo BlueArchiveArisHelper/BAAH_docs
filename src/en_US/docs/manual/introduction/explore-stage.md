@@ -54,7 +54,7 @@ It is not recommended to set a team as a mono-color team, as some stages may hav
 
 ::: tip
 
-Please uncheck the option `uto select team according to the attribute, if not checked, you need to manually configure the team each time` to enable this feature.
+Please uncheck the option `Auto select team according to the attribute, if not checked, you need to manually configure the team each time` to enable this feature.
 
 :::
 
@@ -77,7 +77,7 @@ When this feature is enabled, before each battle, it will prompt for the require
    3. Configure teams based on the prompt. Here, configure Team 1 with red attack and Team 2 with purple attack according to the prompts.
     ![Manual Team Configuration 3](/img/explore-stage/manually_configure_the_team_3.png)
     ![Manual Team Configuration 4](/img/explore-stage/manually_configure_the_team_4.png)
-   4. After configuring the teams, **do not click Deploy**. Directly click the return button in the upper left corner to go back to the grid movement interface.
+   4. After configuring the teams, **do not click Mobilize**. Directly click the return button in the upper left corner to go back to the grid movement interface.
    ![Manual Team Configuration 5](/img/explore-stage/manually_configure_the_team_5.png)
    5. Return to the terminal and press the `Enter` key on your keyboard to start the task.
    ![Manual Team Configuration 6](/img/explore-stage/manually_configure_the_team_6.png)

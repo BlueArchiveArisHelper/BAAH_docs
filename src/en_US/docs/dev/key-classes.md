@@ -1,3 +1,5 @@
+<LanguageWarn/>
+
 # Key Classes
 
 ## modules/configs/Configger Class
