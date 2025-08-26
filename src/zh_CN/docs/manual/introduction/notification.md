@@ -84,7 +84,7 @@ https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 
 </details>
 
-1. 在 `API通知Token` 一栏输入你的API的Token。
+2. 在 `API通知Token` 一栏输入你的API的Token。
 > :memo: **注：** 各大通知API的Token获取方法各不相同，请根据你使用的服务自行查询。
 
 ## 自定义通知内容
