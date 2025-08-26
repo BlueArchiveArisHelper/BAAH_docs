@@ -57,7 +57,7 @@ python checker.py
 
 ## SEO格式
 
-````
+```
 ---
 title: 标题
 subtitle: 小标题
