@@ -30,7 +30,7 @@ description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置�
 
 首先，下载约 140MB 的压缩包后解压至任意文件夹
 
-[前往下载页](/download)
+[前往下载页](/zh_CN/download)
 
 将 BAAH_CONFIGS 文件夹内的 example.json 复制并重命名为任一其他名字，如 task.json
 
@@ -46,7 +46,7 @@ description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置�
 == MacOS
 **MacOS**
 
-详见[从源码部署](../docs/source-code.md)。
+详见[从源码部署](/zh_CN/docs/manual/source-code.md)。
 
 == Linux
 **Linux**

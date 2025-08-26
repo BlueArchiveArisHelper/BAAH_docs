@@ -48,7 +48,7 @@ description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推�
 
 **MacOS**
 
-需要手动使用源代码，详情请见章节[从源码部署](/docs/source-code.md)。
+需要手动使用源代码，详情请见章节[从源码部署](/zh_CN/docs/manual/source-code.md)。
 
 == Linux
 
@@ -60,7 +60,7 @@ description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推�
 docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
 ```
 
-或者手动使用源代码，详情请见章节[从源码部署](/docs/source-code.md)。
+或者手动使用源代码，详情请见章节[从源码部署](/zh_CN/docs/manual/source-code.md)。
 
 == Android
 

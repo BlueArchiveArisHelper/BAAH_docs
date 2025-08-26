@@ -14,7 +14,7 @@ BAAH has comprehensive community support. If you encounter any problems while us
 
 1. Generally speaking, reading the documentation and watching the [tutorial videos](https://www.bilibili.com/video/BV1ZxfGYSEVr/) can solve more than 90% of the problems.
 2. Make good use of the search function in this documentation (shortcut key: Ctrl+K) to search for keywords related to your question, which can quickly help you find the content you need.
-3. Most common questions are listed in the [Q&A](../manual/QA.md) chapter, please check it first.
+3. Most common questions are listed in the [Q&A](/en_US/docs/manual/QA.md) chapter, please check it first.
 4. It is **highly recommended** to read [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) first.
 
 :::
@@ -34,7 +34,7 @@ QQ Group Problem-solving Group: 985729020
 
 ### Before Asking Questions
 1. Please make sure you have watched the tutorial videos and this documentation as suggested, as they can solve the vast majority of problems.
-2. Check if the software has an [update](../manual/QA.md#0-how-to-update-baah), and try updating to the latest version.
+2. Check if the software has an [update](/en_US/docs/manual/QA.md#0-how-to-update-baah), and try updating to the latest version.
 3. If you are in the QQ group, you can first browse through the group chat history to see if there are similar situations and how they were resolved.
 4. Read GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues), including closed [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed), to see if there are similar problems.
 

@@ -12,7 +12,7 @@ BAAH 拥有完善的社区支持，在使用中如果遇到了问题可以寻求
 
 1. 一般来说阅读文档与观看[教程视频](https://www.bilibili.com/video/BV1ZxfGYSEVr/)能解决90%以上的问题。
 2. 多使用此文档的搜索功能（快捷键：Ctrl+K）搜索你问题的关键词，能快速找到需要的内容。
-3. 大部分常见的问题会放在[Q&A 常见问题](../docs/QA.md)一章中，请先查看。
+3. 大部分常见的问题会放在[Q&A 常见问题](/zh_CN/docs/manual/QA.md)一章中，请先查看。
 4. **非常建议**先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
 
 :::
@@ -32,7 +32,7 @@ QQ群 问题解答群：985729020
 
 ### 在提问之前
 1. 请确定你已经按照提示的内容观看完教学视频和本文档，它们能解决绝大多数的问题。
-2. 检查一下软件是否有[更新](../docs/QA.md#_0-如何更新baah)，尝试更新到最新版本。
+2. 检查一下软件是否有[更新](/zh_CN/docs/manual/QA.md#_0-如何更新baah)，尝试更新到最新版本。
 3. 如果你在QQ群内，可以先翻看群聊天记录，看看有没有类似的情况，他们是怎么解决的。
 4. 阅读 GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues)，包括已经关闭的 [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed)，看有没有类似问题。
 

@@ -20,7 +20,7 @@ Can automatically complete normal and hard stage explorations. Please ensure you
 ## Stage Exploration Configuration
 Fill in the starting chapter and stage in `Explore Normal Quest` / `Explore Hard Quest`, then click the `Explore Normal Quest` / `Explore Hard Quest` button on the right to start.
 
-[Don't know what chapters and stages are? Click here](../introduction/sweep-level.md#location-and-stage-description)
+[Don't know what chapters and stages are? Click here](/en_US/docs/manual/introduction/sweep-level.md#location-and-stage-description)
 
 > :memo: **Note:** If using `Deploy from source code`, please fill in `Explore Normal Quest` / `Explore Hard Quest` in the `Task Execution Order`, save the configuration, and then execute `python main.py <config_name>.json`.
 

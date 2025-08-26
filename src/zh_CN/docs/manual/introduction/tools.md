@@ -24,7 +24,7 @@
 自动完成任务列表中的挑战任务。
 
 ## 推图
-详见 [推图](../docs/explore-stage.md) 一章节。
+详见 [推图](/zh_CN/docs/manual/introduction/explore-stage.md) 一章节。
 
 ## 活动一览
 自动完成活动一览中的活动故事（在纪念大厅界面的任务/业务区的旁边）。

@@ -24,7 +24,7 @@ description: 快速解决 BAAH 自动化脚本的典型问题：更新覆盖安�
 4. 描述BAAH在错误发生前后的行为或提供录屏
 5. 提供BAAH.exe发生错误前后的日志
 
-详见章节[获取支持](../docs/get-support)。
+详见章节[获取支持](/zh_CN/docs/manual/get-support)。
 
 ## 2. 提示adb连接失败，截图大小为0kb 或 一直检测到游戏未打开，尝试打开游戏
 
@@ -77,7 +77,7 @@ BAAH与ALAS，MAA兼容，只是：
 
 BAAH的本质是一个可以接受参数的应用程序，当我们打开cmd，cd到BAAH文件夹下，执行 `BAAH.exe 你的配置名.json` 即可运行该配置。在了解了如何使用Windows的任务计划程序后末尾，您就可以使用任务计划程序控制程序的定时自动运行，结合BAAH中的定时开启/关闭模拟器功能，即可做到解放双手完成BAAH的每日任务。
 
-详见[视频教程](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6)和章节[自动化运行](../docs/automated-operation)。
+详见[视频教程](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6)和章节[自动化运行](/zh_CN/docs/manual/automated-operation)。
 
 ## 12. GUI运行时参数
 

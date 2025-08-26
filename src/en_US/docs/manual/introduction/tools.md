@@ -26,7 +26,7 @@ Automatically complete corresponding story quests.
 Automatically complete challenge quests in the quest list.
 
 ## Stage Exploration
-See [Stage Exploration](../introduction/explore-stage.md) chapter for details.
+See [Stage Exploration](/en_US/docs/manual/introduction/explore-stage.md) chapter for details.
 
 ## Event Recap
 Automatically complete event stories found in the Event Recap (next to Tasks/Services in the Memorial Hall).

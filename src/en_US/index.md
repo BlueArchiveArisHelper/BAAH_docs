@@ -15,7 +15,7 @@ hero:
       link: /en_US/download
     - theme: alt
       text: View Documentation
-      link: /en_US/docs/manual/quick-start
+      link: /en_US/docs/manual/quick-start.md
     - theme: alt
       text: Visit Repository
       link: https://github.com/BlueArchiveArisHelper/BAAH/

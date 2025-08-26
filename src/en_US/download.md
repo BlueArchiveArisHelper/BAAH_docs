@@ -48,7 +48,7 @@ It is recommended to read the documentation before use.
 
 **MacOS**
 
-Requires manual use of source code, see the chapter [Deploy from Source Code](/docs/source-code.md) for details.
+Requires manual use of source code, see the chapter [Deploy from Source Code](/en_US/docs/manual/source-code.md) for details.
 
 == Linux
 
@@ -59,7 +59,7 @@ Run through Docker
 ``` bash
 docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
 
-Or manually use the source code, see the chapter [Deploy from Source Code](/docs/source-code.md) for details.
+Or manually use the source code, see the chapter [Deploy from Source Code](/en_US/docs/manual/source-code.md) for details.
 
 == Android
 

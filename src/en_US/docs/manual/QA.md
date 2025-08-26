@@ -26,7 +26,7 @@ Please:
 4. Describe the behavior of BAAH before and after the error occurred or provide a recording.
 5. Provide logs of BAAH.exe before and after the error occurred.
 
-For details, see the [Getting Support](../docs/get-support) section.
+For details, see the [Getting Support](/en_US/docs/manual/get-support) section.
 
 ## 2. ADB connection failed, screenshot size is 0kb or game is always detected as not opened
 
@@ -79,7 +79,7 @@ Please add the BAAH folder to your antivirus software's whitelist and extract ag
 
 BAAH is essentially an application that can accept parameters. When we open cmd, cd to the BAAH folder, and execute `BAAH.exe your_config_name.json`, we can run the configuration. After understanding how to use Windows Task Scheduler, you can use it to control the scheduled automatic operation of the program. Combined with BAAH's scheduled emulator on/off feature, you can complete BAAH's daily tasks hands-free.
 
-See [Video Tutorial](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6) and the [Automated Operation](../docs/automated-operation) section.
+See [Video Tutorial](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6) and the [Automated Operation](/en_US/docs/manual/automated-operation) section.
 
 ## 12. GUI runtime parameters
 

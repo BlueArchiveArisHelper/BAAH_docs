@@ -48,7 +48,7 @@ In Task Execution Order, enable the task flow or click the Quick Call Task butto
 == MacOS
 **MacOS**
 
-See [Deploy from Source Code](../manual/source-code.md) for details.
+See [Deploy from Source Code](/en_US/docs/manual/source-code) for details.
 
 == Linux
 **Linux**
