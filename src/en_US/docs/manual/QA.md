@@ -13,28 +13,28 @@ description: Quick solutions to common BAAH automation script issues update over
 
 Download BAAH1.x.xx_update.zip from [GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases/) or [Gitee Release](https://gitee.com/sammusen/BAAH/releases) or QQ group or by clicking the update button in the GUI, then extract all contents to the BAAH folder and overwrite.
 
-Or double-click `UPDATE.exe` in the directory to update BAAH.
+Or just double click `UPDATE.exe` to update BAAH.
 
 ## 1. How to provide feedback
 
 Please:
 
-0. Check if the issue is already listed in the FAQ
-1. Check if BAAH is the latest version, you can update BAAH through the update button in the GUI
-2. Describe your game server region and BAAH version number
-3. Describe your purpose
-4. Describe BAAH's behavior before and after the error occurs, or provide a screen recording
-5. Provide logs from BAAH.exe before and after the error occurs
+0. Check if the issue is already listed in the FAQs.
+1. Check whether the BAAH is the latest version. You can update BAAH through the update button in the GUI.
+2. Describe your game server, BAAH version.
+3. Describe your purpose.
+4. Describe the behavior of BAAH before and after the error occurred or provide a recording.
+5. Provide logs of BAAH.exe before and after the error occurred.
 
 For details, see the [Getting Support](../docs/get-support) section.
 
 ## 2. ADB connection failed, screenshot size is 0kb or game is always detected as not opened
 
-Please check if the ADB port number in your configuration file matches the emulator's ADB port number.
+Please check if the adb port number in your configuration file matches the adb port number of the emulator.
 
-Please check if the game server region selection in your configuration file is correct.
+Please verify if your server selection in the configuration file is correct.
 
-## 3. How to check MuMuPlayer's port number
+## 3. How to check MuMuPlayer emulator's port number
 
 Click the three horizontal lines in the upper right corner of the emulator, open Device Diagnostics, scroll to the bottom, and the ADB port number will be displayed.
 
@@ -52,28 +52,28 @@ BAAH is an auto-click software based on image and text recognition. Changing ima
 
 BAAH can dynamically recognize CN server's anti-censorship patch. Please ensure you are using the official anti-censorship patch.
 
-## 7. When using swipe to select stages, the swipe distance is not enough, causing the script to click on the blank space between buttons
+## 7. When Using Swipe to Select Levels, the Swipe Distance is Not Enough
 
-This issue usually occurs on CN server BA. Please unbind the swipe trigger distance from the server region in the configuration file and change the original 40 to 60. If it was originally 60, try changing it to 40.
+This issue usually occurs in CN server official BAs. Unbind the swipe trigger distance from the server in the configuration file and change 40 to 60.
 
-## 8. Can BAAH run multiple instances
+## 8. Can BAAH be Multi-opened?
 
-In the GUI interface, switch to different configuration files and click "Save and Run" in the lower right corner respectively.
+Switch to different configuration files in the GUI interface, then click Save and Run in the bottom right corner separately.
 
-BAAH can be used via command line. Please cd to the BAAH folder and execute `BAAH.exe your_config_name.json` to run the configuration. Combined with Windows Task Scheduler, automatic startup can be achieved.
+BAAH can be run through the command line, just cd to the BAAH folder, and execute `BAAH.exe your_config.json`. By combining the Windows Task Scheduler, you can run BAAH automatically at a specific time.
 
-If you use bat commands, make sure you have cd'd to the BAAH folder, then execute `BAAH.exe config1.json` followed by `BAAH.exe config2.json`
+If you are using a bat command or Windows Task Scheduler, make sure to cd to the BAAH folder, then execute `BAAH.exe config1.json` followed by `BAAH.exe config2.json`.
 
-## 9. Can BAAH run with other scripts
+## 9. Can BAAH be Run Multi-opened with Other Scripts?
 
 BAAH is compatible with ALAS and MAA, but:
 
-1. Do not try to run (BAAH) and (ALAS) or (MAA) simultaneously on the same multi-instance emulator/same emulator port, as they will compete for screenshots. Please set up multiple multi-instance emulators
-2. Try to prevent automation scripts from restarting the ADB service. BAAH will never restart the ADB service. You can start BAAH after other automation tools.
+1. Please do not attempt to run BAAH and ALAS or MAA on the same multi-opened emulator/same emulator port simultaneously, as they will compete for screenshots. Please set up multiple multi-opened emulators.
+2. Please be careful not to let the automation scripts restart the adb service, BAAH will not try to shut down the adb daemon, you should start BAAH after other automation tools.
 
 ## 10. BAAH.exe disappeared after extraction
 
-Please add the BAAH folder to your antivirus software's whitelist and extract again. BAAH is completely open source. As long as you download BAAH from GitHub Release, Mirror酱, the Baidu Netdisk link at the beginning of this document, or the QQ group, you can use it safely.
+Please add the BAAH folder to your antivirus software's whitelist and extract again. BAAH is completely open source. As long as you download BAAH from GitHub Release, MirrorChyan, the Quark Cloud Disk link at the beginning of this document, or the QQ group, you can use it safely.
 
 ## 11. How to make BAAH run on a schedule
 
@@ -83,12 +83,13 @@ See [Video Tutorial](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6) and t
 
 ## 12. GUI runtime parameters
 
-You can specify parameters when starting the GUI to achieve more settings, such as "BAAH_GUI.exe --token 123456" to set a password for the GUI page. The following is a list of available parameters
+You can set more parameters before BAAH_GUI running to enable more settings. For example, run "BAAH_GUI.exe --token 123456" will protect your GUI webpage with a password. Following is the paremeter table that GUI can use:
+
 
 | Param | Desc | Default |
 |-|-|-|
-| --host | GUI startup IP | 127.0.0.1 |
-| --port | GUI startup port | 8000 (auto search) |
+| --host | GUI will bind on this IP | 127.0.0.1 |
+| --port | GUI will bind on this port | 8000, auto find |
 | --token | GUI password | None |
-| --no-show | Switch, don't open browser when specified | |
+| --no-show | Switch, will not open explorer when GUI is started if it is given | ||
 

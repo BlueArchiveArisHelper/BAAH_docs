@@ -35,6 +35,8 @@ Install using homebrew
 
 ``` bash
 brew install python 3.10
+```
+
 == Linux
 
 **Linux**
@@ -43,6 +45,7 @@ Install using UV
 
 ``` bash
 uv python install 3.10
+```
 
 ~~What? You don't have UV? Don't worry, if you're using Linux, you'll definitely figure this small thing out.~~
 
@@ -62,6 +65,7 @@ Install Git using `winget`
 
 ``` cmd
 winget install Git.Git
+```
 
 Or download from [Git official website](https://git-scm.com/downloads), run the installer, and click Next all the way through
 
@@ -75,6 +79,7 @@ Install from homebrew
 
 ``` bash
 brew install git
+```
 
 == Linux
 
@@ -92,6 +97,7 @@ Then, in the location where you want to install BAAH, open the terminal and run 
 git clone https://github.com/BlueArchiveArisHelper/BAAH.git
 # If not, run the following
 git clone https://gh-proxy.com/BlueArchiveArisHelper/BAAH.git
+```
 
 Don't close the window, run `cd BAAH` to enter the folder, and install dependencies.
 
@@ -100,6 +106,7 @@ Don't close the window, run `cd BAAH` to enter the folder, and install dependenc
 pip config set global.index-url https://mirrors.cernet.edu.cn/pypi/web/simple
 # Install dependencies
 pip install -r requirements.txt
+```
 
 Use `python jsoneditor.py` to run the WebUI, and modify the adb and aria2 paths in the configuration file editing interface.
 

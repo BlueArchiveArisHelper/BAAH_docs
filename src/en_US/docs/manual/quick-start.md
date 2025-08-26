@@ -32,39 +32,40 @@ description: Complete BlueArchive Aris Helper deployment in 3 steps! MuMu emulat
 
 First, download the approximately 140MB compressed package and extract it to any folder
 
-[Go to Download Page](/download)
+[Go to Download Page](/en_US/download)
 
 Copy example.json from the BAAH_CONFIGS folder and rename it to any other name, such as task.json
 
 Double-click BAAH_GUI.exe to open the interface.
 
-In emulator settings, modify the port number to your emulator's ADB debugging port.
+In Emulator Configuration, modify the port number to your emulator's ADB debugging port.
 
-In server settings, select your BA server.
+In Server Configuration, select your BA server.
 
-In task execution order settings, enable the task flow or click the quick execute button to run tasks.
+In Task Execution Order, enable the task flow or click the Quick Call Task button to run tasks.
 
 
 == MacOS
 **MacOS**
 
-See [Deploy from Source Code](../docs/source-code.md) for details.
+See [Deploy from Source Code](../manual/source-code.md) for details.
 
 == Linux
 **Linux**
 
 First, ensure your system has Docker installed. You can check by entering the following command
 
- 56  ``` bash
+``` bash
 # For ROOT users
 docker help
 # For non-ROOT users with sudo privileges
 sudo docker help
+```
 
 If the command outputs the following content, then your system has Docker
 
- 65  ::: details Command Output
- 66  ``` bash
+::: details Command Output
+``` bash
 Usage:  docker [OPTIONS] COMMAND
 
 A self-sufficient runtime for containers
@@ -146,19 +147,21 @@ Global Options:
 Run 'docker COMMAND --help' for more information on a command.
 
 For more help on how to use Docker, head to https://docs.docker.com/go/guides/
-149  :::
+```
+:::
 
 Then, pull the image, create and run the container.
 
-153  ``` bash
+``` bash
 docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
+```
 
 Then open your browser and navigate to `http://<your-server-ip>:8000`
 
-In emulator settings, modify the port number to your emulator's ADB debugging port.
+In Emulator Configuration, modify the port number to your emulator's ADB debugging port.
 
-In server settings, select your BA server.
+In Server Configuration, select your BA server.
 
-In task execution order settings, enable the task flow or click the quick execute button to run tasks.
+In Task Execution Order, enable the task flow or click the Quick Call Task button to run tasks.
 
 ::::

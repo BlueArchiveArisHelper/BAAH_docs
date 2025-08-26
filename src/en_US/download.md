@@ -20,7 +20,7 @@ You can join one of the following QQ groups to get the latest version update not
 
 You can join one of the following QQ groups for usage help
 
-**Q&A Group: 985729020**
+**Problem-solving Group: 985729020**
 
 :::
 
@@ -34,7 +34,7 @@ You can get BAAH from the following methods.
 
 [Quark Cloud Disk(China)](https://pan.quark.cn/s/319faf23496c)
 
-[Mirror酱](https://mirrorchyan.com/zh/projects?rid=BAAH) (Requires Mirror CDK)
+[MirrorChyan](https://mirrorchyan.com/zh/projects?rid=BAAH) (Requires Mirror CDK)
 
 [GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases)
 

@@ -14,8 +14,8 @@ BAAH has comprehensive community support. If you encounter any problems while us
 
 1. Generally speaking, reading the documentation and watching the [tutorial videos](https://www.bilibili.com/video/BV1ZxfGYSEVr/) can solve more than 90% of the problems.
 2. Make good use of the search function in this documentation (shortcut key: Ctrl+K) to search for keywords related to your question, which can quickly help you find the content you need.
-3. Most common questions are listed in the [Q&A Common Questions](../docs/QA.md) chapter, please check it first.
-4. It is **highly recommended** to read [How To Ask Questions The Smart Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md) first.
+3. Most common questions are listed in the [Q&A](../manual/QA.md) chapter, please check it first.
+4. It is **highly recommended** to read [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) first.
 
 :::
 
@@ -34,7 +34,7 @@ QQ Group Problem-solving Group: 985729020
 
 ### Before Asking Questions
 1. Please make sure you have watched the tutorial videos and this documentation as suggested, as they can solve the vast majority of problems.
-2. Check if the software has an [update](../docs/QA.md#_0-如何更新baah), and try updating to the latest version.
+2. Check if the software has an [update](../manual/QA.md#0-how-to-update-baah), and try updating to the latest version.
 3. If you are in the QQ group, you can first browse through the group chat history to see if there are similar situations and how they were resolved.
 4. Read GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues), including closed [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed), to see if there are similar problems.
 
@@ -49,7 +49,7 @@ Solving problems without sufficient information is no different than trying to b
 
    · Describe BAAH's behavior before and after the error occurs, or record a complete video of the problem.
 
-   · Provide BAAH's logs, which are usually under `BAAH\DATA\LOGS`. Please reproduce the problem once and prepare the latest logs. If logs cannot be saved, please check the options "Output logs to /DATA/LOGS/ directory" and "Save logs when errors occur" in "Other Settings".
+   · Provide BAAH's logs, which are usually under `BAAH\DATA\LOGS`. Please reproduce the problem once and prepare the latest logs. If logs cannot be saved, please check the options `Whether output log to /DATA/LOGS/ directory` and `Whether save log when error occurs` in `Other Settings`.
 
 
 ## Reporting Bugs / Making Suggestions
@@ -64,18 +64,18 @@ You can submit bugs or suggestions in GitHub [Issues](https://github.com/BlueArc
 
 ### Reporting Bugs
 
-1. On the GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues) page, create a new issue and select `Bug report / Report Bug`.
+1. On the GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues) page, create a new issue and select `Bug report / 上报Bug`.
 
 2. According to the prompts, fill in the following information in the corresponding fields.
    - Describe the symptoms of the bug.
-   - Provide BAAH logs before and after the error occurs, which are usually under `BAAH\DATA\LOGS`. Please reproduce the problem once and prepare the latest logs. If logs cannot be saved, please check the options "Output logs to /DATA/LOGS/ directory" and "Save logs when errors occur" in "Other Settings".
+   - Provide BAAH's logs, which are usually under `BAAH\DATA\LOGS`. Please reproduce the problem once and prepare the latest logs. If logs cannot be saved, please check the options `Whether output log to /DATA/LOGS/ directory` and `Whether save log when error occurs` in `Other Settings`.
    - Provide screenshots of the emulator.
    - Provide relevant information, including game server, emulator resolution and DPI, BAAH version number, etc.
    - Summarize your problem and fill it in the title.
 
 ### Making Suggestions
 
-1. On the GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues) page, create a new issue and select `Feature request / Feature Request`.
+1. On the GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues) page, create a new issue and select `Feature request / 功能请求`.
 
 2. According to the prompts, fill in the following information in the corresponding fields.
    - Describe your suggestion, that is, the feature you want to add, and what problems it can solve.

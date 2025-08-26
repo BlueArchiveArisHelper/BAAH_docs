@@ -3,7 +3,7 @@
 # Stage Exploration
 ::: tip
 
-If `Simple Strategy` is selected, the function to skip grid movement will be used. Please note that this will not collect all rewards, but it can increase the success rate of stage exploration (especially in the early game when your students' levels are low and you can't form a complete team).
+If `Use simple explore` is selected, the function to skip grid movement will be used. Please note that this will not collect all rewards, but it can increase the success rate of stage exploration (especially in the early game when your students' levels are low and you can't form a complete team).
 
 Some grid-based stages cannot be cleared in one run to collect all rewards (three-star ratings, Luminite gift boxes, and challenge achievements). For these stages, repeated battles will be performed to ensure all rewards are collected.
 :::
@@ -18,22 +18,22 @@ All automatic battles will use the game's default `AUTO` mode. Please ensure you
 Can automatically complete normal and hard stage explorations. Please ensure your team's levels are sufficient.
 
 ## Stage Exploration Configuration
-Fill in the starting area and stage in `Normal Stage Exploration` / `Hard Stage Exploration`, then click the `Normal Stage Exploration` / `Hard Stage Exploration` button on the right to start.
+Fill in the starting chapter and stage in `Explore Normal Quest` / `Explore Hard Quest`, then click the `Explore Normal Quest` / `Explore Hard Quest` button on the right to start.
 
-[Don't know what areas and stages are? Click here](../docs/sweep-level.md#area-and-stage-explanation)
+[Don't know what chapters and stages are? Click here](../introduction/sweep-level.md#location-and-stage-description)
 
-> :memo: **Note:** If using `Deploy from source code`, please fill in `Normal Stage Exploration` / `Hard Stage Exploration` in the `Task Execution Order`, save the configuration, and then execute `python main.py <config_name>.json`.
+> :memo: **Note:** If using `Deploy from source code`, please fill in `Explore Normal Quest` / `Explore Hard Quest` in the `Task Execution Order`, save the configuration, and then execute `python main.py <config_name>.json`.
 
 ## Team Configuration
 ### Automatic Team Matching
-Check `Automatic Team Matching` to enable this feature. Before each battle, it will enter the team configuration interface and click the `Auto` button next to the team to use BA's recommended team composition.
+Check `Whether to use automatic matching` to enable this feature. Before each battle, it will enter the team configuration interface and click the `Auto` button next to the team to use BA's recommended team composition.
 
 ![Automatic Team Matching](/img/explore-stage/automatic_matching.png)
 
 ### Automatic Team Selection Based on Attributes
 ::: tip
 
-Please check the option `Automatically select team based on attributes for stage exploration. If unchecked, manual team configuration is required` to enable this feature.
+Please check the option `Auto select team according to the attribute, if not checked, you need to manually configure the team each time` to enable this feature.
 
 This feature does not automatically scan your configured teams to select the best one, but rather selects the most suitable team based on the weights you fill in.
 :::
@@ -47,20 +47,20 @@ For example, in the game, if your Team 1 is set up to fight both red and yellow 
 
 It is not recommended to set a team as a mono-color team, as some stages may have repeated enemy types (for example, two red armored enemies). You can search online for recommended students and team composition guides for stage exploration.
 
-~~What? You don't have enough students? Use the `Simple Strategy` then. You just won't be able to collect all rewards.~~
+~~What? You don't have enough students? Use the `Use simple explore` then. You just won't be able to collect all rewards.~~
 
 
 ### Manual Team Configuration
 
 ::: tip
 
-Please uncheck the option `Automatically select team based on attributes for stage exploration. If unchecked, manual team configuration is required` to enable this feature.
+Please uncheck the option `uto select team according to the attribute, if not checked, you need to manually configure the team each time` to enable this feature.
 
-57. | :::
+:::
 
 ::: warning
 
-When using this mode, do not execute tasks directly in the GUI. Please fill in `Normal Stage Exploration` / `Hard Stage Exploration` in the `Task Execution Order`, then execute the task in the terminal.
+When using this mode, do not execute tasks directly in the GUI. Please fill in `Explore Normal Quest` / `Explore Hard Quest` in the `Task Execution Order`, then execute the task in the terminal.
 :::
 
 This is a manual team configuration mode, where the script will automatically handle grid movement and battles, but team configuration needs to be done manually.
