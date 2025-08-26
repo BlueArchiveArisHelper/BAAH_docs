@@ -1,7 +1,5 @@
 # BAAH网站仓库
 
-此分支正在进行多语言测试
-
 ## 文件结构
 
 ```
@@ -24,9 +22,18 @@
 /src/en_US/index.md --> English home page
 
 /scripts/ --> 后处理脚本位置
+/checker.py --> python检查器
 ```
 
 ## 编写
+
+在发布pr前，建议使用检查器，可以检查到一些错误。
+
+如：死链，多语言完备（配置，侧边栏，导航栏，文件结构）
+
+``` bash
+python checker.py
+```
 
 ### 图片调用
 
