@@ -6,7 +6,7 @@
 
 All automatic battles will use the game's default `AUTO` mode. Please ensure your team is sufficiently leveled.
 
-~~What? You don't have enough students? Use the `Use simple explore` then. You just won't be able to collect all rewards.~~
+~~What? You can't even clear it manually? Well, the script definitely can't clear it either.~~
 
 This feature can only complete daily token farming, and cannot be used for score optimization.
 :::
