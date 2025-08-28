@@ -1,32 +1,32 @@
-# 开发规范
+# Development Specification
 
-此开发规范为参考推荐规范。
+This development specification is a reference recommendation.
 
-此外，如果希望你的pr能够被尽快合并，请在每块逻辑语句区域处写下至少一行注释进行描述。
+Additionally, if you want your PR to be merged as soon as possible, please write at least one line of comment to describe each logical statement block.
 
-推荐参考：[Google Python 开发规范（中文）](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents.html)
+Recommended reference: [Google Python Style Guide (Chinese)](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents.html)
 
-## 键值命名&映射
+## Key Naming & Mapping
 
-在默认配置 `modules/configs/defaultSettings.py` 中，所有的键值都以 **大写字母，数字，EN下划线(_)** 命名
+In the default configuration `modules/configs/defaultSettings.py`, all keys are named with **uppercase letters, numbers, and English underscores(_)**
 
-其中，映射表名称为 `<小写英文>2<小写英文>` 命名
+The mapping table names follow the `<lowercase>2<lowercase>` naming convention
 
-在国际化配置 `DATA/i18n` 中，所有键值都以 **小写字母，数字，EN下划线(_)** 命名
+In the internationalization configuration `DATA/i18n`, all keys are named with **lowercase letters, numbers, and English underscores(_)**
 
-## 文件命名
+## File Naming
 
-在webui页面编写 `gui/pages` 中，请以 `Setting_xxx.py` 命名，最好 `xxx` 以大写英语字母开头。
+When writing webui pages in `gui/pages`, please name them as `Setting_xxx.py`, where `xxx` preferably starts with an uppercase English letter.
 
-在逻辑编写 `modules/AllTask` 中，根据一级任务名称，创建以 `XxxXxx` 为名称的文件夹，已有则不用创建。一级任务则以同样的 `XxxXxx.py` 命名，与上级文件夹保持一致
+When writing logic in `modules/AllTask`, create a folder named `XxxXxx` based on the primary task name (don't create if it already exists). The primary task should be named `XxxXxx.py`, consistent with the parent folder.
 
-## 关于混淆
+## Code Obfuscation
 
-BAAH是一个多人维护的开源项目，请注意不要以以下或其他方式混淆你的代码。
- - 不要使用无意义的文件名，变量名，键值
- - 不要过度依赖AI代码编写
+BAAH is a multi-person maintained open source project. Please avoid confusing your code in the following or other ways:
+ - Don't use meaningless filenames, variable names, or keys
+ - Don't over-rely on AI code generation
 
-## 逻辑文件模板
+## Logic File Template
 
 ``` python
 from DATA.assets.PageName import PageName
@@ -54,20 +54,20 @@ class NameOfTask(Task):
      
     def post_condition(self) -> bool:
         return super().post_condition()
-```
 
-## 函数调用
+## Function Calls
 
-若要在代码中调用用户配置文件，可以直接使用 `config.userconfigdict["KEY"]` 获取。
+To call user configuration in code, you can directly use `config.userconfigdict["KEY"]` to get the value.
 
 ::: tip
-根据规范，所有 `config.userconfigdict` 的键值全部使用大写字母，数字，EN下划线(_)命名
-::: 
+According to the specification, all keys in `config.userconfigdict` must use uppercase letters, numbers, and English underscores(_)
+65  ::: 
 
-逻辑中，所有日志输出请使用 `logging` 类，有`logging.info` `logging.warn` `logging.error` `logging.debug` 4个级别，且搭配 `istr({CN: "日志", EN: "log"})` 实现国际化输出。
+For logging in logic, please use the `logging` class with four levels: `logging.info`, `logging.warn`, `logging.error`, and `logging.debug`, combined with `istr({CN: "日志", EN: "log"})` for internationalized output.
 
-在webui编写中，使用 `config.get_text('key')` 获取国际化数据，使用 `config.userconfigdict["KEY"]` 获取用户配置文件。
+When writing webui, use `config.get_text('key')` to get internationalized data and `config.userconfigdict["KEY"]` to get user configuration.
 
 ::: warning
-请使用istr实现多语言显示文字，避免进行字符串硬编码
+Please use `istr` for multilingual text display and avoid hardcoding strings
 :::
+
