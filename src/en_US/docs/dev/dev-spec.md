@@ -1,3 +1,5 @@
+<LanguageWarn/>
+
 # Development Specification
 
 This development specification is a reference recommendation.
