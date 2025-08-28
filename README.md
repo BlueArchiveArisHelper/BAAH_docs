@@ -19,7 +19,7 @@
 /src/en_US --> English site
 /src/en_US/docs --> English docs
 /src/en_US/download.md --> English download page
-/src/en_US/index.md --> English home page\=cv     4reeeeee
+/src/en_US/index.md --> English home page
 
 /scripts/ --> 后处理脚本位置
 /checker.py --> python检查器

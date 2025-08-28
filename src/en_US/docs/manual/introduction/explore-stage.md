@@ -5,7 +5,7 @@
 
 If `Use simple explore` is selected, the function to skip grid movement will be used. Please note that this will not collect all rewards, but it can increase the success rate of stage exploration (especially in the early game when your students' levels are low and you can't form a complete team).
 
-Some grid-based stages cannot be cleared in one run to collect all rewards (three-star ratings, Luminite gift boxes, and challenge achievements). For these stages, repeated battles will be performed to ensure all rewards are collected.
+Some grid-based stages cannot be cleared in one run to collect all rewards (Mission Obbjectives, Special Gift Boxes(50 Pyroxenes), and challenge achievements). For these stages, repeated battles will be performed to ensure all rewards are collected.
 :::
 
 ::: warning

@@ -11,7 +11,7 @@ This chapter applies to Bounty, Commission, Scrimmage, Event Stages, Multi-Sweep
 
 `Location` refers to the top-level primary area, which is divided into two types:
 
-**1. For levels that require entering a secondary menu, such as Bounty, Commission, Scrimmage, and Event Stages**
+**1. For levels that require entering a secondary menu, such as Bounty, Commission, and Scrimmage**
    
    These are the multiple areas displayed in the primary menu, sorted from top to bottom.
 
@@ -44,7 +44,7 @@ This chapter applies to Bounty, Commission, Scrimmage, Event Stages, Multi-Sweep
 
    </details>
 
->:memo: **Note:** If a negative sign is added to the level number, it will be ordered from bottom to top. For example, `-1` represents the first sweepable level from the bottom.
+>:memo: **Note:** If a negative sign is added to the stage number, it will be ordered from bottom to top. For example, `-1` represents the first sweepable stage from the bottom.
 
 ## Times Description
 
@@ -52,17 +52,18 @@ This chapter applies to Bounty, Commission, Scrimmage, Event Stages, Multi-Sweep
 |-----------------|---------------------------------------------|
 | number          | Sweep number times                          |
 | \-1             | Sweep Max times                             |
-| \-number        | Sweep Max times, then subtract number times |
+| \-number        | Sweep (Max - number) times                  |
+
 
 
 
 Examples:
 
-| **Input Times** | **Action**                                     |
-|-----------------|------------------------------------------------|
-| 5               | Sweep 5 times                                  |
-| \-1             | Sweep Max times                                |
-| \-3             | Sweep Max/Maximum times, then subtract 3 times |
+| **Input Times** | **Action**                                  |
+|-----------------|---------------------------------------------|
+| 5               | Sweep 5 times                               |
+| \-1             | Sweep Max times                             |
+| \-3             | Sweep (Max - 3) times                       |
 
 
 ## Defining Content for Different Days
