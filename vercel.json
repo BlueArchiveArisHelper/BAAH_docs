@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/releases",
-      "destination": "https://api.github.com/repos/sanmusen214/BAAH/releases/latest"
+      "destination": "https://api.github.com/repos/BlueArchiveArisHelper/BAAH/releases/latest"
     },
     {
       "source": "/download/:tag/:filename",
