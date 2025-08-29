@@ -97,21 +97,23 @@ https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 | **#** | **字段**                          | **说明**       | **结果**                    |
 |-------|---------------------------------|--------------|---------------------------|
 | 1     | %PORT\_IS\_USED%                | 目标端口是否被占用    | True/False                |
-| 2     | %EMULATOR\_PROCESS\_PID%        | 模拟器进程的 PID   | 进程 ID 数字或 None            |
+| 2     | %EMULATOR\_PROCESS\_PID%        | 模拟器进程的 PID     | 进程 ID 数字或 None            |
 | 3     | %GUI\_OPEN\_IN\_WEB%            | 是否在网页中打开 GUI | True/False                |
 | 4     | %LAST\_TEAM\_SET%               | 上一次的队伍信息     | 列表                        |
 | 5     | %CAFE\_HAD\_INVITED%            | 是否已邀请咖啡馆学生   | True/False                |
 | 6     | %TIMETABLE\_NO\_TICKET%         | 课程表是否无票      | True/False                |
-| 7     | %BAAH\_START\_TIME%             | BAAH 任务开始时间  | 字符串                       |
+| 7     | %BAAH\_START\_TIME%             | BAAH 任务开始时间  | 时间                       |
 | 8     | %BEFORE\_BAAH\_SOURCES%         | 任务开始前的资源     | 体力、信用点和青辉石                |
 | 9     | %AFTER\_BAAH\_SOURCES%          | 任务结束时的资源     | 体力、信用点和青辉石                |
 | 10    | %CONTEST\_NO\_TICKET%           | 竞技场是否无票      | True/False                |
 | 11    | %HAS\_ENTER\_EVENT%             | 是否已进入活动页面    | True/False                |
-| 12    | %INFO\_DICT%                    | 任务执行中的详细信息   | 字典                        |
-| 13    | %SCREENSHOT\_READ\_FAIL\_TIMES% | 截图读取失败次数     | 数字                        |
-| 14    | %RESTART\_EMULATOR\_TIMES%      | 模拟器重启次数      | 数字                        |
-| 15    | %SCREENSHOT\_DATA%              | 截图数据         | 当截图模式为pipe时使用，RGB 值或 None |
-| 16    | %CURRENT\_PERIOD\_TASK\_INDEX%  | 执行的任务序数   | 数字，\-1 表示未执行任何任务          |
+| 12    | %ASSAULT\_DATE%                 | 总力战日期          | 日期                        |
+| 13    | %CRAFT\_FAILED%                 | 制造任务失败   | 原因                        |
+| 14    | %EVENT\_DATE%                   | 活动日期          | 日期                        |
+| 15    | %SCREENSHOT\_READ\_FAIL\_TIMES% | 截图读取失败次数     | 数字                        |
+| 16    | %RESTART\_EMULATOR\_TIMES%      | 模拟器重启次数      | 数字                        |
+| 17    | %SCREENSHOT\_DATA%              | 截图数据         | 当截图模式为pipe时使用，RGB 值或 None |
+| 18    | %CURRENT\_PERIOD\_TASK\_INDEX%  | 执行的任务序数   | 数字，\-1 表示未执行任何任务          |
 
 <details>
 <summary>例子</summary>
