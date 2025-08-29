@@ -37,7 +37,14 @@ QQ群 问题解答群：985729020
 4. 阅读 GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues)，包括已经关闭的 [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed)，看有没有类似问题。
 
 ### 在提问时
-解决没有足够信息问题的难度无亚于闭门造车，所以提问时请确保你提供了有效信息，包括：
+
+> Troubleshooting any problem without the error log is like driving with your eyes closed.
+> 
+> 在没有错误日志的情况下诊断任何问题无异于闭眼开车。
+> 
+> ——[Apache官方文档](https://httpd.apache.org/docs/trunk/getting-started.html#logs)
+
+因此请提问时确保你提供了有效信息，包括：
    
    · 游戏区服，BAAH的版本号
 

@@ -39,7 +39,11 @@ QQ Group Problem-solving Group: 985729020
 4. Read GitHub [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues), including closed [Issues](https://github.com/BlueArchiveArisHelper/BAAH/issues?q=is%3Aissue%20state%3Aclosed), to see if there are similar problems.
 
 ### When Asking Questions
-Solving problems without sufficient information is no different than trying to build a car behind closed doors. Therefore, when asking questions, please ensure you provide effective information, including:
+> Troubleshooting any problem without the error log is like driving with your eyes closed.
+> 
+> ——[Apache HTTP Server Documentation](https://httpd.apache.org/docs/trunk/getting-started.html#logs)
+
+Therefore, when asking questions, please ensure you provide effective information, including:
    
    · Game server, BAAH version number
 
