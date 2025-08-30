@@ -15,34 +15,31 @@ This chapter applies to Bounty, Commission, Scrimmage, Event Stages, Multi-Sweep
    
    These are the multiple areas displayed in the primary menu, sorted from top to bottom.
 
-   <details>
-   <summary>Example using Bounty</summary>
+::: details Example using Bounty
 
-   ![Bounty Area](/img/sweep-level/area_1.png)
+![Bounty Area](/img/sweep-level/area_1.png)
 
-   </details>
+:::
 
 **2. For levels in Normal Map Sweep and Hard Map Sweep**
 
    This is the area number displayed in the top-left corner of the interface.
 
-   <details>
-   <summary>Example using Normal Map</summary>
+::: details Example using Normal Map
 
-   ![Normal Map Area](/img/sweep-level/area_2.png)
+![Normal Map Area](/img/sweep-level/area_2.png)
 
-   </details>
+:::
    
 ---
 
 `Stage` refers to the level number that needs to be swept after entering the corresponding area, sorted from top to bottom.
 
-   <details>
-   <summary>Example using Normal Map</summary>
+::: details Example using Normal Map
 
-   ![Normal Map Stage](/img/sweep-level/level.png)
+![Normal Map Stage](/img/sweep-level/level.png)
 
-   </details>
+:::
 
 >:memo: **Note:** If a negative sign is added to the stage number, it will be ordered from bottom to top. For example, `-1` represents the first sweepable stage from the bottom.
 

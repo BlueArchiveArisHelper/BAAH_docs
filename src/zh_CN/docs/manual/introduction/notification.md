@@ -115,8 +115,7 @@ https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 | 17    | %SCREENSHOT\_DATA%              | 截图数据         | 当截图模式为pipe时使用，RGB 值或 None |
 | 18    | %CURRENT\_PERIOD\_TASK\_INDEX%  | 执行的任务序数   | 数字，\-1 表示未执行任何任务          |
 
-<details>
-<summary>例子</summary>
+::: details 例
 
 输入内容：
 
@@ -133,4 +132,4 @@ https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 
 ![邮件回报](/img/notification/customize_email_content_1.png)
 
-</details>
+:::

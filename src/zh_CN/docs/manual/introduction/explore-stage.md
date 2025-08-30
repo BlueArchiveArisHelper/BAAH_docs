@@ -65,22 +65,22 @@
 
 该功能启用后会在每次开始战斗前，会在终端中提示需要的队伍属性，随后等待点击 `回车键` 继续执行任务。
 
-   <details>
-   <summary>例</summary>
 
-   1. 查看终端中提示的队伍属性。例如这里提示队伍1需要红攻，队伍2需要紫攻。
-    ![手动配置队伍1](/img/explore-stage/manually_configure_the_team_1.png)
-   2. 点击走格子界面的 `开始` 键，进入配队界面。
-    ![手动配置队伍2](/img/explore-stage/manually_configure_the_team_2.png)
-   3. 根据提示配队。这里根据提示配置红攻的队伍1，紫攻的队伍2。
-    ![手动配置队伍3](/img/explore-stage/manually_configure_the_team_3.png)
-    ![手动配置队伍4](/img/explore-stage/manually_configure_the_team_4.png)
-   4. 完成配队后**不要点击出击**，直接点击左上角返回按钮回到走格子界面。
-   ![手动配置队伍5](/img/explore-stage/manually_configure_the_team_5.png)
-   5. 回到终端，点击键盘的 `回车` 键，开始执行任务。
-   ![手动配置队伍6](/img/explore-stage/manually_configure_the_team_6.png)
+::: details 例
 
-   </details>
+1. 查看终端中提示的队伍属性。例如这里提示队伍1需要红攻，队伍2需要紫攻。
+ ![手动配置队伍1](/img/explore-stage/manually_configure_the_team_1.png)
+2. 点击走格子界面的 `开始` 键，进入配队界面。
+ ![手动配置队伍2](/img/explore-stage/manually_configure_the_team_2.png)
+3. 根据提示配队。这里根据提示配置红攻的队伍1，紫攻的队伍2。
+ ![手动配置队伍3](/img/explore-stage/manually_configure_the_team_3.png)
+ ![手动配置队伍4](/img/explore-stage/manually_configure_the_team_4.png)
+4. 完成配队后**不要点击出击**，直接点击左上角返回按钮回到走格子界面。
+ ![手动配置队伍5](/img/explore-stage/manually_configure_the_team_5.png)
+5. 回到终端，点击键盘的 `回车` 键，开始执行任务。
+ ![手动配置队伍6](/img/explore-stage/manually_configure_the_team_6.png)
+
+:::
 
 
 

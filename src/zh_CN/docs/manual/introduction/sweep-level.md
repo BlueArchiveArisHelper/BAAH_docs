@@ -13,34 +13,31 @@
    
    为进入的一级菜单中显示的多个地区，按照从上往下排序。
 
-   <details>
-   <summary>以悬赏通缉为例</summary>
+::: details 以悬赏通缉为例
 
-   ![悬赏通缉地区](/img/sweep-level/area_1.png)
+![悬赏通缉地区](/img/sweep-level/area_1.png)
 
-   </details>
+:::
 
 **2. 适用于普通图扫荡、困难图扫荡的关卡**
 
    为界面左上角显示的地区数字。
 
-   <details>
-   <summary>以普通图为例</summary>
+::: details 以普通图为例
 
-   ![普通图地区](/img/sweep-level/area_2.png)
+![普通图地区](/img/sweep-level/area_2.png)
 
-   </details>
+:::
    
 ---
 
 `关卡` 即进入对应地区后，需要刷取的关卡数字，按照从上往下排序。
 
-   <details>
-   <summary>以普通图为例</summary>
+::: details 以普通图为例
 
-   ![普通图关卡](/img/sweep-level/level.png)
+![普通图关卡](/img/sweep-level/level.png)
 
-   </details>
+:::
 
 >:memo: **注：** 如果将关卡数字加一个负号，则会按照从下往上的顺序。例如 `-1` 代表倒数的第一个可扫荡的关卡。
 

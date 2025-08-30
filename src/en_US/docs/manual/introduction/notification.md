@@ -116,8 +116,7 @@ In the `Customize the email content` field, you can fill in the following **fiel
 | 15    | %SCREENSHOT_DATA% | Screenshot data | RGB value or None when screenshot mode is pipe |
 | 16    | %CURRENT_PERIOD_TASK_INDEX% | Executed task sequence number | Number, -1 means no task has been executed |
 
-<details>
-<summary>Example</summary>
+::: details Example
 
 Input content:
 
@@ -134,4 +133,4 @@ Report content:
 
 ![Email report](/img/notification/customize_email_content_1.png)
 
-</details>
+:::
