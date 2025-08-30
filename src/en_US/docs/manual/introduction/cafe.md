@@ -34,7 +34,7 @@ If you need to use interactive furniture, please turn off the interaction switch
 
 ![Pinned Invitation List](/img/cafe/invite_list_2.png)
 
-
+:::
 
 
 
