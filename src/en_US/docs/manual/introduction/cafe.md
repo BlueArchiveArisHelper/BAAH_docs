@@ -30,11 +30,7 @@ If you need to use interactive furniture, please turn off the interaction switch
 2. In the cafe interface, set the filter method in the cafe invitation list to Pinned.
 3. You will find that the specified student is pinned at the top of the list. Enter their current number to invite that specific student.
 
-::: details Example
-
 ![Pinned Invitation List](/img/cafe/invite_list_2.png)
-
-:::
 
 
 

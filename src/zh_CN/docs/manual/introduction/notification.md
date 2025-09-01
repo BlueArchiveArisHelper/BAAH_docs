@@ -65,8 +65,7 @@
 
 API地址的需要指定 Token，标题和内容的格式，关键词为[token], [title], [content]。
 
-<details>
-<summary>以Server酱为例</summary>
+::: details 以Server酱为例
 
 Server酱的API地址为：
 
@@ -81,10 +80,9 @@ https://sctapi.ftqq.com/<Token>.send?title=<标题>&desp=<内容>
 https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 
 ```
+:::
 
-</details>
-
-2. 在 `API通知Token` 一栏输入你的API的Token。
+1. 在 `API通知Token` 一栏输入你的API的Token。
 > :memo: **注：** 各大通知API的Token获取方法各不相同，请根据你使用的服务自行查询。
 
 ## 自定义通知内容

@@ -66,8 +66,7 @@ You can use API to get notifications, which can be used to push to WeChat Offici
 
 The API address needs to specify the format for Token, title and content, with keywords [token], [title], [content].
 
-<details>
-<summary>Example with ServerChan</summary>
+::: details Example with ServerChan
 
 ServerChan's API address is:
 
@@ -82,10 +81,9 @@ Therefore, enter in the `API Notification URL (GET request)` field:
 https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 
 ```
+:::
 
-</details>
-
-2. Enter your API's Token in the `API Notification Token` field.
+1. Enter your API's Token in the `API Notification Token` field.
 > :memo: **Note:** The method of obtaining Tokens for different notification APIs varies, please look it up according to the service you use.
 
 ## Custom Notification Content
