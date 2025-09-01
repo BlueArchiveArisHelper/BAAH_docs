@@ -1,12 +1,6 @@
 <LanguageWarn/>
 
 # Tools
-
-::: warning
-
-If using `Deploy from source code`, please fill in the corresponding tasks in `Task Execution Order`, save the configuration, and then execute `python main.py <config name>.json`.
-:::
-
 After configuring the emulator port and server region, you can use various tools by clicking the `Quick Call Task` button in the `Task Execution Order` section.
 
 ## Clear Momotalk

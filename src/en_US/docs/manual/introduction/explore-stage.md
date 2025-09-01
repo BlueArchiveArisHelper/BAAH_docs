@@ -22,8 +22,6 @@ Fill in the starting chapter and stage in `Explore Normal Quest` / `Explore Hard
 
 [Don't know what chapters and stages are? Click here](/en_US/docs/manual/introduction/sweep-level.md#location-and-stage-description)
 
-> :memo: **Note:** If using `Deploy from source code`, please fill in `Explore Normal Quest` / `Explore Hard Quest` in the `Task Execution Order`, save the configuration, and then execute `python main.py <config_name>.json`.
-
 ## Team Configuration
 ### Automatic Team Matching
 Check `Whether to use automatic matching` to enable this feature. Before each battle, it will enter the team configuration interface and click the `Auto` button next to the team to use BA's recommended team composition.
