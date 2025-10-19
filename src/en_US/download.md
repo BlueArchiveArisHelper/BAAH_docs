@@ -42,6 +42,8 @@ You can get BAAH from the following methods.
 
 <DownloadLink />
 
+[BlockHaity's API](https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah)
+
 It is recommended to read the documentation before use.
 
 == MacOS
