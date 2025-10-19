@@ -66,8 +66,7 @@ You can use API to get notifications, which can be used to push to WeChat Offici
 
 The API address needs to specify the format for Token, title and content, with keywords [token], [title], [content].
 
-<details>
-<summary>Example with ServerChan</summary>
+::: details Example with ServerChan
 
 ServerChan's API address is:
 
@@ -82,10 +81,9 @@ Therefore, enter in the `API Notification URL (GET request)` field:
 https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 
 ```
+:::
 
-</details>
-
-2. Enter your API's Token in the `API Notification Token` field.
+1. Enter your API's Token in the `API Notification Token` field.
 > :memo: **Note:** The method of obtaining Tokens for different notification APIs varies, please look it up according to the service you use.
 
 ## Custom Notification Content
@@ -103,19 +101,20 @@ In the `Customize the email content` field, you can fill in the following **fiel
 | 4     | %LAST_TEAM_SET% | Last team information | List |
 | 5     | %CAFE_HAD_INVITED% | Whether cafe students have been invited | True/False |
 | 6     | %TIMETABLE_NO_TICKET% | Whether timetable has no ticket | True/False |
-| 7     | %BAAH_START_TIME% | BAAH task start time | String |
+| 7     | %BAAH_START_TIME% | BAAH task start time | Time |
 | 8     | %BEFORE_BAAH_SOURCES% | Resources before task start | AP, Credits and Pyroxene |
 | 9     | %AFTER_BAAH_SOURCES% | Resources at task end | AP, Credits and Pyroxene |
 | 10    | %CONTEST_NO_TICKET% | Whether contest has no ticket | True/False |
 | 11    | %HAS_ENTER_EVENT% | Whether event page has been entered | True/False |
-| 12    | %INFO_DICT% | Detailed information during task execution | Dictionary |
+| 12    | %ASSAULT_DATE%                 | Total assault date          | Date                        |
+| 13    | %CRAFT_FAILED%                 | Craft failed               | Reason                        |
+| 14    | %EVENT_DATE%                   | Event date          | Date                        |
 | 13    | %SCREENSHOT_READ_FAIL_TIMES% | Number of screenshot read failures | Number |
 | 14    | %RESTART_EMULATOR_TIMES% | Number of emulator restarts | Number |
 | 15    | %SCREENSHOT_DATA% | Screenshot data | RGB value or None when screenshot mode is pipe |
 | 16    | %CURRENT_PERIOD_TASK_INDEX% | Executed task sequence number | Number, -1 means no task has been executed |
 
-<details>
-<summary>Example</summary>
+::: details Example
 
 Input content:
 
@@ -132,4 +131,4 @@ Report content:
 
 ![Email report](/img/notification/customize_email_content_1.png)
 
-</details>
+:::

@@ -29,10 +29,7 @@
 2. 在咖啡馆界面将咖啡馆邀请列表内设置筛选方式为精选。
 3. 可以发现指定学生被固定在了列表的最上方，输入现在所处的编号，就能指定邀请该学生。
 
-   <details>
-   <summary>例子</summary>
+![邀请列表精选](/img/cafe/invite_list_2.png)
 
-   ![邀请列表精选](/img/cafe/invite_list_2.png)
 
-   </details>
 

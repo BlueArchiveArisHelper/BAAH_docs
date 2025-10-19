@@ -42,6 +42,8 @@ description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推�
 
 <DownloadLink />
 
+[BlockHaity's API](https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah)
+
 使用前建议阅读文档。
 
 == MacOS

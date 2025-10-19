@@ -13,7 +13,7 @@ If you need to use interactive furniture, please turn off the interaction switch
 ## Configuration Introduction
 - Collection: Check `Whether collect in cafe` to enable this function, which will collect cafe outputs.
 
-- Head Pat: Check `Whether touch in cafe` to enable this function, which will increase relationships by patting heads.
+- Touch Head: Check `Whether touch in cafe` to enable this function, which will increase relationships by touching heads.
 
 - Student Recognition: Check `Enable student recognize touch mode` to enable this function, which will recognize and click on student positions. Otherwise, it will recognize and click on attention symbols.
 
@@ -30,12 +30,7 @@ If you need to use interactive furniture, please turn off the interaction switch
 2. In the cafe interface, set the filter method in the cafe invitation list to Pinned.
 3. You will find that the specified student is pinned at the top of the list. Enter their current number to invite that specific student.
 
-   <details>
-   <summary>Example</summary>
-
-   ![Pinned Invitation List](/img/cafe/invite_list_2.png)
-
-   </details>
+![Pinned Invitation List](/img/cafe/invite_list_2.png)
 
 
 

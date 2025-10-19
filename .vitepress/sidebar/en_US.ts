@@ -5,10 +5,10 @@ export const enSidebar: DefaultTheme.Sidebar = {
         { text: 'Download', link: '/en_US/download' },
         {
             text: 'Use documentation', items: [
-                { text: 'Get started quickly', link: '/en_US/docs/manual/quick-start' },
-                { text: 'Deploy from source', link: '/en_US/docs/manual/source-code' },
+                { text: 'Get Started Quickly', link: '/en_US/docs/manual/quick-start' },
+                { text: 'Deploy from Source Code', link: '/en_US/docs/manual/source-code' },
                 {
-                    text: 'Function introduction',
+                    text: 'Function Introduction',
                     collapsed: true,
                     items: [
                         { text: 'Level Sweeping', link: '/en_US/docs/manual/introduction/sweep-level' },

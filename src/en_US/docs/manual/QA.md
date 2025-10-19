@@ -40,7 +40,7 @@ Click the three horizontal lines in the upper right corner of the emulator, open
 
 ## 4. How to check LDPlayer emulator's port number
 
-When connecting to LDPlayer, you can check "Use Serial Number" on the right side of the ADB port input box, then enter `emulator-5554`, or try `emulator-5556`, `emulator-5558`, etc., until the connection is successful.
+When connecting to LDPlayer, you can check `Whether use adb serial to connect the emulator` on the right side of the ADB port input box, then enter `emulator-5554`, or try `emulator-5556`, `emulator-5558`, etc., until the connection is successful.
 
 Click Multi-instance on the right side of the emulator to get the current emulator's ID number, the port number is: 5555 + ID * 2
 

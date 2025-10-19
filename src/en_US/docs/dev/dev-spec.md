@@ -6,7 +6,7 @@ This development specification is a reference recommendation.
 
 Additionally, if you want your PR to be merged as soon as possible, please write at least one line of comment to describe each logical statement block.
 
-Recommended reference: [Google Python Style Guide (Chinese)](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents.html)
+Recommended reference: [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 
 ## Key Naming & Mapping
 
@@ -63,7 +63,7 @@ To call user configuration in code, you can directly use `config.userconfigdict[
 
 ::: tip
 According to the specification, all keys in `config.userconfigdict` must use uppercase letters, numbers, and English underscores(_)
-65  ::: 
+:::
 
 For logging in logic, please use the `logging` class with four levels: `logging.info`, `logging.warn`, `logging.error`, and `logging.debug`, combined with `istr({CN: "日志", EN: "log"})` for internationalized output.
 

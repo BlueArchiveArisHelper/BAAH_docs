@@ -22,8 +22,6 @@ Fill in the starting chapter and stage in `Explore Normal Quest` / `Explore Hard
 
 [Don't know what chapters and stages are? Click here](/en_US/docs/manual/introduction/sweep-level.md#location-and-stage-description)
 
-> :memo: **Note:** If using `Deploy from source code`, please fill in `Explore Normal Quest` / `Explore Hard Quest` in the `Task Execution Order`, save the configuration, and then execute `python main.py <config_name>.json`.
-
 ## Team Configuration
 ### Automatic Team Matching
 Check `Whether to use automatic matching` to enable this feature. Before each battle, it will enter the team configuration interface and click the `Auto` button next to the team to use BA's recommended team composition.
@@ -67,23 +65,21 @@ This is a manual team configuration mode, where the script will automatically ha
 
 When this feature is enabled, before each battle, it will prompt for the required team attributes in the terminal, and then wait for you to press `Enter` to continue the task.
 
-   <details>
-   <summary>Example</summary>
+::: details Example
 
-   1. Check the team attributes prompted in the terminal. For example, here it prompts that Team 1 needs red attack and Team 2 needs purple attack.
-    ![Manual Team Configuration 1](/img/explore-stage/manually_configure_the_team_1.png)
-   2. Click the `Start` button in the grid movement interface to enter the team configuration interface.
-    ![Manual Team Configuration 2](/img/explore-stage/manually_configure_the_team_2.png)
-   3. Configure teams based on the prompt. Here, configure Team 1 with red attack and Team 2 with purple attack according to the prompts.
-    ![Manual Team Configuration 3](/img/explore-stage/manually_configure_the_team_3.png)
-    ![Manual Team Configuration 4](/img/explore-stage/manually_configure_the_team_4.png)
-   4. After configuring the teams, **do not click Mobilize**. Directly click the return button in the upper left corner to go back to the grid movement interface.
-   ![Manual Team Configuration 5](/img/explore-stage/manually_configure_the_team_5.png)
-   5. Return to the terminal and press the `Enter` key on your keyboard to start the task.
-   ![Manual Team Configuration 6](/img/explore-stage/manually_configure_the_team_6.png)
+1. Check the team attributes prompted in the terminal. For example, here it prompts that Team 1 needs red attack and Team 2 needs purple attack.
+ ![Manual Team Configuration 1](/img/explore-stage/manually_configure_the_team_1.png)
+2. Click the `Start` button in the grid movement interface to enter the team configuration interface.
+ ![Manual Team Configuration 2](/img/explore-stage/manually_configure_the_team_2.png)
+3. Configure teams based on the prompt. Here, configure Team 1 with red attack and Team 2 with purple attack according to the prompts.
+ ![Manual Team Configuration 3](/img/explore-stage/manually_configure_the_team_3.png)
+ ![Manual Team Configuration 4](/img/explore-stage/manually_configure_the_team_4.png)
+4. After configuring the teams, **do not click Mobilize**. Directly click the return button in the upper left corner to go back to the grid movement interface.
+ ![Manual Team Configuration 5](/img/explore-stage/manually_configure_the_team_5.png)
+5. Return to the terminal and press the `Enter` key on your keyboard to start the task.
+ ![Manual Team Configuration 6](/img/explore-stage/manually_configure_the_team_6.png)
 
-   </details>
-
+:::
 
 
 

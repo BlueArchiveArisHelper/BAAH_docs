@@ -10,7 +10,7 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
       provider: 'local',
       options: {
         locales: {
-          zh: {
+          zh_CN: {
             translations: {
               button: {
                 buttonText: '搜索',
