@@ -1,8 +1,8 @@
 ---
 # SEO Optimization
 title: BAAH Multi-platform Download Guide
-subtitle: Windows/MacOS/Linux/Android
-description: Get BlueArchive Aris Helper automation script for free! Windows recommends high-speed mirror download, MacOS requires source code deployment, Linux supports one-click Docker operation, Android see external tutorial for details.
+subtitle: Windows/macOS/Linux/Android
+description: Get BlueArchive Aris Helper automation script for free! Windows recommends high-speed mirror download, macOS requires source code deployment, Linux supports one-click Docker operation, Android see external tutorial for details.
 ---
 
 # Download BAAH
@@ -46,9 +46,9 @@ You can get BAAH from the following methods.
 
 It is recommended to read the documentation before use.
 
-== MacOS
+== macOS
 
-**MacOS**
+**macOS**
 
 Requires manual use of source code, see the chapter [Deploy from Source Code](/en_US/docs/manual/source-code.md) for details.
 

@@ -45,8 +45,8 @@ In Server Configuration, select your BA server.
 In Task Execution Order, enable the task flow or click the Quick Call Task button to run tasks.
 
 
-== MacOS
-**MacOS**
+== macOS
+**macOS**
 
 See [Deploy from Source Code](/en_US/docs/manual/source-code) for details.
 

@@ -43,8 +43,8 @@ description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置�
 在任务执行顺序设置中，启用任务流或点击快速执行按钮运行任务。
 
 
-== MacOS
-**MacOS**
+== macOS
+**macOS**
 
 详见[从源码部署](/zh_CN/docs/manual/source-code.md)。
 

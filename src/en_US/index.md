@@ -24,7 +24,7 @@ features:
   - title: Open Source, Transparent, Free
     details: Using MIT open source license, all code is hosted on GitHub, all code changes are publicly viewable, there will be no paid content.
   - title: Powerful Cross-platform Capability
-    details: Whether it's Windows, MacOS, Linux or even Android (experimental), BAAH can run on all platforms.
+    details: Whether it's Windows, macOS, Linux or even Android (experimental), BAAH can run on all platforms.
   - title: Complete Community Support
     details: You can submit Issues in the BAAH GitHub repository or ask questions in the QQ Q&A group (985729020).
 
@@ -32,7 +32,7 @@ features:
 
 title: BlueArchive Aris Helper (BAAH) - Open Source Automation Script
 subtitle: Official Download and Documentation
-description: BAAH is an open-source free Blue Archive automation tool, supporting Windows/MacOS/Linux/Android multi-platform, providing one-stop solutions for game task automation, resource collection, shop purchases, dungeon farming, etc.
+description: BAAH is an open-source free Blue Archive automation tool, supporting Windows/macOS/Linux/Android multi-platform, providing one-stop solutions for game task automation, resource collection, shop purchases, dungeon farming, etc.
 ---
 
 ## Supported Functions：

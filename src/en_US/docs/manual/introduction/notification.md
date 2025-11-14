@@ -83,7 +83,7 @@ https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 ```
 :::
 
-1. Enter your API's Token in the `API Notification Token` field.
+2. Enter your API's Token in the `API Notification Token` field.
 > :memo: **Note:** The method of obtaining Tokens for different notification APIs varies, please look it up according to the service you use.
 
 ## Custom Notification Content
