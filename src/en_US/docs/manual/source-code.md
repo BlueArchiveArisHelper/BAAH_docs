@@ -110,7 +110,7 @@ pip install -r requirements.txt
 
 Use `python jsoneditor.py` to run the WebUI, and modify the adb and aria2 paths in the configuration file editing interface.
 
-Execute `python main.py config.json` to start BAAH according to the config.json configuration.
+Execute `python jsoneditor.py config.json` to start BAAH according to the config.json configuration.
 
 ## Installing from Source Archive
 

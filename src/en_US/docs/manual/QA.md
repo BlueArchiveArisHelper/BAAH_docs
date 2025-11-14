@@ -83,7 +83,7 @@ See [Video Tutorial](https://www.bilibili.com/video/BV1ZxfGYSEVr?t=1995.6) and t
 
 ## 12. GUI runtime parameters
 
-You can set more parameters before BAAH_GUI running to enable more settings. For example, run "BAAH_GUI.exe --token 123456" will protect your GUI webpage with a password. Following is the paremeter table that GUI can use:
+You can set more parameters before GUI running to enable more settings. For example, run "BAAH.exe --token 123456" will protect your GUI webpage with a password. Following is the paremeter table that GUI can use:
 
 
 | Param | Desc | Default |

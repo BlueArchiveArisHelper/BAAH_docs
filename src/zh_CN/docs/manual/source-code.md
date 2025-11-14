@@ -107,7 +107,7 @@ pip install -r requirements.txt
 
 使用 `python jsoneditor.py` 来运行WebUI，在配置文件编辑界面中修改adb和aria2路径。
 
-执行 `python main.py config.json` 将会按照config.json配置开始执行BAAH。
+执行 `python jsoneditor.py config.json` 将会按照config.json配置开始执行BAAH。
 
 ## 从源码归档安装
 

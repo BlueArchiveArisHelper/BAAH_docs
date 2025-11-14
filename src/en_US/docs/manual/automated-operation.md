@@ -54,7 +54,7 @@ Select **Deploy any console program** as the program type
 
 Select **No additional files required** as the deployment method
 
-Name it as you like, and for the startup command, enter `docker exec BAAH sh -c "python main.py <your configuration file name>.json"`
+Name it as you like, and for the startup command, enter `docker exec BAAH sh -c "python jsoneditor.py <your configuration file name>.json"`
 
 Click OK, enter the console, and click on Scheduled Tasks.
 

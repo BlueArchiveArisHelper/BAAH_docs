@@ -36,7 +36,7 @@ First, download the approximately 140MB compressed package and extract it to any
 
 Copy example.json from the BAAH_CONFIGS folder and rename it to any other name, such as task.json
 
-Double-click BAAH_GUI.exe to open the interface.
+Double-click BAAH.exe to open the interface.
 
 In Emulator Configuration, modify the port number to your emulator's ADB debugging port.
 
