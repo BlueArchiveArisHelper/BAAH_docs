@@ -33,7 +33,7 @@ Project Directory
         - [folder]aria2
     BAAH.py // Execute a user-configured task file, encapsulated as a method
     jsoneditor.py // Entry file for WebUI, including command-line argument parsing
-    main.py // Entry file for the main program, including command-line argument parsing
+    main.py // The script main program
     package.py // Package script as executable file
     requirements.txt // Dependency list
 </LiteTree>
