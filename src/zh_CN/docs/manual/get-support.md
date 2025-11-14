@@ -21,9 +21,9 @@ BAAH 拥有完善的社区支持，在使用中如果遇到了问题可以寻求
 
 你可以加入通过以下渠道获取帮助。
 
-QQ群 问题解答群：985729020
+[QQ群 问题解答群](https://qm.qq.com/q/K2wAMIovqQ)： 985729020
 
-[QQ频道](https://pd.qq.com/s/5atxio0vq)
+[腾讯频道](https://pd.qq.com/s/5atxio0vq)
 
 [GitHub 讨论区](https://github.com/BlueArchiveArisHelper/BAAH/discussions)
 

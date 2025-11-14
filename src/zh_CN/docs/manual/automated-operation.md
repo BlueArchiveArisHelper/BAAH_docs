@@ -52,7 +52,7 @@
 
 部署方式选择 **无需额外文件**
 
-名称任意，启动命令输入 `docker exec BAAH sh -c "python main.py <你的配置文件名称>.json"`
+名称任意，启动命令输入 `docker exec BAAH sh -c "python jsoneditor.py <你的配置文件名称>.json"`
 
 点击确定，进入控制台，点击计划任务。
 

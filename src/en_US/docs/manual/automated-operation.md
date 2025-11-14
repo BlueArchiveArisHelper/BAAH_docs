@@ -33,7 +33,7 @@ You can use **Windows Task Scheduler** to automate the operation
 
 Add arguments, fill in the configuration file name with extension, such as **example.json**
 
-For "Start in (optional)", fill in everything before **BAAH.exe** in the input box below "Program/script:". For example:
+For Start in (optional), fill in everything before **BAAH.exe** in the input box below **Program/script:**. For example:
 
 ![Task Scheduler: Find Program Path](/img/automated-operation/windows_timer_7.png)
 
@@ -54,7 +54,7 @@ Select **Deploy any console program** as the program type
 
 Select **No additional files required** as the deployment method
 
-Name it as you like, and for the startup command, enter `docker exec BAAH sh -c "python main.py <your configuration file name>.json"`
+Name it as you like, and for the startup command, enter `docker exec BAAH sh -c "python jsoneditor.py <your configuration file name>.json"`
 
 Click OK, enter the console, and click on Scheduled Tasks.
 

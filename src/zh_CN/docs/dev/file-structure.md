@@ -31,7 +31,7 @@
         - [folder]aria2
     BAAH.py // 执行某一个用户配置的任务文件，封装为方法
     jsoneditor.py // webui的入口文件，包含命令行参数解析
-    main.py // 为主程序的入口文件，包含命令行参数解析
+    main.py // 脚本主程序
     package.py // 打包脚本为可执行文件
     requirements.txt // 依赖列表
 </LiteTree>

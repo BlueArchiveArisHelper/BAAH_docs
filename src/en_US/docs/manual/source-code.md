@@ -2,7 +2,7 @@
 # SEO Optimization
 title: BAAH Advanced Source Code Deployment Guide
 subtitle: Python 3.10+Git Manual Compilation (with Risk Warning)
-description: BAAH source code deployment solution for developers, requires Python 3.10 and ADB environment, supports Windows/MacOS/Linux/Android, no official update support, recommended for technical users.
+description: BAAH source code deployment solution for developers, requires Python 3.10 and ADB environment, supports Windows/macOS/Linux/Android, no official update support, recommended for technical users.
 ---
 
 <LanguageWarn/>
@@ -27,9 +27,9 @@ First, install **Python 3.10.x**
 
 [Download from Python official website](https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe)
 
-== MacOS
+== macOS
 
-**MacOS**
+**macOS**
 
 Install using homebrew
 
@@ -71,9 +71,9 @@ Or download from [Git official website](https://git-scm.com/downloads), run the 
 
 ~~Don't worry about installing to C drive taking up space, it's just a 100+MB software~~
 
-== MacOS
+== macOS
 
-**MacOS**
+**macOS**
 
 Install from homebrew
 
@@ -110,7 +110,7 @@ pip install -r requirements.txt
 
 Use `python jsoneditor.py` to run the WebUI, and modify the adb and aria2 paths in the configuration file editing interface.
 
-Execute `python main.py config.json` to start BAAH according to the config.json configuration.
+Execute `python jsoneditor.py config.json` to start BAAH according to the config.json configuration.
 
 ## Installing from Source Archive
 

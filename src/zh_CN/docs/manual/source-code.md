@@ -2,7 +2,7 @@
 # SEO 优化
 title: BAAH 高级源码部署指南
 subtitle: Python 3.10+Git 手动编译（附风险提示)
-description: 面向开发者的 BAAH 源码部署方案，需 Python 3.10 与 ADB 环境，支持 Windows/MacOS/Linux/Android，无官方更新支持，建议技术用户使用。
+description: 面向开发者的 BAAH 源码部署方案，需 Python 3.10 与 ADB 环境，支持 Windows/macOS/Linux/Android，无官方更新支持，建议技术用户使用。
 ---
 
 # 从源码部署
@@ -25,9 +25,9 @@ Android Termux 部署请前往[🔗部署方法](https://bas.blockhaity.qzz.io?t
 
 [从Python官网下载](https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe)
 
-== MacOS
+== macOS
 
-**MacOS**
+**macOS**
 
 使用homebrew安装
 
@@ -68,9 +68,9 @@ winget install Git.Git
 
 ~~不用担心安装到C盘会占用空间，就100+MB的软件~~
 
-== MacOS
+== macOS
 
-**MacOS**
+**macOS**
 
 从homebrew安装
 
@@ -107,7 +107,7 @@ pip install -r requirements.txt
 
 使用 `python jsoneditor.py` 来运行WebUI，在配置文件编辑界面中修改adb和aria2路径。
 
-执行 `python main.py config.json` 将会按照config.json配置开始执行BAAH。
+执行 `python jsoneditor.py config.json` 将会按照config.json配置开始执行BAAH。
 
 ## 从源码归档安装
 
