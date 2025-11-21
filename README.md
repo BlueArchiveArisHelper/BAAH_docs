@@ -21,6 +21,9 @@
 /src/en_US/download.md --> English download page
 /src/en_US/index.md --> English home page
 
+/edge-functions/ --> 边缘函数
+/edge-functions/res/ --> 边缘函数资源
+
 /scripts/ --> 后处理脚本位置
 /checker.py --> python检查器
 ```

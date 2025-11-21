@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Noto Sans SC', sans-serif;
+            background-image: url('/src/public/img/website/icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .main-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70%;
+            width: 70%;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(15px);
+            border: 5px solid #0066cc;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-card">
+        即将重定向到您浏览器所使用的语言
+        <br>
+        Redirecting to the language your browser is using...
+    </div>
+    <meta http-equiv="refresh" content="0; url={{redirect}}">
+</body>
+
+</html>
