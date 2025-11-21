@@ -33,28 +33,30 @@ function getBrowserLanguage(acceptLanguage) {
 // EO 边缘函数主函数
 export default async function onRequest(context) {
     try {
-        // 获取请求URL中的参数，决定要获取哪个文件
-        const url = new URL(context.request.url);
-        const fileUrl = url.searchParams.get('url') || '/edge-func-res/redirect.html';
-
-        // 在边缘函数中发起请求
-        const response = await fetch(fileUrl);
-        const html = await response.text();
         const acceptLanguage = context.request.headers.get('accept-language') || ''
         const browserLanguage = getBrowserLanguage(acceptLanguage)
-
-        // 替换重定向保留字段
-        const redirectHtml = html.replace(/{{redirect}}/g, browserLanguage.path)
-        return new Response(redirectHtml, {
+        
+        // 根据语言返回简单的文本信息
+        const messages = {
+            'en': 'Redirecting to English version...',
+            'zh': '正在跳转到中文版本...'
+        }
+        
+        return new Response(messages[browserLanguage.code], {
             headers: {
-                'Content-Type': 'text/html'
+                'Content-Type': 'text/plain; charset=utf-8'
             }
         });
     } catch (error) {
-        // 错误处理：返回默认语言页面
-        return Response.redirect(new URL(supportedLanguages[0].path, context.request.url), 302)
+        // 错误处理：返回默认语言信息
+        return new Response('Redirecting to English version...', {
+            headers: {
+                'Content-Type': 'text/plain; charset=utf-8'
+            }
+        });
     }
 }
+
 
 
 
