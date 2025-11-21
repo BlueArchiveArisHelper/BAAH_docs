@@ -35,31 +35,11 @@ export default async function onRequest(context) {
     try {
         const acceptLanguage = context.request.headers.get('accept-language') || ''
         const browserLanguage = getBrowserLanguage(acceptLanguage)
-        
-        // 根据语言返回简单的文本信息
-        const messages = {
-            'en': 'Redirecting to English version...',
-            'zh': '正在跳转到中文版本...'
-        }
-        
-        return new Response(messages[browserLanguage.code], {
-            headers: {
-                'Content-Type': 'text/plain; charset=utf-8'
-            }
-        });
+
+        // 返回重定向响应
+        return Response.redirect(browserLanguage.path, 302)
     } catch (error) {
-        // 错误处理：返回默认语言信息
-        return new Response('Redirecting to English version...', {
-            headers: {
-                'Content-Type': 'text/plain; charset=utf-8'
-            }
-        });
+        // 错误处理：重定向到默认语言（中文）
+        return Response.redirect(supportedLanguages[1].path, 302)
     }
 }
-
-
-
-
-
-
-
