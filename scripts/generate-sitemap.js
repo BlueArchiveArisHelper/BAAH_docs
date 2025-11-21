@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
-// 忽略关键字
-const ignoreKeywords = ['.js', '.woff2', '.css', '.json', '.png', '.svg','.xml'];
+// 只允许HTML文件
+const allowedExtensions = ['.html'];
 
 // 递归遍历目录
 function walkDir(dir, fileList = []) {
@@ -32,30 +32,26 @@ function generateSitemap(distDir) {
         // 将dist目录路径替换为空，以便生成相对路径
         const relativePath = path.relative(distDir, file);
 
-        // 检查是否包含忽略关键字
-        const shouldIgnore = ignoreKeywords.some(keyword => relativePath.includes(keyword));
+        // 检查是否是HTML文件
+        const isHtmlFile = allowedExtensions.some(ext => path.extname(file) === ext);
 
-        if (!shouldIgnore) {
+        if (isHtmlFile) {
             sitemap += `\t<url>\n\t\t<loc>https://baah.sanmusen.top/${relativePath}</loc>\n`;
 
-            // 如果文件是HTML文件，则提取锚点
-            if (path.extname(file) === '.html') {
-                const htmlContent = fs.readFileSync(file, 'utf-8');
-                const $ = cheerio.load(htmlContent);
+            // 提取HTML文件中的锚点
+            const htmlContent = fs.readFileSync(file, 'utf-8');
+            const $ = cheerio.load(htmlContent);
 
-                $('a').each((index, element) => {
-                    const href = $(element).attr('href');
-                    if (href && href.startsWith('#')) {
-                        sitemap += `\t\t<loc>https://baah.sanmusen.top/${relativePath}${href}</loc>\n`;
-                    }
-                });
-            }
+            $('a').each((index, element) => {
+                const href = $(element).attr('href');
+                if (href && href.startsWith('#')) {
+                    sitemap += `\t\t<loc>https://baah.sanmusen.top/${relativePath}${href}</loc>\n`;
+                }
+            });
 
             sitemap += `\t</url>\n`;
         }
     });
-
-
 
     sitemap += '</urlset>';
 
@@ -65,3 +61,4 @@ function generateSitemap(distDir) {
 
 // 使用dist目录作为参数调用函数
 generateSitemap(path.join(__dirname, '../dist'));
+

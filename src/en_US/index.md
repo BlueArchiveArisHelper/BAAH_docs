@@ -46,7 +46,7 @@ description: BAAH is an open-source free Blue Archive automation tool, supportin
 - Update game (Game Package, Resource Package)
 
 ## Contributors
-<a></a>
+<br>
 <a href="https://github.com/BlueArchiveArisHelper/BAAH/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=BlueArchiveArisHelper/BAAH" />
 </a>
