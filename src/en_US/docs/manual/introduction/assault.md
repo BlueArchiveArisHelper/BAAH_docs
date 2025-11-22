@@ -42,9 +42,9 @@ This feature allows Team 1 in Assault to use Assistant. Please leave an empty sl
 
 1. Go to the team formation interface and enter the student borrowing screen.
 2. Click the `ASSAULT HELPER STUDENT` button.
-![assist Student](/img/assault/assault_helper_1.png)
+![assist Student](/img/assault/assault_helper_1.webp)
 1. In the popup window, use the left mouse button to select the students you want to borrow.
-![Select Students](/img/assault/assault_helper_2.png)
+![Select Students](/img/assault/assault_helper_2.webp)
 
 > :memo: **Note:** If you need to borrow SPECIAL students, please check `Whether assault helper is support role` to enable this feature. You only need to leave an empty slot in the back row, and select the SPECIAL students you want to borrow.
 

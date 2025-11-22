@@ -9,23 +9,23 @@
 
 1. 首先，在任务计划程序库中，创建一个文件夹，名称任意。
 
-![计划任务：找到程序](/img/automated-operation/windows_timer_1.png)
+![计划任务：找到程序](/img/automated-operation/windows_timer_1.webp)
 
 2. 然后，点击进入文件夹，创建一个基本任务，名称任意。如：
 
-![计划任务：创建基本任务](/img/automated-operation/windows_timer_2.png)
+![计划任务：创建基本任务](/img/automated-operation/windows_timer_2.webp)
 
-![计划任务：创建基本任务](/img/automated-operation/windows_timer_3.png)
+![计划任务：创建基本任务](/img/automated-operation/windows_timer_3.webp)
 
 3. 触发器的选择上，根据需求选择。如：
 
-![计划任务：选择触发器](/img/automated-operation/windows_timer_4.png)
+![计划任务：选择触发器](/img/automated-operation/windows_timer_4.webp)
 
-![计划任务：选择触发器](/img/automated-operation/windows_timer_5.png)
+![计划任务：选择触发器](/img/automated-operation/windows_timer_5.webp)
 
 4. 执行任务，选择 **运行程序(T)**
 
-![计划任务：选择运行方式](/img/automated-operation/windows_timer_6.png)
+![计划任务：选择运行方式](/img/automated-operation/windows_timer_6.webp)
 
 5. 点击 **浏览(R)...** 选择你的BAAH程序本体 **BAAH.exe**
 
@@ -33,11 +33,11 @@
 
 起始于，填写 **程序或脚本(P):** 下方输入框 **BAAH.exe** 前的所有内容。如：
 
-![计划任务：寻找程序](/img/automated-operation/windows_timer_7.png)
+![计划任务：寻找程序](/img/automated-operation/windows_timer_7.webp)
 
 6. 随后点击 **下一页(N)** **完成(F)** 随后你的自动化任务创建成功。
 
-![计划任务：完成](/img/automated-operation/windows_timer_8.png)
+![计划任务：完成](/img/automated-operation/windows_timer_8.webp)
 
 == Linux
 **Linux**

@@ -19,7 +19,7 @@ If you need to use interactive furniture, please turn off the interaction switch
 
 - Student Invitation Number: Use invitation coupons to invite corresponding students. Fill in numbers from top to bottom, enter 0 for no invitation.
 
-![Invitation List Number](/img/cafe/invite_list_1.png)
+![Invitation List Number](/img/cafe/invite_list_1.webp)
 
 - Postpone Invitation if Same Name Student is Present: Check `Whether defer the invited student when same name students is in cafe` to enable this function. When a student with the same name is already present (i.e., pop-up asking whether to switch students), it will invite the next numbered student.
 > :memo: **Note:** If `Whether reversed` is checked, it will invite the previous numbered student instead.
@@ -30,7 +30,7 @@ If you need to use interactive furniture, please turn off the interaction switch
 2. In the cafe interface, set the filter method in the cafe invitation list to Pinned.
 3. You will find that the specified student is pinned at the top of the list. Enter their current number to invite that specific student.
 
-![Pinned Invitation List](/img/cafe/invite_list_2.png)
+![Pinned Invitation List](/img/cafe/invite_list_2.webp)
 
 
 

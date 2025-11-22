@@ -24,50 +24,107 @@ description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推�
 
 :::
 
-::: tabs
-
-== Windows
-
-**Windows**
-
-你可以从以下方式获取BAAH。
-
-[夸克网盘](https://pan.quark.cn/s/319faf23496c)
-
-[Mirror酱](https://mirrorchyan.com/zh/projects?rid=BAAH) （需要 Mirror CDK）
-
-[GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases)
-
-<!-- [小飞RAN的API](###xiaofeiRAN-download-url###) -->
+<!-- 重构下载页 -->
+## 针对您的操作系统
 
 <DownloadLink />
 
-[BlockHaity's API](https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah)
+## 所有操作系统
 
-使用前建议阅读文档。
+:::: tabs
 
-== macOS
+== Windows
 
-**macOS**
+<a href="https://pan.quark.cn/s/319faf23496c" class="VPButton medium brand">夸克网盘下载</a>
+<a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">Mirror酱下载(需要CDK)</a>
+<a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium alt">GitHub Release</a>
+<a href="https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah" class="VPButton medium alt">BlockHaity's API</a>
 
-需要手动使用源代码，详情请见章节[从源码部署](/zh_CN/docs/manual/source-code.md)。
+== MacOS
+
+<a href="/zh_CN/docs/manual/source-code.md" class="VPButton medium brand">查看源码部署教程</a>
 
 == Linux
 
-**Linux**
+<a href="/zh_CN/docs/manual/quick-start" class="VPButton medium brand">Docker部署</a>
+<a href="/zh_CN/docs/manual/source-code" class="VPButton medium alt">查看源码部署教程</a>
 
-通过Docker运行
+== Android Termux
 
-``` bash
-docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
-```
+<a href="https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/" class="VPButton medium brand">查看Android部署教程</a>
 
-或者手动使用源代码，详情请见章节[从源码部署](/zh_CN/docs/manual/source-code.md)。
+::::
 
-== Android
 
-**Android** 
+<style>
 
-详情请见[🔗 BlockHaity 的部署方法](https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/)# 下载BAAH
+.VPButton {
+    display: inline-block;
+    border: 1px solid transparent;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: color .25s, border-color .25s, background-color .25s;
+    margin-right: 3px;
+}
 
-:::
+.VPButton:last-child {
+    margin-right: 0;
+}
+
+.VPButton:active {
+    transition: color .1s, border-color .1s, background-color .1s
+}
+
+.VPButton.medium {
+    border-radius: 20px;
+    padding: 0 20px;
+    line-height: 38px;
+    font-size: 14px;
+}
+
+.VPButton.big {
+    border-radius: 24px;
+    padding: 0 24px;
+    line-height: 46px;
+    font-size: 16px
+}
+
+.VPButton.brand {
+    border-color: var(--vp-button-brand-border);
+    color: var(--vp-button-brand-text);
+    background-color: var(--vp-button-brand-bg);
+    text-decoration: none
+}
+
+.VPButton.brand:hover {
+    border-color: var(--vp-button-brand-hover-border);
+    color: var(--vp-button-brand-hover-text);
+    background-color: var(--vp-button-brand-hover-bg)
+}
+
+.VPButton.brand:active {
+    border-color: var(--vp-button-brand-active-border);
+    color: var(--vp-button-brand-active-text);
+    background-color: var(--vp-button-brand-active-bg)
+}
+
+.VPButton.alt {
+    border-color: var(--vp-button-alt-border);
+    color: var(--vp-button-alt-text);
+    background-color: var(--vp-button-alt-bg);
+    text-decoration: none
+}
+
+.VPButton.alt:hover {
+    border-color: var(--vp-button-alt-hover-border);
+    color: var(--vp-button-alt-hover-text);
+    background-color: var(--vp-button-alt-hover-bg)
+}
+
+.VPButton.alt:active {
+    border-color: var(--vp-button-alt-active-border);
+    color: var(--vp-button-alt-active-text);
+    background-color: var(--vp-button-alt-active-bg)
+}
+</style>
