@@ -25,11 +25,11 @@ Please uncheck the option `Whether recognize which room to click in the timetabl
 ### Location
 `Location` refers to the top-level school name, sorted from top to bottom.
 
-![Schedule Location](/img/lesson/lesson_1.png)
+![Schedule Location](/img/lesson/lesson_1.webp)
 
 If no content is filled in for the corresponding area, it will display **No tasks set here** and skip the area directly.
 
 ### Room Number
 `Room Number` refers to the classroom numbers you want to visit after entering the corresponding area, counted from left to right and top to bottom, with numbers ranging from 1 to 9.
 
-![Schedule Room Number](/img/lesson/lesson_2.png)
+![Schedule Room Number](/img/lesson/lesson_2.webp)

@@ -128,6 +128,6 @@ https://sctapi.ftqq.com/[token].send?title=[title]&desp=[content]
 ```
 回报内容：
 
-![邮件回报](/img/notification/customize_email_content_1.png)
+![邮件回报](/img/notification/customize_email_content_1.webp)
 
 :::

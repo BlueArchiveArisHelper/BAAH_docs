@@ -4,7 +4,7 @@
 
 The shop locates items to be purchased based on row and column relationships, you just need to fill in the corresponding position.
 
-![Shop](/img/shop/shop_1.png)
+![Shop](/img/shop/shop_1.webp)
 
 - If you want to purchase all items, please check `Buy All`.
 - `Refresh times` refers to the number of times clicking the **Refresh** button after purchase, which consumes Pyroxene.

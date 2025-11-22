@@ -17,7 +17,7 @@ This chapter applies to Bounty, Commission, Scrimmage, Event Stages, Multi-Sweep
 
 ::: details Example using Bounty
 
-![Bounty Area](/img/sweep-level/area_1.png)
+![Bounty Area](/img/sweep-level/area_1.webp)
 
 :::
 
@@ -27,7 +27,7 @@ This chapter applies to Bounty, Commission, Scrimmage, Event Stages, Multi-Sweep
 
 ::: details Example using Normal Map
 
-![Normal Map Area](/img/sweep-level/area_2.png)
+![Normal Map Area](/img/sweep-level/area_2.webp)
 
 :::
    
@@ -37,7 +37,7 @@ This chapter applies to Bounty, Commission, Scrimmage, Event Stages, Multi-Sweep
 
 ::: details Example using Normal Map
 
-![Normal Map Stage](/img/sweep-level/level.png)
+![Normal Map Stage](/img/sweep-level/level.webp)
 
 :::
 
@@ -72,4 +72,4 @@ You can define the content to be swept on different days by filling in different
 - If a day is left blank, i.e., the prompt **No tasks are set here**, it will skip that date directly.
 
 ## Example Including the Above Features
-![Normal Map Level](/img/sweep-level/sweep_level_example.png)
+![Normal Map Level](/img/sweep-level/sweep_level_example.webp)

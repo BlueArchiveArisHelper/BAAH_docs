@@ -24,7 +24,7 @@
 ### 自动配队
 勾选 `自动配队` 启用此功能，每次开始战斗前会进入配队界面，点击队伍旁边的 `自动` 按钮用BA的推荐配队。
 
-![自动配队](/img/explore-stage/automatic_matching.png)
+![自动配队](/img/explore-stage/automatic_matching.webp)
 
 ### 自动根据属性选择队伍
 ::: tip
@@ -37,7 +37,7 @@
 需要提前在队伍的配置界面配置好推图的学生队伍，并配置好不同队伍，并且填写各个队伍的属性权重，单格子填写0~10，脚本将根据权重选择最适合的队伍进行出击。
 
 队伍对应关系：
-![队伍对应关系](/img/explore-stage/Auto_select_team_according_to_the_attribute_1.png)
+![队伍对应关系](/img/explore-stage/Auto_select_team_according_to_the_attribute_1.webp)
 
 例如在游戏中，你的队伍 1 设置为既可以打红甲，又可以打黄甲，那么在配置界面中，可以将红攻和黄攻的强度均设置为5，这样遭遇红甲或者黄甲将调用这支队伍。
 
@@ -67,16 +67,16 @@
 ::: details 例
 
 1. 查看终端中提示的队伍属性。例如这里提示队伍1需要红攻，队伍2需要紫攻。
- ![手动配置队伍1](/img/explore-stage/manually_configure_the_team_1.png)
+ ![手动配置队伍1](/img/explore-stage/manually_configure_the_team_1.webp)
 2. 点击走格子界面的 `开始` 键，进入配队界面。
- ![手动配置队伍2](/img/explore-stage/manually_configure_the_team_2.png)
+ ![手动配置队伍2](/img/explore-stage/manually_configure_the_team_2.webp)
 3. 根据提示配队。这里根据提示配置红攻的队伍1，紫攻的队伍2。
- ![手动配置队伍3](/img/explore-stage/manually_configure_the_team_3.png)
- ![手动配置队伍4](/img/explore-stage/manually_configure_the_team_4.png)
+ ![手动配置队伍3](/img/explore-stage/manually_configure_the_team_3.webp)
+ ![手动配置队伍4](/img/explore-stage/manually_configure_the_team_4.webp)
 4. 完成配队后**不要点击出击**，直接点击左上角返回按钮回到走格子界面。
- ![手动配置队伍5](/img/explore-stage/manually_configure_the_team_5.png)
+ ![手动配置队伍5](/img/explore-stage/manually_configure_the_team_5.webp)
 5. 回到终端，点击键盘的 `回车` 键，开始执行任务。
- ![手动配置队伍6](/img/explore-stage/manually_configure_the_team_6.png)
+ ![手动配置队伍6](/img/explore-stage/manually_configure_the_team_6.webp)
 
 :::
 
