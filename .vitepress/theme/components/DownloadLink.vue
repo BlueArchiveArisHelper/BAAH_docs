@@ -13,6 +13,7 @@
       <div v-if="platform === 'windows'">
         <a href="https://pan.quark.cn/s/319faf23496c" class="VPButton medium brand">夸克网盘下载</a>
         <a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">Mirror酱下载</a>
+        <a :href="githubDirectLink" class="VPButton medium alt">GitHub直链下载</a>
         <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium alt">GitHub Release</a>
       </div>
 
@@ -44,6 +45,7 @@ export default {
       version: '加载中...',
       releaseBody: '加载中...',
       platform: '',
+      githubDirectLink: '',
       error: null
     }
   },
@@ -70,6 +72,9 @@ export default {
         const data = await response.json()
         this.version = data.tag_name
         this.releaseBody = data.body.replace(/\n/g, '<br>')
+        if (data.assets && data.assets.length > 0) {
+          this.githubDirectLink = data.assets[0].browser_download_url
+        }
       } catch (error) {
         console.error('获取版本信息失败:', error)
         this.version = '获取失败'
@@ -79,3 +84,4 @@ export default {
   }
 }
 </script>
+
