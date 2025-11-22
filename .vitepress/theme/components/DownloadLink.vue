@@ -15,6 +15,7 @@
         <a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">{{ texts.mirrorDownload }}</a>
         <a :href="githubDirectLink" class="VPButton medium alt">{{ texts.githubDirectDownload }}</a>
         <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium alt">{{ texts.githubRelease }}</a>
+        <a href="https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah" class="VPButton medium alt">{{ texts.blockhaityapi }}</a>
       </div>
 
       <div v-else-if="platform === 'mac'">
@@ -73,6 +74,7 @@ export default {
           androidDeployTutorial: '查看Android部署教程',
           loading: '加载中...',
           fetchFailed: '获取失败',
+          blockhaityapi: "BlockHaity's API",
           sourceCodePath: '/zh_CN/docs/manual/source-code.md',
           dockerPath: '/zh_CN/docs/manual/quick-start',
           androidPath: 'https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/'
@@ -90,6 +92,7 @@ export default {
           androidDeployTutorial: 'View Android Deployment Tutorial',
           loading: 'Loading...',
           fetchFailed: 'Failed to fetch',
+          blockhaityapi: "BlockHaity's API",
           sourceCodePath: '/en_US/docs/manual/source-code.md',
           dockerPath: '/en_US/docs/manual/quick-start',
           androidPath: 'https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/'
