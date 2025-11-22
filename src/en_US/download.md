@@ -38,8 +38,6 @@ You can get BAAH from the following methods.
 
 [GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases)
 
-<!-- [小飞RAN的API](###xiaofeiRAN-download-url###) -->
-
 <DownloadLink />
 
 [BlockHaity's API](https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah)

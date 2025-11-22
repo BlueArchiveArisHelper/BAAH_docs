@@ -38,8 +38,6 @@ description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推�
 
 [GitHub Release](https://github.com/BlueArchiveArisHelper/BAAH/releases)
 
-<!-- [小飞RAN的API](###xiaofeiRAN-download-url###) -->
-
 <DownloadLink />
 
 [BlockHaity's API](https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah)
