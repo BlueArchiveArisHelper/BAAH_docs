@@ -23,7 +23,7 @@ BAAH has comprehensive community support. If you encounter any problems while us
 
 You can get help through the following channels.
 
-[QQ Group Problem-solving Group](https://qm.qq.com/q/K2wAMIovqQ): 985729020
+[QQ Group Q&A Group](https://qm.qq.com/q/K2wAMIovqQ): 985729020
 
 [Tencent Channel](https://pd.qq.com/s/5atxio0vq)
 
