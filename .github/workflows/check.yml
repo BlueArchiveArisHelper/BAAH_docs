@@ -1,0 +1,84 @@
+name: Check PR
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout PR code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Block PR merge
+        run: |
+          gh pr review ${{ github.event.pull_request.number }} \
+            --body "检查开始，请等待。此PR暂时无法合并。" \
+            --request-changes
+
+      - name: Create check comment
+        id: create_comment
+        run: |
+          COMMENT_ID=$(gh pr comment ${{ github.event.pull_request.number }} \
+            --body "## 检查进度\n\n⏳ 开始检查..." \
+            --jq '.id' \
+            --raw-output)
+          echo "comment_id=$COMMENT_ID" >> $GITHUB_OUTPUT
+
+      - name: Check deadlink
+        run: |
+          python3 /TOOLS/deadlink_checker.py
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --edit-comment ${{ steps.create_comment.outputs.comment_id }} \
+            --body "## 检查进度\n\n✅ 死链检查完成\n⏳ 正在检查图片..."
+
+      - name: Check image
+        run: |
+          python3 /TOOLS/webp_checker.py
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --edit-comment ${{ steps.create_comment.outputs.comment_id }} \
+            --body "## 检查进度\n\n✅ 死链检查完成\n✅ 图片检查完成\n⏳ 检查完成..."
+      
+      - name: Allow PR merge
+        if: always()
+        run: |
+          if [ -f "error.txt" ]; then
+            ERROR_CONTENT=$(cat error.txt)
+            gh pr review ${{ github.event.pull_request.number }} \
+              --body "❌ 检查未通过，PR无法合并。\n\n错误信息：\n\`\`\`\n$ERROR_CONTENT\n\`\`\`" \
+              --request-changes
+            if [ -f "warn.txt" ]; then
+              WARN_CONTENT=$(cat warn.txt)
+              gh pr comment ${{ github.event.pull_request.number }} \
+                --edit-comment ${{ steps.create_comment.outputs.comment_id }} \
+                --body "## 检查进度\n\n❌ 检查未通过\n\n⚠️ 警告信息：\n\`\`\`\n$WARN_CONTENT\n\`\`\`\n\n❌ 错误信息：\n\`\`\`\n$ERROR_CONTENT\n\`\`\`"
+            else
+              gh pr comment ${{ github.event.pull_request.number }} \
+                --edit-comment ${{ steps.create_comment.outputs.comment_id }} \
+                --body "## 检查进度\n\n❌ 检查未通过\n\n❌ 错误信息：\n\`\`\`\n$ERROR_CONTENT\n\`\`\`"
+            fi
+          elif [ -f "warn.txt" ]; then
+            WARN_CONTENT=$(cat warn.txt)
+            gh pr review ${{ github.event.pull_request.number }} \
+              --body "⚠️ 检查通过但有警告，PR可以合并。\n\n警告信息：\n\`\`\`\n$WARN_CONTENT\n\`\`\`" \
+              --approve
+            gh pr comment ${{ github.event.pull_request.number }} \
+              --edit-comment ${{ steps.create_comment.outputs.comment_id }} \
+              --body "## 检查进度\n\n✅ 检查完成\n\n⚠️ 警告信息：\n\`\`\`\n$WARN_CONTENT\n\`\`\`\n\n🎉 PR可以合并"
+          else
+            gh pr review ${{ github.event.pull_request.number }} \
+              --body "检查完成，PR可以合并。" \
+              --approve
+            gh pr comment ${{ github.event.pull_request.number }} \
+              --edit-comment ${{ steps.create_comment.outputs.comment_id }} \
+              --body "## 检查进度\n\n✅ 所有检查完成\n🎉 PR可以合并"
+          fi
+
+

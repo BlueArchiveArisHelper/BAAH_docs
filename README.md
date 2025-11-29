@@ -24,18 +24,12 @@
 /edge-functions/ --> 边缘函数
 
 /scripts/ --> 后处理脚本位置
-/checker.py --> python检查器
+/TOOLS/ --> Action检查脚本位置
 ```
 
 ## 编写
 
-在发布pr前，建议使用检查器，可以检查到一些错误。
-
-如：死链，多语言完备（配置，侧边栏，导航栏，文件结构）
-
-``` bash
-python checker.py
-```
+检查器已经被Action检查脚本替代，你也可以在项目目录下运行/TOOLS/内所有的python脚本来检查
 
 ### 引用文档
 
