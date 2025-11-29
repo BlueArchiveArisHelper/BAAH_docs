@@ -2,7 +2,7 @@ import os
 import re
 from tool import tools
 
-if __name__ == "__main__":
+def check_deadlinks():
     src = tools.filetree("src")
     mdlist = [path for path in src if path.endswith(".md")]
     imglist = [path for path in src if path.endswith(".webp") or path.endswith(".png") or path.endswith(".jpg") or path.endswith(".jpeg")]
@@ -55,3 +55,6 @@ if __name__ == "__main__":
                     # print(f"找到图片链接: {link}")
                     if link.replace("/img/", "src/public/img/") not in imglist:
                         tools.write_error(f"死链: {link}")
+
+if __name__ == "__main__":
+    check_deadlinks()

@@ -29,7 +29,11 @@
 
 ## 编写
 
-检查器已经被Action检查脚本替代，你也可以在项目目录下运行/TOOLS/内所有的python脚本来检查
+检查器已经被Action检查脚本替代，你也可以在项目目录下运行下面的命令来检查
+
+``` bash
+python TOOLS/check_all.py
+```
 
 ### 引用文档
 

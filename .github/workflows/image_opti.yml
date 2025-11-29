@@ -1,0 +1,20 @@
+name: Image Optimization
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  optimize_images:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg python3
