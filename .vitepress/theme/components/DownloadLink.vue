@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a :href="downloadUrl" target="_blank">镜像</a>
+    <a :href="downloadUrl" target="_blank">镜像 | Mirror</a>
   </div>
 </template>
 

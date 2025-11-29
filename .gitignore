@@ -3,3 +3,5 @@
 /.vitepress/cache
 /dist
 /pnpm-lock.yaml
+/server
+/.idea
