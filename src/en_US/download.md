@@ -36,22 +36,22 @@ You can join one of the following QQ groups for usage help
 == Windows
 
 <a href="https://pan.quark.cn/s/319faf23496c" class="VPButton medium brand">Quark Cloud Download</a>
-<a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">Mirror Download (CDK Required)</a>
+<a href="https://mirrorchyan.com/en/projects?rid=BAAH" class="VPButton medium alt">MirrorChyan Download (CDK Required)</a>
 <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium alt">GitHub Release</a>
 <a href="https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah" class="VPButton medium alt">BlockHaity's API</a>
 
-== MacOS
+== macOS
 
-<a href="/zh_CN/docs/manual/source-code.md" class="VPButton medium brand">View Source Code Deployment Tutorial</a>
+<a href="/en_US/docs/manual/source-code" class="VPButton medium brand">View Source Code Deployment Tutorial</a>
 
 == Linux
 
-<a href="/zh_CN/docs/manual/quick-start" class="VPButton medium brand">Docker Deployment</a>
-<a href="/zh_CN/docs/manual/source-code" class="VPButton medium alt">View Source Code Deployment Tutorial</a>
+<a href="/en_US/docs/manual/quick-start" class="VPButton medium brand">Docker Deployment</a>
+<a href="/en_US/docs/manual/source-code" class="VPButton medium alt">View Source Code Deployment Tutorial</a>
 
 == Android Termux
 
-<a href="https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/" class="VPButton medium brand">View Android Deployment Tutorial</a>
+<a href="https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/" class="VPButton medium brand">View Android Deployment Tutorial (Only Chinese)</a>
 
 ::::
 
@@ -66,6 +66,7 @@ You can join one of the following QQ groups for usage help
     white-space: nowrap;
     transition: color .25s, border-color .25s, background-color .25s;
     margin-right: 3px;
+    margin-bottom: 10px;
 }
 
 .VPButton:last-child {

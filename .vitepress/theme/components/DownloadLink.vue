@@ -12,7 +12,7 @@
     <div>
       <div v-if="platform === 'windows'">
         <a href="https://pan.quark.cn/s/319faf23496c" class="VPButton medium brand">{{ texts.quarkDownload }}</a>
-        <a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">{{ texts.mirrorDownload }}</a>
+        <a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">{{ texts.mirrorChyanDownload }}</a>
         <a :href="githubDirectLink" class="VPButton medium alt">{{ texts.githubDirectDownload }}</a>
         <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium alt">{{ texts.githubRelease }}</a>
         <a href="https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah" class="VPButton medium alt">{{ texts.blockhaityapi }}</a>
@@ -65,7 +65,7 @@ export default {
           currentVersion: '当前最新版本：',
           releaseContent: '发布内容',
           quarkDownload: '夸克网盘下载',
-          mirrorDownload: 'Mirror酱下载',
+          mirrorChyanDownload: 'Mirror酱下载（需要CDK）',
           githubDirectDownload: 'GitHub直链下载',
           githubRelease: 'GitHub Release',
           viewSourceTutorial: '查看源码部署教程',
@@ -75,7 +75,7 @@ export default {
           loading: '加载中...',
           fetchFailed: '获取失败',
           blockhaityapi: "BlockHaity's API",
-          sourceCodePath: '/zh_CN/docs/manual/source-code.md',
+          sourceCodePath: '/zh_CN/docs/manual/source-code',
           dockerPath: '/zh_CN/docs/manual/quick-start',
           androidPath: 'https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/'
         },
@@ -83,17 +83,17 @@ export default {
           currentVersion: 'Current Latest Version: ',
           releaseContent: 'Release Content',
           quarkDownload: 'Quark Cloud Download',
-          mirrorDownload: 'Mirror Download',
+          mirrorChyanDownload: 'MirrorChyan Download (CDK Required)',
           githubDirectDownload: 'GitHub Direct Download',
           githubRelease: 'GitHub Release',
           viewSourceTutorial: 'View Source Deployment Tutorial',
           linuxDeployMessage: 'Your OS is Linux, you can use the following deployment methods',
           dockerDeploy: 'Docker Deployment',
-          androidDeployTutorial: 'View Android Deployment Tutorial',
+          androidDeployTutorial: 'View Android Deployment Tutorial (Only Chinese)',
           loading: 'Loading...',
           fetchFailed: 'Failed to fetch',
           blockhaityapi: "BlockHaity's API",
-          sourceCodePath: '/en_US/docs/manual/source-code.md',
+          sourceCodePath: '/en_US/docs/manual/source-code',
           dockerPath: '/en_US/docs/manual/quick-start',
           androidPath: 'https://bas.blockhaity.qzz.io?target=/2025/02/10/BAAH%E5%9C%A8%E9%80%86%E5%A4%A9%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E8%BF%90%E8%A1%8C/'
         }

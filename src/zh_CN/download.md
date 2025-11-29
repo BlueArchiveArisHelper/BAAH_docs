@@ -40,9 +40,9 @@ description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推�
 <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium alt">GitHub Release</a>
 <a href="https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah" class="VPButton medium alt">BlockHaity's API</a>
 
-== MacOS
+== macOS
 
-<a href="/zh_CN/docs/manual/source-code.md" class="VPButton medium brand">查看源码部署教程</a>
+<a href="/zh_CN/docs/manual/source-code" class="VPButton medium brand">查看源码部署教程</a>
 
 == Linux
 
@@ -66,6 +66,7 @@ description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推�
     white-space: nowrap;
     transition: color .25s, border-color .25s, background-color .25s;
     margin-right: 3px;
+    margin-bottom: 10px;
 }
 
 .VPButton:last-child {
