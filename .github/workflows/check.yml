@@ -15,7 +15,8 @@ jobs:
       - name: Checkout PR code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          repository: ${{ github.repository }}
+          ref: ${{ github.ref }}
 
       - name: Block PR merge
         run: |
@@ -77,3 +78,4 @@ jobs:
               --edit-last \
               --body "## 检查进度\n\n✅ 所有检查完成\n🎉 PR可以合并"
           fi
+
