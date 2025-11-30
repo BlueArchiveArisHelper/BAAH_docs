@@ -18,6 +18,9 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.event.pull_request.head.ref }}
 
+      - name: list PR files
+        run: ls
+
       - name: Block PR merge
         run: |
           gh pr review ${{ github.event.pull_request.number }} \
