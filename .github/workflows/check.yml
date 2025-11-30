@@ -28,21 +28,21 @@ jobs:
         id: create_comment
         run: |
           gh pr comment ${{ github.event.pull_request.number }} \
-            --body "## 检查进度<br><br>⏳ 开始检查..."
+            --body "检查进度<br><br>⏳ 开始检查..."
 
       - name: Check deadlink
         run: |
           python3 TOOLS/deadlink_checker.py
           gh pr comment ${{ github.event.pull_request.number }} \
             --edit-last \
-            --body "## 检查进度<br><br>✅ 死链检查完成<br>⏳ 正在检查图片..."
+            --body "检查进度<br><br>✅ 死链检查完成<br>⏳ 正在检查图片..."
 
       - name: Check image
         run: |
           python3 TOOLS/webp_checker.py
           gh pr comment ${{ github.event.pull_request.number }} \
             --edit-last \
-            --body "## 检查进度<br><br>✅ 死链检查完成<br>✅ 图片检查完成<br>⏳ 检查完成..."
+            --body "检查进度<br><br>✅ 死链检查完成<br>✅ 图片检查完成<br>⏳ 检查完成..."
       
       - name: Allow PR merge
         if: always()
@@ -56,11 +56,11 @@ jobs:
               WARN_CONTENT=$(cat warn.txt)
               gh pr comment ${{ github.event.pull_request.number }} \
                 --edit-last \
-                --body "## 检查进度<br><br>❌ 检查未通过<br><br>⚠️ 警告信息：<br>\`\`\`<br>$WARN_CONTENT<br>\`\`\`<br><br>❌ 错误信息：<br>\`\`\`<br>$ERROR_CONTENT<br>\`\`\`"
+                --body "检查进度<br><br>❌ 检查未通过<br><br>⚠️ 警告信息：<br>\`\`\`<br>$WARN_CONTENT<br>\`\`\`<br><br>❌ 错误信息：<br>\`\`\`<br>$ERROR_CONTENT<br>\`\`\`"
             else
               gh pr comment ${{ github.event.pull_request.number }} \
                 --edit-last \
-                --body "## 检查进度<br><br>❌ 检查未通过<br><br>❌ 错误信息：<br>\`\`\`<br>$ERROR_CONTENT<br>\`\`\`"
+                --body "检查进度<br><br>❌ 检查未通过<br><br>❌ 错误信息：<br>\`\`\`<br>$ERROR_CONTENT<br>\`\`\`"
             fi
           elif [ -f "warn.txt" ]; then
             WARN_CONTENT=$(cat warn.txt)
@@ -69,14 +69,14 @@ jobs:
               --approve
             gh pr comment ${{ github.event.pull_request.number }} \
               --edit-last \
-              --body "## 检查进度<br><br>✅ 检查完成<br><br>⚠️ 警告信息：<br>\`\`\`<br>$WARN_CONTENT<br>\`\`\`<br><br>🎉 PR可以合并"
+              --body "检查进度<br><br>✅ 检查完成<br><br>⚠️ 警告信息：<br>\`\`\`<br>$WARN_CONTENT<br>\`\`\`<br><br>🎉 PR可以合并"
           else
             gh pr review ${{ github.event.pull_request.number }} \
               --body "检查完成，PR可以合并。" \
               --approve
             gh pr comment ${{ github.event.pull_request.number }} \
               --edit-last \
-              --body "## 检查进度<br><br>✅ 所有检查完成<br>🎉 PR可以合并"
+              --body "检查进度<br><br>✅ 所有检查完成<br>🎉 PR可以合并"
           fi
 
 
