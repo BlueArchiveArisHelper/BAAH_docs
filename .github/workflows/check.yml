@@ -15,8 +15,8 @@ jobs:
       - name: Checkout PR code
         uses: actions/checkout@v3
         with:
-          repository: ${{ github.repository }}
-          ref: ${{ github.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Block PR merge
         run: |
@@ -78,4 +78,5 @@ jobs:
               --edit-last \
               --body "## 检查进度\n\n✅ 所有检查完成\n🎉 PR可以合并"
           fi
+
 
