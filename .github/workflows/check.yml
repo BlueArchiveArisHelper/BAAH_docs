@@ -28,8 +28,7 @@ jobs:
         run: |
           COMMENT_ID=$(gh pr comment ${{ github.event.pull_request.number }} \
             --body "## 检查进度\n\n⏳ 开始检查..." \
-            --jq '.id' \
-            --raw-output)
+            | grep -oP '"id":\K\d+')
           echo "comment_id=$COMMENT_ID" >> $GITHUB_OUTPUT
 
       - name: Check deadlink
