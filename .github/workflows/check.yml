@@ -19,7 +19,9 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
 
       - name: list PR files
-        run: ls
+        run: |
+          ls
+          ls TOOLS
 
       - name: Block PR merge
         run: |
