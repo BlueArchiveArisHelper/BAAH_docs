@@ -129,6 +129,6 @@ Executed task sequence number: %CURRENT_PERIOD_TASK_INDEX%
 ```
 Report content:
 
-![Email report](/img/notification/customize_email_content_1.png)
+![Email report](/img/notification/customize_email_content_1.webp)
 
 :::

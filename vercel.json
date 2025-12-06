@@ -1,4 +1,5 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
   "rewrites": [
     {
@@ -20,6 +21,12 @@
     {
       "source": "/apk/cn",
       "destination": "https://d.apkpure.net/b/XAPK/com.RoamingStar.BlueArchive?version=latest"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/zh_CN/"
     }
   ]
 }

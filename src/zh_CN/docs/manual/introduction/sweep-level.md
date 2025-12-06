@@ -15,7 +15,7 @@
 
 ::: details 以悬赏通缉为例
 
-![悬赏通缉地区](/img/sweep-level/area_1.png)
+![悬赏通缉地区](/img/sweep-level/area_1.webp)
 
 :::
 
@@ -25,7 +25,7 @@
 
 ::: details 以普通图为例
 
-![普通图地区](/img/sweep-level/area_2.png)
+![普通图地区](/img/sweep-level/area_2.webp)
 
 :::
    
@@ -35,7 +35,7 @@
 
 ::: details 以普通图为例
 
-![普通图关卡](/img/sweep-level/level.png)
+![普通图关卡](/img/sweep-level/level.webp)
 
 :::
 
@@ -70,4 +70,4 @@
 - 若填写的天数为空白，即提示 **这里没有设置任何任务** ，则会直接跳过该日期。
 
 ## 包含上述功能的例子
-![普通图关卡](/img/sweep-level/sweep_level_example.png)
+![普通图关卡](/img/sweep-level/sweep_level_example.webp)

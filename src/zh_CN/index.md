@@ -45,7 +45,7 @@ description: BAAH 是开源免费的 Blue Archive 自动化工具，支持 Windo
 - 自动更新游戏（游戏包体，资源包）
 
 ## 贡献者们
-<a></a>
+<br>
 <a href="https://github.com/BlueArchiveArisHelper/BAAH/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=BlueArchiveArisHelper/BAAH" />
 </a>

@@ -23,7 +23,7 @@ BAAH has comprehensive community support. If you encounter any problems while us
 
 You can get help through the following channels.
 
-[QQ Group Problem-solving Group](https://qm.qq.com/q/K2wAMIovqQ): 985729020
+[QQ Group Q&A Group](https://qm.qq.com/q/K2wAMIovqQ): 985729020
 
 [Tencent Channel](https://pd.qq.com/s/5atxio0vq)
 
@@ -45,15 +45,15 @@ You can get help through the following channels.
 
 Therefore, when asking questions, please ensure you provide effective information, including:
    
-   · Game server, BAAH version number
+   - Game server, BAAH version number
 
-   · Describe the environment where the problem occurs (machine configuration, operating system, application, and related information)
+   - Describe the environment where the problem occurs (machine configuration, operating system, application, and related information)
 
-   · Carefully and clearly describe the symptoms of your problem, that is, what you want BAAH to do.
+   - Carefully and clearly describe the symptoms of your problem, that is, what you want BAAH to do.
 
-   · Describe BAAH's behavior before and after the error occurs, or record a complete video of the problem.
+   - Describe BAAH's behavior before and after the error occurs, or record a complete video of the problem.
 
-   · Provide BAAH's logs, which are usually under `BAAH\DATA\LOGS`. Please reproduce the problem once and prepare the latest logs. If logs cannot be saved, please check the options `Whether output log to /DATA/LOGS/ directory` and `Whether save log when error occurs` in `Other Settings`.
+   - Provide BAAH's logs, which are usually under `BAAH\DATA\LOGS`. Please reproduce the problem once and prepare the latest logs. If logs cannot be saved, please check the options `Whether output log to /DATA/LOGS/ directory` and `Whether save log when error occurs` in `Other Settings`.
 
 
 ## Reporting Bugs / Making Suggestions

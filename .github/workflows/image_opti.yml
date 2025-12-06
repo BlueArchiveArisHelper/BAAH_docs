@@ -1,0 +1,34 @@
+name: Image Optimization
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  optimize_images:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg python3
+    
+      - name: Optimize images
+        run: |
+          python3 TOOLS/image_opti.py
+    
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Optimize images"
+            git push origin main
+          fi

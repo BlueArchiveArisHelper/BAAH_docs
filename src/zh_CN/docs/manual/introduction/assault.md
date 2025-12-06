@@ -40,9 +40,9 @@
 
 1. 来到游戏配队界面，进入借用学生的界面。
 2. 选择点击`总力战助战学生`按钮。
-![助战学生](/img/assault/assault_helper_1.png)
+![助战学生](/img/assault/assault_helper_1.webp)
 3. 在弹出的窗口中，使用鼠标左键框起需要借用的学生。
-![选择学生](/img/assault/assault_helper_2.png)
+![选择学生](/img/assault/assault_helper_2.webp)
 
 > :memo: **注：** 如果需要借用的是后排学生，请勾选`总力战助战学生是否是后排角色` 启用此功能。仅需在后排空出一个学生位置，并且圈起的学生为需要借用的后排学生即可。
 
