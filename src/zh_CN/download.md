@@ -36,7 +36,7 @@ description: 免费获取 BlueArchive Aris Helper 自动化脚本！Windows 推�
 == Windows
 
 <a href="https://pan.quark.cn/s/319faf23496c" class="VPButton medium brand">夸克网盘下载</a>
-<a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">Mirror酱下载(需要CDK)</a>
+<a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">Mirror酱下载（需要CDK）</a>
 <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium alt">GitHub Release</a>
 <a href="https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah" class="VPButton medium alt">BlockHaity's API</a>
 

@@ -4,8 +4,18 @@ import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 
 export const enConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
   themeConfig: { // 主题设置
-    lastUpdatedText: 'Last updated', // 上次更新显示文本
+    lastUpdated: {
+      text: "Last updated", // 上次更新显示文本
+      formatOptions: {
+        dateStyle: "short",
+        timeStyle: "short",
+      },
+    },
     returnToTopLabel: 'Back to top', // 更改手机端菜单文字显示
+    sidebarMenuLabel: 'Menu',
+    lightModeSwitchTitle: 'Switch to light theme',
+    darkModeSwitchTitle: 'Switch to dark theme',
+    langMenuLabel: 'Language',
     search: {
       provider: 'local',
       options: {

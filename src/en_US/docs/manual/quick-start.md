@@ -14,13 +14,15 @@ description: Complete BlueArchive Aris Helper deployment in 3 steps! MuMu emulat
 1. Emulator
    - It is recommended to use MuMu 4.x
    - Set resolution to 1280*720 pixels with 240 DPI. Enable ADB debugging. Note the ADB debugging port number of the emulator.
-   - If you are using MuMuPlayer, please turn off Keep alive in background in the bottom of settings
+   - If you are using MuMuPlayer, please turn off Keep alive in background in the bottom of settings.
    - If ADB cannot connect, please confirm that the network bridge mode of the emulator is turned off or modify the ADB connection IP in other settings.
 2. Game Settings
     - **Games** -> **EX Skill Effects** -> **Off**
     - **Graphics** -> **Battle Screen Vertical Letterbox** -> **Off**
-    - Manually raise the camera view in the cafe to the highest position, preferably stacking all furniture on the far right side of the screen
-
+    - Manually raise the camera view in the cafe to the highest position, preferably stacking all furniture on the far right side of the screen.
+3. Additional Game Settings for Steam Global Version
+    - **Control** -> **Display Shortcut Icon** -> **Off**
+    - Close software that displays frame rate and usage in the game window, as they may block the UI.
 ## Deployment
 
 :::: tabs
@@ -30,7 +32,7 @@ description: Complete BlueArchive Aris Helper deployment in 3 steps! MuMu emulat
 
 [Video Tutorial](https://www.bilibili.com/video/BV1ZxfGYSEVr)
 
-First, download the approximately 140MB compressed package and extract it to any folder
+First, download the approximately 160MB compressed package and extract it to any folder.
 
 [Go to Download Page](/en_US/download)
 
@@ -38,9 +40,9 @@ Copy example.json from the BAAH_CONFIGS folder and rename it to any other name, 
 
 Double-click BAAH.exe to open the interface.
 
-In Emulator Configuration, modify the port number to your emulator's ADB debugging port.
-
 In Server Configuration, select your BA server.
+
+In Emulator Configuration, modify the port number to your emulator's ADB debugging port. (If you are using an emulator)
 
 In Task Execution Order, enable the task flow or click the Quick Call Task button to run tasks.
 
@@ -158,9 +160,9 @@ docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
 
 Then open your browser and navigate to `http://<your-server-ip>:8000`
 
-In Emulator Configuration, modify the port number to your emulator's ADB debugging port.
-
 In Server Configuration, select your BA server.
+
+In Emulator Configuration, modify the port number to your emulator's ADB debugging port. (If you are using an emulator)
 
 In Task Execution Order, enable the task flow or click the Quick Call Task button to run tasks.
 

@@ -132,9 +132,9 @@ export default {
         this.version = data.tag_name
         this.releaseBody = data.body
           .replace(/\n/g, '<br>') // 统一换行符
-          .replace(/##\s*Fix/g, '<span style="color: #e74c3c; font-weight: bold;">Fix</span>')
-          .replace(/##\s*Feat/g, '<span style="color: #2ecc71; font-weight: bold;">Feat</span>')
-          .replace(/##\s*Update/g, '<span style="color: #3498db; font-weight: bold;">Update</span>')
+          .replace(/#{1,2}\s*Fix/g, '<span style="color: #e74c3c; font-weight: bold;">Fix</span>')
+          .replace(/#{1,2}\s*Feat/g, '<span style="color: #2ecc71; font-weight: bold;">Feat</span>')
+          .replace(/#{1,2}\s*Update/g, '<span style="color: #3498db; font-weight: bold;">Update</span>')
       } catch (error) {
         console.error('Failed to fetch release info:', error)
         this.version = this.texts.fetchFailed

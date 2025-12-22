@@ -4,8 +4,18 @@ import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 
 export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
   themeConfig: { // 主题设置
-    lastUpdatedText: '上次更新', // 上次更新显示文本
+    lastUpdated: {
+      text: "最后更新于", // 上次更新显示文本
+      formatOptions: {
+        dateStyle: "short",
+        timeStyle: "short",
+      },
+    },
     returnToTopLabel: '返回顶部', // 更改手机端菜单文字显示
+    sidebarMenuLabel: '菜单',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    langMenuLabel: '多语言',
     search: {
       provider: 'local',
       options: {
