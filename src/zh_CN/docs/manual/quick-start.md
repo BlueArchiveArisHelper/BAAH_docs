@@ -54,115 +54,32 @@ description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置�
 == Linux
 **Linux**
 
-首先，确保你的系统内包含Docker，可以输入一下命令查看
+首先，确保你的电脑内存在容器管理器（如 `podman`,`docker`）和 `adb`
 
+然后，使用root权限运行 `adb start-server`
+
+接下来，运行容器
+
+::: details Docker命令
 ``` bash
-# 对于ROOT用户
-docker help
-# 对于非ROOT，但是拥有sudo权限的用户
-sudo docker help
-```
-
-如果命令输出了以下内容，则你的系统包含Docker
-
-::: details 命令输出
-``` bash
-Usage:  docker [OPTIONS] COMMAND
-
-A self-sufficient runtime for containers
-
-Common Commands:
-  run         Create and run a new container from an image
-  exec        Execute a command in a running container
-  ps          List containers
-  build       Build an image from a Dockerfile
-  pull        Download an image from a registry
-  push        Upload an image to a registry
-  images      List images
-  login       Authenticate to a registry
-  logout      Log out from a registry
-  search      Search Docker Hub for images
-  version     Show the Docker version information
-  info        Display system-wide information
-
-Management Commands:
-  builder     Manage builds
-  container   Manage containers
-  context     Manage contexts
-  image       Manage images
-  manifest    Manage Docker image manifests and manifest lists
-  network     Manage networks
-  plugin      Manage plugins
-  system      Manage Docker
-  trust       Manage trust on Docker images
-  volume      Manage volumes
-
-Swarm Commands:
-  swarm       Manage Swarm
-
-Commands:
-  attach      Attach local standard input, output, and error streams to a running container
-  commit      Create a new image from a container's changes
-  cp          Copy files/folders between a container and the local filesystem
-  create      Create a new container
-  diff        Inspect changes to files or directories on a container's filesystem
-  events      Get real time events from the server
-  export      Export a container's filesystem as a tar archive
-  history     Show the history of an image
-  import      Import the contents from a tarball to create a filesystem image
-  inspect     Return low-level information on Docker objects
-  kill        Kill one or more running containers
-  load        Load an image from a tar archive or STDIN
-  logs        Fetch the logs of a container
-  pause       Pause all processes within one or more containers
-  port        List port mappings or a specific mapping for the container
-  rename      Rename a container
-  restart     Restart one or more containers
-  rm          Remove one or more containers
-  rmi         Remove one or more images
-  save        Save one or more images to a tar archive (streamed to STDOUT by default)
-  start       Start one or more stopped containers
-  stats       Display a live stream of container(s) resource usage statistics
-  stop        Stop one or more running containers
-  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
-  top         Display the running processes of a container
-  unpause     Unpause all processes within one or more containers
-  update      Update configuration of one or more containers
-  wait        Block until one or more containers stop, then print their exit codes
-
-Global Options:
-      --config string      Location of client config files (default "/root/.docker")
-  -c, --context string     Name of the context to use to connect to the daemon (overrides
-                           DOCKER_HOST env var and default context set with "docker context use")
-  -D, --debug              Enable debug mode
-  -H, --host list          Daemon socket to connect to
-  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal")
-                           (default "info")
-      --tls                Use TLS; implied by --tlsverify
-      --tlscacert string   Trust certs signed only by this CA (default "/root/.docker/ca.pem")
-      --tlscert string     Path to TLS certificate file (default "/root/.docker/cert.pem")
-      --tlskey string      Path to TLS key file (default "/root/.docker/key.pem")
-      --tlsverify          Use TLS and verify the remote
-  -v, --version            Print version information and quit
-
-Run 'docker COMMAND --help' for more information on a command.
-
-For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+sudo docker run -d \
+                -v /path/to/configs:/app/BAAH/BAAH_CONFIGS \
+                --net=host \
+                --restart=always \
+                --name BAAH \
+                ghcr.io/bluearchivearishelper/baah:latest
 ```
 :::
 
-然后，拉取镜像，创建并运行容器。
-
+::: details Podman命令
 ``` bash
-docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
+sudo docker run -d \
+                -v /path/to/configs:/app/BAAH/BAAH_CONFIGS \
+                --net=host \
+                --restart=always \
+                --name BAAH \
+                ghcr.io/bluearchivearishelper/baah:latest
 ```
-
-随后打开浏览器，打开 `http://<your-server-ip>:8000`
-
-在服务器设置中，选择你游玩的ba服务器。
-
-如果使用的是模拟器，请在模拟器设置中，修改端口号为你的模拟器adb调试端口
-
-在任务执行顺序设置中，启用任务流或点击快速执行按钮运行任务。
+:::
 
 ::::
