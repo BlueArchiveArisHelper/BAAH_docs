@@ -13,7 +13,7 @@
       <div v-if="platform === 'windows'">
         <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium brand">{{
           texts.githubRelease }}</a>
-        <a href="https://pan.quark.cn/s/319faf23496c" class="VPButton medium alt">{{ texts.quarkDownload }}</a>
+        <a href="https://pan.quark.cn/s/49fab9d220ec" class="VPButton medium alt" :title="texts.quarkExtractionCode">{{ texts.quarkDownload }}</a>
         <a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">{{ texts.mirrorChyanDownload
         }}</a>
         <a href="https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah" class="VPButton medium alt">{{
@@ -63,6 +63,7 @@ export default {
           currentVersion: '当前最新版本：',
           releaseContent: '发布内容',
           quarkDownload: '夸克网盘下载',
+          quarkExtractionCode: '提取码：W3dc',
           mirrorChyanDownload: 'Mirror酱下载（需要CDK）',
           githubDirectDownload: 'GitHub直链下载',
           githubRelease: 'GitHub Release',
@@ -80,6 +81,7 @@ export default {
           currentVersion: 'Current Latest Version: ',
           releaseContent: 'Release Content',
           quarkDownload: 'Quark Cloud Download',
+          quarkExtractionCode: 'Extraction Code: W3dc',
           mirrorChyanDownload: 'MirrorChyan Download (CDK Required)',
           githubDirectDownload: 'GitHub Direct Download',
           githubRelease: 'GitHub Release',

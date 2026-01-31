@@ -35,7 +35,7 @@ You can join one of the following QQ groups for usage help
 
 == Windows
 
-<a href="https://pan.quark.cn/s/319faf23496c" class="VPButton medium brand">Quark Cloud Download</a>
+<a href="https://pan.quark.cn/s/49fab9d220ec" class="VPButton medium brand" title="Extraction Code: W3dc">Quark Cloud Download</a>
 <a href="https://mirrorchyan.com/en/projects?rid=BAAH" class="VPButton medium alt">MirrorChyan Download (CDK Required)</a>
 <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium alt">GitHub Release</a>
 <a href="https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah" class="VPButton medium alt">BlockHaity's API</a>
