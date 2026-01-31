@@ -93,7 +93,7 @@ brew install git
 # 如果你连接 GitHub 的网络良好，运行这个
 git clone https://github.com/BlueArchiveArisHelper/BAAH.git
 # 如果不好，运行下列内容
-git clone https://v6.gh-proxy.com/github.com/BlueArchiveArisHelper/BAAH.git
+git clone https://gh-proxy.com/BlueArchiveArisHelper/BAAH.git
 ```
 
 不要关闭窗口，运行 `cd BAAH` 进入文件夹，安装依赖。
@@ -112,22 +112,3 @@ pip install -r requirements.txt
 ## 从源码归档安装
 
 不用安装Git，下载 **source code zip** 然后解压到想要的文件夹，在BAAH源代码文件夹中打开终端，然后安装依赖，运行即可。
-
-## 手动构建容器
-
-BAAH提供单独使用 `Dockerfile` ，你可以不用克隆仓库就可以构建容器
-
-构建命令如下
-
-``` bash
-# 下载Dockerfile
-wget https://github.com/BlueArchiveArisHelper/BAAH/raw/refs/heads/main/Dockerfile
-
-# 如果网络不佳，则运行下列命令
-wget https://v6.gh-proxy.com/github.com/BlueArchiveArisHelper/BAAH/raw/refs/heads/main/Dockerfile.CN
-
-sudo docker build -f <你下载的Dockerfile> -t baah:localbuild .
-
-#如果你使用的是podman,则使用下列命令
-sudo docker build -f <你下载的Dockerfile> -t baah:localbuild .
-```

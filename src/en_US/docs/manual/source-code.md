@@ -115,22 +115,3 @@ Execute `python jsoneditor.py config.json` to start BAAH according to the config
 ## Installing from Source Archive
 
 No need to install Git, download the **source code zip** and extract it to the desired folder. Open the terminal in the BAAH source code folder, then install dependencies and run.
-
-## Manual Container Building
-
-BAAH provides a standalone `Dockerfile`, allowing you to build the container without cloning the repository
-
-Build commands are as follows
-
-``` bash
-# Download Dockerfile
-wget https://github.com/BlueArchiveArisHelper/BAAH/raw/refs/heads/main/Dockerfile
-
-# If network is poor, run the following command
-wget https://v6.gh-proxy.com/github.com/BlueArchiveArisHelper/BAAH/raw/refs/heads/main/Dockerfile.CN
-
-sudo docker build -f <your-downloaded-Dockerfile> -t baah:localbuild .
-
-# If you are using podman, use the following command
-sudo docker build -f <your-downloaded-Dockerfile> -t baah:localbuild .
-```
