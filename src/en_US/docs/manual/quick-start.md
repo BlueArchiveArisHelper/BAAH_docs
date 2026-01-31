@@ -20,7 +20,9 @@ description: Complete BlueArchive Aris Helper deployment in 3 steps! MuMu emulat
     - **Games** -> **EX Skill Effects** -> **Off**
     - **Graphics** -> **Battle Screen Vertical Letterbox** -> **Off**
     - Manually raise the camera view in the cafe to the highest position, preferably stacking all furniture on the far right side of the screen.
-3. Additional Game Settings for Steam Global Version
+3. Additional Game Settings for PC Version
+    - **Graphics** -> **Display Mode** -> **Windowsed**
+    - **Graphics** -> **Aspect Ratio** -> **16:9**
     - **Control** -> **Display Shortcut Icon** -> **Off**
     - Close software that displays frame rate and usage in the game window, as they may block the UI.
 ## Deployment
@@ -42,7 +44,11 @@ Double-click BAAH.exe to open the interface.
 
 In Server Configuration, select your BA server.
 
-In Emulator Configuration, modify the port number to your emulator's ADB debugging port. (If you are using an emulator)
+If you are using an emulator, modify the port number to your emulator's ADB debugging port in the Emulator Configuration.
+
+If you're using an emulator and want to auto-start it, enter the emulator path in the Emulator Configuration.
+
+If you're using the Japanese Server PC version and want to auto-start the game, enter the game path (typically at ...\YostarGames\BlueArchive_JP\BlueArchive.exe) in the Emulator Configuration.
 
 In Task Execution Order, enable the task flow or click the Quick Call Task button to run tasks.
 
