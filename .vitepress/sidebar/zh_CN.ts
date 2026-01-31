@@ -3,6 +3,7 @@ export const zhSidebar: DefaultTheme.Sidebar = {
     '/zh_CN/': [
         { text: '主页', link: '/zh_CN' },
         { text: '下载', link: '/zh_CN/download' },
+        { text: '捐赠', link: '/zh_CN/donate' },
         {
             text: '使用文档', items: [
                 { text: '快速开始', link: '/zh_CN/docs/manual/quick-start' },
