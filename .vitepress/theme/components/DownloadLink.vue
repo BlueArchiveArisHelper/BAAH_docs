@@ -13,11 +13,14 @@
       <div v-if="platform === 'windows'">
         <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium brand">{{
           texts.githubRelease }}</a>
-        <a href="https://pan.quark.cn/s/49fab9d220ec" class="VPButton medium alt" :title="texts.quarkExtractionCode">{{ texts.quarkDownload }}</a>
+        <a href="https://pan.quark.cn/s/49fab9d220ec" class="VPButton medium alt" :title="texts.quarkExtractionCode">{{
+          texts.quarkDownload }}</a>
         <a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">{{ texts.mirrorChyanDownload
-        }}</a>
+          }}</a>
         <a href="https://api.blockhaity.qzz.io/docs/#/api-doc/getbaah" class="VPButton medium alt">{{
           texts.blockhaityapi }}</a>
+        <a href="https://cnb.cool/BlockHaity/BAAH-releases/-/releases" class="VPButton medium alt">{{ texts.cnbDownload
+          }}</a>
       </div>
 
       <div v-else-if="platform === 'mac'">
@@ -65,7 +68,7 @@ export default {
           quarkDownload: '夸克网盘下载',
           quarkExtractionCode: '提取码：W3dc',
           mirrorChyanDownload: 'Mirror酱下载（需要CDK）',
-          githubDirectDownload: 'GitHub直链下载',
+          cnbDownload: 'Cloud Native Build',
           githubRelease: 'GitHub Release',
           viewSourceTutorial: '查看源码部署教程',
           dockerDeploy: 'Docker部署',
@@ -83,7 +86,7 @@ export default {
           quarkDownload: 'Quark Cloud Download',
           quarkExtractionCode: 'Extraction Code: W3dc',
           mirrorChyanDownload: 'MirrorChyan Download (CDK Required)',
-          githubDirectDownload: 'GitHub Direct Download',
+          cnbDownload: 'Cloud Native Build',
           githubRelease: 'GitHub Release',
           viewSourceTutorial: 'View Source Deployment Tutorial',
           linuxDeployMessage: 'Your OS is Linux, you can use the following deployment methods',
