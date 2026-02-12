@@ -1,7 +1,7 @@
 
 const supportedLanguages = [
-    { code: 'en', name: 'English', path: '/en_US/' },
-    { code: 'zh', name: '中文', path: '/zh_CN/' },
+    { code: 'en', name: 'English', path: '/en_US' },
+    { code: 'zh', name: '中文', path: '/zh_CN' },
 ]
 
 // 获取浏览器语言偏好
@@ -35,11 +35,19 @@ export default async function onRequest(context) {
     try {
         const acceptLanguage = context.request.headers.get('accept-language') || ''
         const browserLanguage = getBrowserLanguage(acceptLanguage)
+        
+        // 解析URL获取target参数
+        const url = new URL(context.request.url)
+        const target = url.searchParams.get('target') || '/'
+        
+        // 构建重定向路径
+        const redirectPath = target ? `${browserLanguage.path}${target}` : browserLanguage.path
 
         // 返回重定向响应
-        return Response.redirect(browserLanguage.path, 302)
+        return Response.redirect(redirectPath, 302)
     } catch (error) {
         // 错误处理：重定向到默认语言（中文）
         return Response.redirect(supportedLanguages[1].path, 302)
     }
 }
+
