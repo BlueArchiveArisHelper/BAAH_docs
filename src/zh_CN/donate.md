@@ -21,5 +21,5 @@
 :::
 
 ::: details sanmusen214
-
+<AfdianCard />
 :::
