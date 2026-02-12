@@ -13,7 +13,7 @@
       <div v-if="platform === 'windows'">
         <a href="https://github.com/BlueArchiveArisHelper/BAAH/releases" class="VPButton medium brand">{{
           texts.githubRelease }}</a>
-        <a href="https://pan.quark.cn/s/49fab9d220ec" class="VPButton medium alt" :title="texts.quarkExtractionCode">{{
+        <a href="https://pan.quark.cn/s/49fab9d220ec?pwd=W3dc" class="VPButton medium alt" :title="texts.quarkExtractionCode">{{
           texts.quarkDownload }}</a>
         <a href="https://mirrorchyan.com/zh/projects?rid=BAAH" class="VPButton medium alt">{{ texts.mirrorChyanDownload
           }}</a>

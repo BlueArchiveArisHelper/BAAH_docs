@@ -12,6 +12,7 @@ export default {
   enhanceApp({ app }) {
     app.component('DownloadLink', defineAsyncComponent(() => import('./components/DownloadLink.vue')));
     app.component('LanguageWarn', defineAsyncComponent(() => import('./components/LanguageWarn.vue')));
+    app.component('AfdianCard',defineAsyncComponent(() => import('./components/AfdianCard.vue')));
     enhanceAppWithTabs(app)
     app.component('LiteTree', LiteTree)
   },
