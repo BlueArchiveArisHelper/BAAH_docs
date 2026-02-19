@@ -160,7 +160,7 @@ For more help on how to use Docker, head to https://docs.docker.com/go/guides/
 然后，拉取镜像，创建并运行容器。
 
 ``` bash
-docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
+docker run -d --name BAAH -p 8000:8000 ghcr.io/bluearchivearishelper/baah:latest
 ```
 
 随后打开浏览器，打开 `http://<your-server-ip>:8000`

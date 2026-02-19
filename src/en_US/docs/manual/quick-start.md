@@ -161,7 +161,7 @@ For more help on how to use Docker, head to https://docs.docker.com/go/guides/
 Then, pull the image, create and run the container.
 
 ``` bash
-docker run -d --name BAAH -p 8000:8000 ghcr.io/BlueArchiveArisHelper/baah:latest
+docker run -d --name BAAH -p 8000:8000 ghcr.io/bluearchivearishelper/baah:latest
 ```
 
 Then open your browser and navigate to `http://<your-server-ip>:8000`
