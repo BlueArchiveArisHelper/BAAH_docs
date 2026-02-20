@@ -60,7 +60,7 @@ description: 3 步完成 BlueArchive Aris Helper 部署！MuMu 模拟器设置�
 == Linux
 **Linux**
 
-首先，确保你的系统内包含Docker，可以输入一下命令查看
+首先，确保你的系统内包含Docker或podman，可以输入一下命令查看
 
 ``` bash
 # 对于ROOT用户
@@ -159,9 +159,40 @@ For more help on how to use Docker, head to https://docs.docker.com/go/guides/
 
 然后，拉取镜像，创建并运行容器。
 
+:::: tabs
+
+== docker
+
+**docker**
+
 ``` bash
-docker run -d --name BAAH -p 8000:8000 ghcr.io/bluearchivearishelper/baah:latest
+# 如果你使用模拟器/其他Android容器，使用端口转发
+sudo docker run -d --name BAAH -p 8000:8000 ghcr.io/bluearchivearishelper/baah:latest
+# # 国内版本
+sudo docker run -d --name BAAH -p 8000:8000 docker.cnb.cool/ycawa/baah:latest
+
+# 如果你需要连接远程Android设备，请在宿主机开启ADB Server，并使用host模式
+sudo docker run -d --name BAAH --net=host ghcr.io/bluearchivearishelper/baah:latest
+# # 国内版本
+sudo docker run -d --name BAAH --net=host docker.cnb.cool/ycawa/baah:latest
 ```
+
+== podman
+
+``` bash
+# 推荐在系统级运行BAAH容器
+# 如果你使用模拟器/其他Android容器，使用端口转发
+podman run -d --name BAAH -p 8000:8000 ghcr.io/bluearchivearishelper/baah:latest
+# # 国内版本
+podman run -d --name BAAH -p 8000:8000 docker.cnb.cool/ycawa/baah:latest
+
+# 如果你需要连接远程Android设备，请在宿主机开启ADB Server，并使用host模式
+podman run -d --name BAAH --net=host ghcr.io/bluearchivearishelper/baah:latest
+# # 国内版本
+podman run -d --name BAAH --net=host docker.cnb.cool/ycawa/baah:latest
+```
+
+::::
 
 随后打开浏览器，打开 `http://<your-server-ip>:8000`
 
