@@ -161,12 +161,7 @@ For more help on how to use Docker, head to https://docs.docker.com/go/guides/
 
 镜像发布: [Github Package](https://github.com/BlueArchiveArisHelper/BAAH/pkgs/container/baah)
 
-:::: tabs
-
-== docker
-
-**docker**
-
+::: details docker
 ``` bash
 # 如果你使用模拟器/其他Android容器，使用端口转发
 sudo docker run -d --name BAAH -p 8000:8000 ghcr.io/bluearchivearishelper/baah:latest
@@ -182,9 +177,8 @@ sudo docker run -d --name BAAH --net=host ghcr.nju.edu.cn/bluearchivearishelper/
 # # 国内版本(不推荐)
 sudo docker run -d --name BAAH --net=host docker.cnb.cool/ycawa/baah:latest
 ```
-
-== podman
-
+:::
+:::details podman
 ``` bash
 # 推荐在系统级运行BAAH容器
 # 如果你使用模拟器/其他Android容器，使用端口转发
@@ -201,8 +195,7 @@ podman run -d --name BAAH --net=host ghcr.nju.edu.cn/bluearchivearishelper/baah:
 # # 国内版本(不推荐)
 podman run -d --name BAAH --net=host docker.cnb.cool/ycawa/baah:latest
 ```
-
-::::
+:::
 
 随后打开浏览器，打开 `http://<your-server-ip>:8000`
 
