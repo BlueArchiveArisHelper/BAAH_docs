@@ -93,7 +93,7 @@ brew install git
 # 如果你连接 GitHub 的网络良好，运行这个
 git clone https://github.com/BlueArchiveArisHelper/BAAH.git
 # 如果不好，运行下列内容
-git clone https://gh-proxy.com/BlueArchiveArisHelper/BAAH.git
+git clone https://v6.gh-proxy.com/github.com/BlueArchiveArisHelper/BAAH.git
 ```
 
 不要关闭窗口，运行 `cd BAAH` 进入文件夹，安装依赖。

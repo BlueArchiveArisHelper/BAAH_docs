@@ -93,10 +93,7 @@ Most distributions come with Git pre-installed. If not, please install it from t
 Then, in the location where you want to install BAAH, open the terminal and run the following.
 
 ``` cmd
-# If you have good network connection to GitHub, run this
 git clone https://github.com/BlueArchiveArisHelper/BAAH.git
-# If not, run the following
-git clone https://gh-proxy.com/BlueArchiveArisHelper/BAAH.git
 ```
 
 Don't close the window, run `cd BAAH` to enter the folder, and install dependencies.
