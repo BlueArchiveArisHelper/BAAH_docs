@@ -159,6 +159,8 @@ For more help on how to use Docker, head to https://docs.docker.com/go/guides/
 
 然后，拉取镜像，创建并运行容器。
 
+镜像发布: [Github Package](https://github.com/BlueArchiveArisHelper/BAAH/pkgs/container/baah)
+
 :::: tabs
 
 == docker
@@ -168,12 +170,16 @@ For more help on how to use Docker, head to https://docs.docker.com/go/guides/
 ``` bash
 # 如果你使用模拟器/其他Android容器，使用端口转发
 sudo docker run -d --name BAAH -p 8000:8000 ghcr.io/bluearchivearishelper/baah:latest
-# # 国内版本
+# # 南京大学镜像站
+sudo docker run -d --name BAAH -p 8000:8000 ghcr.nju.edu.cn/bluearchivearishelper/baah:latest
+# # 国内版本(不推荐)
 sudo docker run -d --name BAAH -p 8000:8000 docker.cnb.cool/ycawa/baah:latest
 
 # 如果你需要连接远程Android设备，请在宿主机开启ADB Server，并使用host模式
 sudo docker run -d --name BAAH --net=host ghcr.io/bluearchivearishelper/baah:latest
-# # 国内版本
+# # 南京大学镜像站
+sudo docker run -d --name BAAH --net=host ghcr.nju.edu.cn/bluearchivearishelper/baah:latest
+# # 国内版本(不推荐)
 sudo docker run -d --name BAAH --net=host docker.cnb.cool/ycawa/baah:latest
 ```
 
@@ -183,12 +189,16 @@ sudo docker run -d --name BAAH --net=host docker.cnb.cool/ycawa/baah:latest
 # 推荐在系统级运行BAAH容器
 # 如果你使用模拟器/其他Android容器，使用端口转发
 podman run -d --name BAAH -p 8000:8000 ghcr.io/bluearchivearishelper/baah:latest
-# # 国内版本
+# # 南京大学镜像站
+podman run -d --name BAAH -p 8000:8000 ghcr.nju.edu.cn/bluearchivearishelper/baah:latest
+# # 国内版本(不推荐)
 podman run -d --name BAAH -p 8000:8000 docker.cnb.cool/ycawa/baah:latest
 
 # 如果你需要连接远程Android设备，请在宿主机开启ADB Server，并使用host模式
 podman run -d --name BAAH --net=host ghcr.io/bluearchivearishelper/baah:latest
-# # 国内版本
+# # 南京大学镜像站
+podman run -d --name BAAH --net=host ghcr.nju.edu.cn/bluearchivearishelper/baah:latest
+# # 国内版本(不推荐)
 podman run -d --name BAAH --net=host docker.cnb.cool/ycawa/baah:latest
 ```
 
