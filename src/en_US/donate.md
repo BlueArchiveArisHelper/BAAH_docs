@@ -1,25 +1,21 @@
-# Donate
+# Donation
 
-If you really like BAAH and want to buy the developer a milk tea (or something else), please read on.
+If you really like BAAH and would like to buy the developer a cup of milk tea (or something else), please read on.
 
 ## Paid Donation
 
-You can purchase Mirror-chan CDK and use it for downloads and updates. This not only allows the developer to receive a commission, but also enables high-speed downloads/updates.
+You can purchase Mirror-chan CDK and use it for downloads and updates. This not only allows the developer to earn a commission, but also enables high-speed downloads/updates.
 
 ## Free Donation
 
-Here are the payment codes or Afdian links for the developers.
+Here are the developers' payment codes or Afdian links.
 
-::: warning
-This is a donation, and there is no obligation for the developers to refund it, either legally or morally.
-
-<p style="color:red;font-weight: bold">Please pay with caution</p>
-
-<p style="color:red;font-weight: bold">Please pay with caution</p>
-
-<p style="color:red;font-weight: bold">Please pay with caution</p>
-:::
+Software maintenance is not easy. If you feel this software has been helpful to you, you are welcome to sponsor through Afdian or WeChat QR code. Your support will be the motivation for developers to continue maintenance.
 
 ::: details sanmusen214
 <AfdianCard />
+:::
+
+::: warning
+Generally, donations are non-refundable and do not include any additional features.
 :::
