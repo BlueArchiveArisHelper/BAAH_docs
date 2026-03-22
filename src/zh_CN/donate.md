@@ -10,16 +10,12 @@
 
 这里列出了开发者们的收款码或爱发电，
 
-::: warning
-这属于捐赠，无论是从法律上还是道德上都没有让开发者退还的义务。
-
-<p style="color:red;font-weight: bold">请谨慎付款</p>
-
-<p style="color:red;font-weight: bold">请谨慎付款</p>
-
-<p style="color:red;font-weight: bold">请谨慎付款</p>
-:::
+软件维护不易，如果您感觉该软件对你有帮助，欢迎通过爱发电，或微信扫码赞助，您的支持将成为开发者继续维护的动力。
 
 ::: details sanmusen214
 <AfdianCard />
+:::
+
+::: warning
+一般情况下，捐赠不会退回，不代表附加任何额外功能。
 :::

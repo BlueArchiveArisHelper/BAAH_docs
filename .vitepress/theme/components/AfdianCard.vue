@@ -1,11 +1,11 @@
 <template>
   <iframe
     ref="afdianIframe"
-    src="https://afdian.com/leaflet?slug=sanmusen214"
+    src="https://ifdian.net/leaflet?slug=sanmusen214"
     :width="iframeWidth"
     height="200"
     scrolling="no"
-    frameborder="0"
+    frameborder="0"i
   ></iframe>
 </template>
 

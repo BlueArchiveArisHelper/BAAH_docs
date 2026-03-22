@@ -3,6 +3,7 @@ export const enSidebar: DefaultTheme.Sidebar = {
     '/en_US/': [
         { text: 'Home Page', link: '/en_US' },
         { text: 'Download', link: '/en_US/download' },
+        { text: 'donate', link: '/en_US/donate' },
         {
             text: 'Use documentation', items: [
                 { text: 'Get Started Quickly', link: '/en_US/docs/manual/quick-start' },
