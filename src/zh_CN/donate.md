@@ -13,7 +13,7 @@
 软件维护不易，如果您感觉该软件对你有帮助，欢迎通过爱发电，或微信扫码赞助，您的支持将成为开发者继续维护的动力。
 
 ::: details sanmusen214
-<AfdianCard />
+![sanmusen214](/img/donate/sanmusen214.webp)
 :::
 
 ::: warning
