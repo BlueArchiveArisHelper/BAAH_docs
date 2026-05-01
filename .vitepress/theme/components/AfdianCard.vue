@@ -1,16 +1,25 @@
 <template>
   <iframe
     ref="afdianIframe"
-    src="https://ifdian.net/leaflet?slug=sanmusen214"
+    :src="`https://ifdian.net/leaflet?slug=${slug}`"
     :width="iframeWidth"
     height="200"
     scrolling="no"
-    frameborder="0"i
+    frameborder="0"
   ></iframe>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+
+const props = defineProps({
+  slug: {
+    type: String,
+    default: 'sanmusen214'
+  }
+})
+
+const { slug } = toRefs(props)
 
 const afdianIframe = ref(null)
 const iframeWidth = ref('100%')
@@ -35,3 +44,4 @@ iframe {
   margin: 0 auto;
 }
 </style>
+
