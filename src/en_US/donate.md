@@ -17,5 +17,5 @@ Software maintenance is not easy. If you feel this software has been helpful to 
 :::
 
 ::: warning
-Generally, donations are non-refundable and do not include any additional features.
+Message from the developer: Thank you for your support of BAAH! Please consider sponsoring within an amount you're comfortable with. Donations made via WeChat or other channels do not include any additional benefits. Students and minors, please refrain from tipping~ Giving two coins to BAAH's [tutorial video](https://www.bilibili.com/video/BV1ZxfGYSEVr/) would also be a huge encouragement and support for us. Thank you very much~
 :::
